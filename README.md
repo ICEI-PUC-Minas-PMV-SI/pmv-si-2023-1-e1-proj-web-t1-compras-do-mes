@@ -13,7 +13,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Vitoria Lorrayne Dos Santos Soares
 * Keren Hapuque Freitas Alves
 * Gabriel Freitas de Oliveira
-* Nome completo do aluno 4
+* Vitor Hugo Miranda da Silva
 * Nome completo do aluno 5
 
 ## Orientador

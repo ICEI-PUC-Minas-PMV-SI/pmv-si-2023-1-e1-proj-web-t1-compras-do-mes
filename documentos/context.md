@@ -1,13 +1,7 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC (Pesquisa de Endividamento e Inadimplência do Consumidor) 2022, 77,9% das famílias brasileiras estão endividadas, o que escancara uma situação crítica: o descontrole financeiro da população. Esse obstáculo só tende a piorar, pois, como reportado pelo SPC Brasil, em 2016, 33,9% dos brasileiros sabiam pouco ou quase nada sobre seus gastos básicos. As pessoas desorganizadas dificilmente terão definidas ações que estejam alinhadas com os objetivos a longo prazo, estão mais sucetiveis as crises econômicas, não conseguem inovar, perdem oportunidades de uma boa compra por não terem uma reserva de emergência, sempre estaram no lim. Quase 9 milhoes de jovens estão enrolados com dividas no Brasil, chama a atençao que pessoas tão novas, no começo da vida já estejam endividadas mesmo não tendo grandes responsabilidades financeiras.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 

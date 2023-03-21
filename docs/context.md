@@ -1,7 +1,13 @@
 # Introdução
 
-O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC (Pesquisa de Endividamento e Inadimplência do Consumidor) 2022, 77,9% das famílias brasileiras estão endividadas, o que escancara uma situação crítica: o descontrole financeiro da população. Esse obstáculo só tende a piorar, pois, como reportado pelo SPC Brasil, em 2016, 33,9% dos brasileiros sabiam pouco ou quase nada sobre seus gastos básicos. As pessoas desorganizadas dificilmente terão definidas ações que estejam alinhadas com os objetivos a longo prazo, estão mais sucetiveis as crises econômicas, não conseguem inovar, perdem oportunidades de uma boa compra por não terem uma reserva de emergência, sempre estaram no lim. Quase 9 milhoes de jovens estão enrolados com dividas no Brasil, chama a atençao que pessoas tão novas, no começo da vida já estejam endividadas mesmo não tendo grandes responsabilidades financeiras.
+O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC (Pesquisa de Endividamento e Inadimplência do Consumidor) 2022, 77,9% das famílias brasileiras estão endividadas, o que escancara uma situação crítica: o descontrole financeiro da população. 
 
+Esse obstáculo só tende a piorar, pois, como reportado pelo SPC Brasil, em 2016, 33,9% dos brasileiros sabiam pouco ou quase nada sobre seus gastos básicos. As pessoas desorganizadas dificilmente terão definidas ações que estejam alinhadas com os objetivos a longo prazo, estão mais sucetiveis as crises econômicas, não conseguem inovar, perdem oportunidades de uma boa compra por não terem uma reserva de emergência, sempre estaram no lim. Quase 9 milhoes de jovens estão enrolados com dividas no Brasil, chama a atençao que pessoas tão novas, no começo da vida já estejam endividadas mesmo não tendo grandes responsabilidades financeiras.
+
+Existe uma relação clara com o endividamento e a cultura do povo brasileiro. De acordo com uma pesquisa de 2015 em parceria do Serasa e IBOPE, disponível no Banco Central, 50% da população afirma que pelo menos uma vez, em um período de 12 meses, os gastos foram maiores do que a sua renda. 56% também afirmam não ter um orçamento doméstico ou familiar.
+Gestão financeira é um passo essencial  para contribuir com uma sociedade mais saudável e autônoma.
+
+O acúmulo de dívidas impacta diretamente na saúde das pessoas, pois cria um ambiente favorável para o desenvolvimento de problemas como insônia, ansiedade e até depressão.
 
 ## Problema
 

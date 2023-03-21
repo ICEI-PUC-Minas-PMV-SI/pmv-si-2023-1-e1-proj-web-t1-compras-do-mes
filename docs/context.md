@@ -10,9 +10,14 @@ O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC 
 
 ## Objetivos
 
-Mesmo fazendo listas é normal as vezes esquecermos de colocar algum item, mas outros são prioridades (como aluguel, gasolina, compras de mês, entre outros) esses gastos são gastos fixos, são as despesas que todo mês vão se repetir, no e-Li$t vc pode fixar as listas de gastos fixos para não esquecer das prioridades e economizar tempo ao invés de fazer 12× a mesma lista de de prioridade que é a lista fixa mensal.Em meio a este contexto, o ‘’e-Li$t’’ é recurso inteligente de fácil acesso e compreensão, que visa estimular e criar um gerenciamento financeiro simples, dinâmico e efetivo. Uma página WEB que fornece  controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos, distribuindo esse valor em diversas listas e categorias, como por exemplo despesas com alimentos, vestuários, lazer, dentre outras. Fazendo possível a visualização rápida de todas as categorias, listas de itens, sub-itens, seus valores respectivos, valores gastos, quantas vezes cada item foi adcionado e o valor final. Se estão dentro dos limites estipulados e ou previstos alinhando seu orçamento ao estilo  estilo de vida disponível ou previsto. A meta é disponibilizar aos usuários total controle de seu orçamento e evitar, dividas e desperdicios.
- 
+Objetivo Geral: Criação de uma página WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
 
+Objetivos Específicos: 
+•	Permitir que o usuário distribua um valor específico para gastar em diversas listas e categorias, como por exemplo despesas com alimentos, vestuários, lazer e etc.
+
+•	Permitir que o usuário crie e e defina uma lista de gastos principais, com gastos fixos mensais que não se alteram, e deixe ela fixada, sem ter a necessidade de refaze-la todos os meses.
+
+•	Permitir a visualização rápida, clara e fluída das listas, para que o usuário tenha controle total de seus gastos de forma objetiva e sem perca de tempo.
 
  
 ## Justificativa

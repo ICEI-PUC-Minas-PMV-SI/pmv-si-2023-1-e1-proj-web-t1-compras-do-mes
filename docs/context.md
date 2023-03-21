@@ -5,14 +5,12 @@ O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC 
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Existe uma relação clara com o endividamento e a cultura do povo brasileiro. De acordo com uma pesquisa de 2015 em parceria do Serasa e IBOPE, disponível no Banco Central, 50% da população afirma que pelo menos uma vez, em um período de 12 meses, os gastos foram maiores do que a sua renda. 56% também afirmam não ter um orçamento doméstico ou familiar. Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de catão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dividas. 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+> - [Endividamento da populaçao brasileira](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9chttps://valorinveste.globo.com/mercados/brasil-e-politica/noticia/2023/01/19/endividamento-das-familias-brasileiras-bate-recorde-em-2022-aponta-cnc.ghtml)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 

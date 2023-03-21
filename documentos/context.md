@@ -5,7 +5,7 @@ O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC 
 
 ## Problema
 
-Existe uma relação clara com o endividamento e a cultura do povo brasileiro. De acordo com uma pesquisa de 2015 em parceria do Serasa e IBOPE, disponível no Banco Central, 50% da população afirma que pelo menos uma vez, em um período de 12 meses, os gastos foram maiores do que a sua renda. 56% também afirmam não ter um orçamento doméstico ou familiar. Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de catão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dividas. 
+Existe uma relação clara com o endividamento e a cultura do povo brasileiro. De acordo com uma pesquisa de 2015 em parceria do Serasa e IBOPE, disponível no Banco Central, 50% da população afirma que pelo menos uma vez, em um período de 12 meses, os gastos foram maiores do que a sua renda. 56% também afirmam não ter um orçamento doméstico ou familiar. Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de catão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dívidas. 
 
 
 

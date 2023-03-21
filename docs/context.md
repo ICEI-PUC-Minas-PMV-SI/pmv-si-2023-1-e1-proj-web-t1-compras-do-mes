@@ -19,6 +19,7 @@ O acúmulo de dívidas impacta diretamente na saúde das pessoas, pois cria um a
 Objetivo Geral: Criação de uma página WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
 
 Objetivos Específicos: 
+
 •	Permitir que o usuário distribua um valor específico para gastar em diversas listas e categorias, como por exemplo despesas com alimentos, vestuários, lazer e etc.
 
 •	Permitir que o usuário crie e e defina uma lista de gastos principais, com gastos fixos mensais que não se alteram, e deixe ela fixada, sem ter a necessidade de refaze-la todos os meses.

@@ -10,7 +10,6 @@ O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC 
 
 
 > **Links Úteis**:
-> - [Endividamento da populaçao brasileira](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9chttps://valorinveste.globo.com/mercados/brasil-e-politica/noticia/2023/01/19/endividamento-das-familias-brasileiras-bate-recorde-em-2022-aponta-cnc.ghtml)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 

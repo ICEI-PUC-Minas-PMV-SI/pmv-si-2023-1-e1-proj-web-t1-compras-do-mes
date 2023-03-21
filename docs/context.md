@@ -18,13 +18,11 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Mesmo fazendo listas é normal as vezes esquecermos de colocar algum item, mas outros são prioridades (como aluguel, gasolina, compras de mês, entre outros) esses gastos são gastos fixos, são as despesas que todo mês vão se repetir, no e-Li$t vc pode fixar as listas de gastos fixos para não esquecer das prioridades e economizar tempo ao invés de fazer 12× a mesma lista de de prioridade que é a lista fixa mensal.Em meio a este contexto, o ‘’e-Li$t’’ é recurso inteligente de fácil acesso e compreensão, que visa estimular e criar um gerenciamento financeiro simples, dinâmico e efetivo. Uma página WEB que fornece  controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos, distribuindo esse valor em diversas listas e categorias, como por exemplo despesas com alimentos, vestuários, lazer, dentre outras. Fazendo possível a visualização rápida de todas as categorias, listas de itens, sub-itens, seus valores respectivos, valores gastos, quantas vezes cada item foi adcionado e o valor final. Se estão dentro dos limites estipulados e ou previstos alinhando seu orçamento ao estilo  estilo de vida disponível ou previsto. A meta é disponibilizar aos usuários total controle de seu orçamento e evitar, dividas e desperdicios.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
+
+ 
 ## Justificativa
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.

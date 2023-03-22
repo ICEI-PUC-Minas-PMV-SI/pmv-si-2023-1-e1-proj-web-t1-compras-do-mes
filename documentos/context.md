@@ -5,12 +5,18 @@ O endividamento no Brasil se tornou um problema crônico. Segundo dados da PEIC 
 
 ## Problema
 
- Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de catão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dívidas. 
+ Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de cartão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dívidas.
+ 
+ A dificuldade em se ter um controle financeiro organizado e centralizado, com a elaboração de listas de compras, dificuldade na manutenção e da organização das despesas, visualização dos principais gastos são os grandes impencílhos para ter uma vida financeira saúdavel e organizada.
+
+
 
 
 ## Objetivos
 
 Mesmo fazendo listas é normal as vezes esquecermos de colocar algum item, mas outros são prioridades (como aluguel, gasolina, compras de mês, entre outros) esses gastos são gastos fixos, são as despesas que todo mês vão se repetir, no e-Li$t vc pode fixar as listas de gastos fixos para não esquecer das prioridades e economizar tempo ao invés de fazer 12× a mesma lista de de prioridade que é a lista fixa mensal.Em meio a este contexto, o ‘’e-Li$t’’ é recurso inteligente de fácil acesso e compreensão, que visa estimular e criar um gerenciamento financeiro simples, dinâmico e efetivo. Uma página WEB que fornece  controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos, distribuindo esse valor em diversas listas e categorias, como por exemplo despesas com alimentos, vestuários, lazer, dentre outras. Fazendo possível a visualização rápida de todas as categorias, listas de itens, sub-itens, seus valores respectivos, valores gastos, quantas vezes cada item foi adcionado e o valor final. Se estão dentro dos limites estipulados e ou previstos alinhando seu orçamento ao estilo  estilo de vida disponível ou previsto. A meta é disponibilizar aos usuários total controle de seu orçamento e evitar, dividas e desperdicios.
+
+
  
 
 

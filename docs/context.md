@@ -29,7 +29,9 @@ Objetivos Específicos:
  
 ## Justificativa
 
-A desorganização financeira impacta diretamente nas pessoas pois cria um ambiente favorável para o acúmulo de dívidas, no entanto, ter um controle possibilita uma melhor qualidade de vida e é em meio a esse cenário que nasce o e-Li$t um site focado em gerenciamento de gastos. Espera-se que com esse site o usuário aprenda a controlar as finanças, economizar,listar gastos e cuidar melhor de sua renda mensal, com o intuito de auxiliar no gerenciamento financeiro das pessoas. Ter o controle de finanças significa maior segurança e estabilidade no mês, sem contar que propicia as pessoas a terem o nome limpo e suscetível a busca por crédito em instituições financeiras para realização de sonhos e projetos pessoais
+O que impulsionou a criação desse site é acreditar que, auxiliar no gerenciamento financeiro das pessoas é um passo essencial/fundamental para contribuir com uma sociedade mais saudável e autônoma.
+Ter o controle das finanças, além de possibilitar uma qualidade de vida melhor, é permitir que os usuários tenham mais segurança e controle dos seus orçamentos, sem contar que possibilita a realização de projetos e sonhos, através de estabilidade financeira e consequentemente emocional, com segurança que não estará estrapolando seu orçamento.
+É em meio a este cenário que nasce a iniciativa "e-Li$t" um site focado em gerenciamento de gastos, que busca trazer de uma forma clara, simples e objetiva, um método de controle financeiro para todos aqueles que se interessem em sair desta "roda gigante" de gastos desenfreados.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)

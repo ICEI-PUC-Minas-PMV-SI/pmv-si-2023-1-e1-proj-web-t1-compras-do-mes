@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Criação de uma página WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
 
 ## Integrantes
 

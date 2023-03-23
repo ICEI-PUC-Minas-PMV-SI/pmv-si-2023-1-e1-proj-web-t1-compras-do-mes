@@ -14,6 +14,13 @@ Camila é uma mulher de 39 anos, professora do município, solteira, apaixonada 
 
 Cristiane tem 19 anos, mora com os pais, acabou de entrar na Universidade, para cursar a Faculdade de Engenharia, em outra cidade. Tem algumas economias e seus pais controlavam suas finanças. Agora com esta possibilidade de morar em outra cidade, tenta aprender como controlar suas finanças para conseguir realizar seu sonho de se formar e conseguir se manter sem passar nenhuma dificuldade financeira.
 
+Neusa tem 45 anos, dona de casa, tem diversas tarefas de arrumação, limpeza do lar, zelo com os filhos e a administração doméstica. Como dona do lar, ela precisa de um organizador para cuidar das finanças pessoais que inclui os cuidados com as despesas domésticas, fazer pequenas modificações no dia a dia, seja modificando seus hábitos de consumo, economizando água, energia ou alimentos, esses novos cuidados colaborarão na obtenção de maior economia doméstica.
+
+Alex tem 24 anos, é um promissor professor de educação física, muito requisitado em todas as academias de sua cidade. O jovem desde pequeno nunca se deu bem com números e nunca ligou muito para seus gastos, tendo o hábito de comprar tudo o que deseja, satisfazendo seus desejos imediatos com compras e mais compras, não se importando com a quantidade de parcelas ou como arcaria com as despesas. Recentemente recebeu uma mensagem do banco que seus cartões haviam estourado e já não havia mais limite no cheque especial. O homem agora busca uma forma prática e intuitiva para se organizar e conseguir quitar esse endividamento.
+
+Alisson é um garoto de 13 anos que está ganhando uma mesada por mês de seus avós, embora muito jovem ele quer administrar bem o seu dinheiro entre lanches na escola e juntar o restante pra trocar de celular no fim do ano.
+
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)

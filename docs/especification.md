@@ -86,7 +86,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na seguinte tabela:
+O desenvolvimento do projeto está restrito pelos itens apresentados na seguinte tabela:
 
 |ID| Restrição                                            |
 |--|-------------------------------------------------------|

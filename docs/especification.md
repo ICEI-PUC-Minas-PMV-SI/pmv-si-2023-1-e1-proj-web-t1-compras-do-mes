@@ -26,7 +26,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
+|Consumista          | Controlar meus gastos              | Me organizar financeiramente           |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
@@ -46,21 +46,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre Lista de gastos mensais | ALTA |  |
-|RF-002| Extrato com demonstrativo dos gastos por tipo (Lazer, Alimentação, etc.)   | ALTA | |
-|RF-003| Permitir a visualização em modo escuro | MÉDIA |  |
-|RF-004| Personalização da Lista de despesas por necessidade do Usuário   | MÉDIA | |
-|RF-005| Emitir um gráfico com despesas do mês | BAIXA |  |
+|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
+|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Adaptável a qualquer interface - Browser, Smartphone ou Tablet | ALTA | 
-|RNF-002| A página deverá ter disponibilidade em 100% do tempo |  ALTA | 
-|RNF-003| Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade | ALTA | 
-|RNF-004| Tempo de resposta de até a 3s para solicitação ao usuário |  MÉDIA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
+Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+
+- [Requisitos Funcionais
+ (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
+ correspondem a uma funcionalidade que deve estar presente na
+  plataforma (ex: cadastro de usuário).
+- [Requisitos Não Funcionais
+  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
+  correspondem a uma característica técnica, seja de usabilidade,
+  desempenho, confiabilidade, segurança ou outro (ex: suporte a
+  dispositivos iOS e Android).
+Lembre-se que cada requisito deve corresponder à uma e somente uma
+característica alvo da sua solução. Além disso, certifique-se de que
+todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 

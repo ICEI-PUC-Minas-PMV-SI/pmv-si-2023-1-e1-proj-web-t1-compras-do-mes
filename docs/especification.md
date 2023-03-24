@@ -92,6 +92,3 @@ O desenvolvimento do projeto será restrito pelos itens apresentados na seguinte
 |03| FrontEnd desenvolvido em HTML5 e JavaScript           |
 |04| Grupo de desenvolvimento deste projeto, a princípio, é composto por 5 pessoas|
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)

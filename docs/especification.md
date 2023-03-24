@@ -41,8 +41,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Consumista                   | Controlar meus gastos              | Me organizar financeiramente            |
 |Investidor Conservador       | Lista de compras                   | Evitar perdas e gerenciar gastos mensais|
 |Pessoa com TOC em organização| Uma solução WEB                    | Organizar Lista de compras              |
+|Iniciante em finanças        | Controlar as finanças e gastos     | Controle fianceiro de forma simples     | 
 |
-
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 

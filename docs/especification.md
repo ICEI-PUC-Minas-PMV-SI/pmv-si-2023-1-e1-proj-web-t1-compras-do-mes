@@ -36,18 +36,21 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`         | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                  |
-|-----------------------------|------------------------------------|-----------------------------------------|
-|Consumista                   | Controlar meus gastos              | Me organizar financeiramente            |
-|Investidor Conservador       | Lista de compras                   | Evitar perdas e gerenciar gastos mensais|
-|Pessoa com TOC em organização| Uma solução WEB                    | Organizar Lista de compras              |
-|Iniciante em finanças        | Controlar as finanças e gastos     | Controle fianceiro de forma simples     | 
-|Dona de Casa                 | Controle dos gastos domésticos     | Proteger o orçamento familiar           |  
-|Pessoa Endividada            | Registrar e organizar dividas      | Evitar e quitar divídas                 |
+|EU COMO... `PERSONA`                            | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                      |
+|------------------------------------------------|------------------------------------|---------------------------------------------|
+|Consumista                                      | Controlar meus gastos              | Me organizar financeiramente                |
+|Investidor Conservador                          | Lista de compras                   | Evitar perdas e gerenciar gastos mensais    |
+|Pessoa com TOC em organização                   | Uma solução WEB                    | Organizar Lista de compras                  |
+|Iniciante em finanças                           | Controlar as finanças e gastos     | Controle fianceiro de forma simples         | 
+|Dona de Casa                                    | Controle dos gastos domésticos     | Proteger o orçamento familiar               |  
+|Pessoa Endividada                               | Registrar e organizar dividas      | Evitar e quitar divídas                     |
+|Jovem aprendendo a administar seu dinheiro      | De um site simples e intuitivo     | Administar o dinheiro para trocar de celular|
+                     
 
 
 
-> **Links Úteis**:
+
+> **Links Úteis**:  
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
 > - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)

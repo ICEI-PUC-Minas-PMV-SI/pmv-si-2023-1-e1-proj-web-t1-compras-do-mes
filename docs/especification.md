@@ -79,7 +79,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Restrições
 
-O desenvolvimento do projeto está restrito pelos itens apresentados na seguinte tabela:
+O desenvolvimento do projeto será restrito pelos itens apresentados na seguinte tabela:
 
 |ID| Restrição                                            |
 |--|-------------------------------------------------------|

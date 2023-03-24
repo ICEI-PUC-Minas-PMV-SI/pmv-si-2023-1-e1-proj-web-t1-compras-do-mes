@@ -90,7 +90,7 @@ O desenvolvimento do projeto será restrito pelos itens apresentados na seguinte
 |01| O projeto será entregue até o final do semestre       |
 |02| Não pode ser desenvolvido um módulo de backend        |
 |03| FrontEnd desenvolvido em HTML5 e JavaScript           |
-|04| Grupo de desenvolvimento deste projeto é composto por 5 pessoas|
+|04| Grupo de desenvolvimento deste projeto, a princípio, é composto por 5 pessoas|
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)

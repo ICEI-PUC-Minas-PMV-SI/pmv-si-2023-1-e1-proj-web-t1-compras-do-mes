@@ -18,7 +18,7 @@ Neusa tem 45 anos, dona de casa, tem diversas tarefas de arrumação, limpeza do
 
 Alex tem 24 anos, é um promissor professor de educação física, muito requisitado em todas as academias de sua cidade. O jovem desde pequeno nunca se deu bem com números e nunca ligou muito para seus gastos, tendo o hábito de comprar tudo o que deseja, satisfazendo seus desejos imediatos com compras e mais compras, não se importando com a quantidade de parcelas ou como arcaria com as despesas. Recentemente recebeu uma mensagem do banco que seus cartões haviam estourado e já não havia mais limite no cheque especial. O homem agora busca uma forma prática e intuitiva para se organizar e conseguir quitar esse endividamento.
 
-Alisson é um garoto de 13 anos que está ganhando uma mesada por mês de seus avós, embora muito jovem ele quer administrar bem o seu dinheiro entre lanches na escola e juntar o restante pra trocar de celular no fim do ano.
+Alisson é um garoto de 13 anos que está ganhando uma mesada por mês de seus avós, embora muito jovem, ele quer administrar bem o seu dinheiro entre lanches na escola e juntar o restante pra trocar de celular no fim do ano.
 
 
 
@@ -90,5 +90,5 @@ O desenvolvimento do projeto será restrito pelos itens apresentados na seguinte
 |01| O projeto será entregue até o final do semestre       |
 |02| Não pode ser desenvolvido um módulo de backend        |
 |03| FrontEnd desenvolvido em HTML5 e JavaScript           |
-|04| Grupo de desenvolvimento deste projeto, a princípio, é composto por 5 pessoas|
+|04| Grupo de desenvolvimento deste projeto, a princípio, é composto por 6 pessoas|
 

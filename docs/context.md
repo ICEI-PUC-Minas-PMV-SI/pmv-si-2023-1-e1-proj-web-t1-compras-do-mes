@@ -33,8 +33,7 @@ O que impulsionou a criação desse site é acreditar que, auxiliar no gerenciam
 Ter o controle das finanças, além de possibilitar uma qualidade de vida melhor, é permitir que os usuários tenham mais segurança e controle dos seus orçamentos, sem contar que possibilita a realização de projetos e sonhos, através de estabilidade financeira e consequentemente emocional, com segurança que não estará estrapolando seu orçamento.
 É em meio a este cenário que nasce a iniciativa "e-Li$t" um site focado em gerenciamento de gastos, que busca trazer de uma forma clara, simples e objetiva, um método de controle financeiro para todos aqueles que se interessem em sair desta "roda gigante" de gastos desenfreados.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+
 
 ## Público-Alvo
 

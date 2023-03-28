@@ -18,13 +18,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`                            | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                      |
 |------------------------------------------------|------------------------------------|---------------------------------------------|
-|Consumista                                      | Controlar meus gastos              | Me organizar financeiramente                |
-|Investidor Conservador                          | Lista de compras                   | Evitar perdas e gerenciar gastos mensais    |
-|Pessoa com TOC em organização                   | Uma solução WEB                    | Organizar Lista de compras                  |
-|Iniciante em finanças                           | Controlar as finanças e gastos     | Controle fianceiro de forma simples         | 
+|Consumista                                      | Definir um orçamento mensal        | Me organizar financeiramente                |
+|Iniciante em finanças                           | Controlar as finanças e gastos     | Resolver dificuldade financeira             | 
 |Dona de Casa                                    | Controle dos gastos domésticos     | Proteger o orçamento familiar               |  
 |Pessoa Endividada                               | Registrar e organizar dividas      | Evitar e quitar divídas                     |
-|Jovem aprendendo a administar seu dinheiro      | De um site simples e intuitivo     | Administar o dinheiro para trocar de celular|
+    
                      
 
 ## Requisitos

@@ -20,8 +20,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |------------------------------------------------|------------------------------------|---------------------------------------------|
 |Consumista                                      | Definir um orçamento mensal        | Me organizar financeiramente                |
 |Iniciante em finanças                           | Controlar as finanças e gastos     | Resolver dificuldade financeira             | 
-|Dona de Casa                                    | Demonstrativo por tipos de gasto   | Proteger o orçamento familiar               |  
-|Pessoa Endividada                               | Registrar e organizar dividas      | Evitar e quitar divídas                     |
+|Dona de Casa                                    | Lista de gastos mensais            | Proteger o orçamento familiar               |  
+|Pessoa Endividada                               | Lista de compras                   | Evitar perdas e gerenciar gastos mensais    |
     
                      
 

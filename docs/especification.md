@@ -34,8 +34,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
 |RF-001| Permitir que o usuário cadastre Lista de gastos mensais | ALTA |  |
-|RF-002| Extrato com demonstrativo dos gastos por tipo (Lazer, Alimentação, etc.)   | ALTA | |
-|RF-003| Permitir a visualização em modo escuro | MÉDIA |  |
+|RF-002| Permitir que o usuário cadastre consumo por categorias (Lazer, Alimentação, etc.)   | ALTA | |
+|RF-003| Emitir um alerta de excedente de gasto   | ALTA | |
 |RF-004| Personalização da Lista de despesas por necessidade do Usuário   | MÉDIA | |
 |RF-005| Emitir um gráfico com despesas do mês | BAIXA |  |
 
@@ -48,6 +48,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| A página deverá ter disponibilidade em 100% do tempo |  ALTA | 
 |RNF-003| Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade | ALTA | 
 |RNF-004| Tempo de resposta de até a 3s para solicitação ao usuário |  MÉDIA |
+|RNF-005| Permitir a visualização em modo escuro | MÉDIA |  |
 
 ## Restrições
 

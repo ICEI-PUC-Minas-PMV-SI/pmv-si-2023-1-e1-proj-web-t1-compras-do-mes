@@ -4,6 +4,8 @@
 Celcio é um contador de 40 anos. Começou a trabalhar desde jovem, mas nunca teve nenhum conhecimento de organização pessoal financeira. Já passou por muitas dificuldades desde jovem por não ter tido interesse em realizar seus planejamentos monetários pessoais. Atualmente, após ter conseguido uma família, está procurando melhorar seus hábitos consumistas realizando listas de compras e definindo um orçamento mensal.
 
 
+
+
 Cristiane tem 19 anos, mora com os pais, acabou de entrar na Universidade, para cursar a Faculdade de Engenharia, em outra cidade. Tem algumas economias e seus pais controlavam suas finanças. Agora com esta possibilidade de morar em outra cidade, tenta aprender como controlar suas finanças para conseguir realizar seu sonho de se formar e conseguir se manter sem passar nenhuma dificuldade financeira.
 
 Neusa tem 45 anos, dona de casa, tem diversas tarefas de arrumação, limpeza do lar, zelo com os filhos e a administração doméstica. Como dona do lar, ela precisa de um organizador para cuidar das finanças pessoais que inclui os cuidados com as despesas domésticas, fazer pequenas modificações no dia a dia, seja modificando seus hábitos de consumo, economizando água, energia ou alimentos, esses novos cuidados colaborarão na obtenção de maior economia doméstica.

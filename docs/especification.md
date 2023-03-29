@@ -18,7 +18,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`                            | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                      |
 |------------------------------------------------|------------------------------------|---------------------------------------------|
-|Consumista                                      | Definir um orçamento mensal        | Me organizar financeiramente                |
+|Consumista                                      | Definir um orçamento mensal e exibir um alerta de excedente de gastos       | Me organizar financeiramente                |
 |Iniciante em finanças                           | Controlar as finanças e gastos     | Resolver dificuldade financeira             | 
 |Dona de Casa                                    | Compras por categoria              | Proteger o orçamento familiar               |  
 |Pessoa Endividada                               | Lista de gastos mensais            | Evitar perdas e gerenciar despesas          |

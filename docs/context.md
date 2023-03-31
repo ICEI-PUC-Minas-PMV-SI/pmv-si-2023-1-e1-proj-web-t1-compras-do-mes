@@ -38,6 +38,3 @@ Ter o controle das finanças, além de possibilitar uma qualidade de vida melhor
 ## Público-Alvo
 
 O público-alvo seria qualquer pessoa que queira  gerenciar suas finanças mensais com mais eficiência, controle e segurança. Incluindo pessoas que estão iniciando sua vida financeira, como pessoas que já iniciaram e que buscam estabilizar e/ou controlar sua gestão financeira possibilitando o conhecimento dos seus hábitos de consumo, mas principalmente ajudar aqueles que estão endividados e não sabem por onde começar.
-
-> **Links Úteis**:
-> - [Público-alvo](https://infograficos.estadao.com.br/focas/por-minha-conta/materia/quase-9-milhoes-de-jovens-estao-enrolados-com-dividas-no-brasil)

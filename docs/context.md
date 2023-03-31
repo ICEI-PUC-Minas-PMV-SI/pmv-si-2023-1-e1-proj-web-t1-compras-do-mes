@@ -11,7 +11,7 @@ O acúmulo de dívidas impacta diretamente na saúde das pessoas, pois cria um a
 
 ## Problema
 
- Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de catão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dívidas. 
+ Compras por impulso, falta de planejamento financeiro, subestimar pequenos gastos são só algumas das péssimas atitudes que alimentam esta realidade, mais de um terço das pessoas têm mais dívidas de cartão de crédito do que popança de emergência. Os efeitos destes hábitos estão mais do que evidentes: um ciclo vicioso de dívidas. 
 
 
 ## Objetivos

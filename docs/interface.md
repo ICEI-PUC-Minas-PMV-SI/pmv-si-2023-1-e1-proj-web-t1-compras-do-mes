@@ -12,16 +12,6 @@ O projeto de interface está organizado em 6 páginas, sendo elas: Home, login, 
 
 ## Wireframes
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
-
-### Exemplo
-
-A tela Inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade.
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-
-
 ### 2 - Tela de Cadastro
 
 Nessa tela, a pessoa escolherá um usuário e senha para a criação de uma nova conta no site.

@@ -20,6 +20,13 @@ A tela Inicial apresenta um menu lateral com as principais seções do portal, e
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
+
+### 4 - Tela de Login
+
+Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anteriormente, para acesso ao E-Li$t.
+
+![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/4-Tela%20de%20login.jpg)
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)

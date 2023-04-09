@@ -21,6 +21,20 @@ A tela Inicial apresenta um menu lateral com as principais seções do portal, e
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
 
+
+### 2 - Tela de Cadastro
+
+Nessa tela, a pessoa escolherá um usuário e senha para a criação de uma nova conta no site.
+
+![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/2-Tela%20de%20cadastro.jpg)
+
+
+### 3 - Pop-up de conclusão de cadastro
+
+Após a conclusão do cadastro, o pop-up abaixo aparecerá. A pessoa poderá acessar sua conta com as credenciais de acesso cadastradas.
+
+![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/3-Pop%20up%20conclus%C3%A3o%20de%20cadastro.jpg)
+
 ### 4 - Tela de Login
 
 Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anteriormente, para acesso ao E-Li$t.

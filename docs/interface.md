@@ -46,6 +46,12 @@ Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anter
 Nessa tela, o Usuário poderá selecionar o ano e o mês no qual ele quer acessar sua lista de gastos. 
 
 ![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/5-Tela%20inicial%20do%20usu%C3%A1rio.jpg)
+
+ ### 6 - Tela de visualização de listas
+ 
+ Nessa página, o usuário poderá vizualizar e personalizar suas listas e seus referentes gastos, gerais e excedentes, vizualizar metas e personalizá-las.
+ 
+![Exemplo de Wireframe](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/img/Wireframes/6-Tela%20de%20visualiza%C3%A7%C3%A3o%20de%20listas.jpg)
  
  ### 7 - Tela de personalização de lista
 

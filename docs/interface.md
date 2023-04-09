@@ -1,9 +1,9 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+O projeto de interface está organizado em 6 páginas, sendo elas: Home, login, cadastro de usuário, tela inicial do usuário, vizualização e personificação das listas. As páginas foram desenvolvolvidas de modo que o usuário cadastre sua lista e adicione seus gastos de forma personalizada por categoria e que seja adaptável a qualquer interface como por exemplo browser, smartphone ou tablet.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+  
 
 ## User Flow
 

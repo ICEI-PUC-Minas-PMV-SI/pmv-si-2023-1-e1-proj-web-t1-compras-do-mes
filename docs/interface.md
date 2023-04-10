@@ -40,7 +40,7 @@ Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anter
 
 ### 5 - Tela Inicial do Usuário
 
-Nessa tela, o Usuário poderá selecionar o ano e o mês no qual ele quer acessar sua lista de gastos.
+Nessa tela, o sistema permite ao Usuário selecionar o ano e o mês no qual ele quer acessar sua lista de gastos.
 
 ![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/5-Tela%20inicial%20do%20usu%C3%A1rio.jpg)
 

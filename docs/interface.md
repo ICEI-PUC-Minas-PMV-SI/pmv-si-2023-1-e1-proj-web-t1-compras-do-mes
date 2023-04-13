@@ -12,31 +12,32 @@ O projeto de interface está organizado em 6 páginas, sendo elas: Home, login, 
 
 ## Wireframes
 
-### 1 - Tela Inicial
+### 1 - Tela Inicial e Login
 
 Nesta tela é apresentada a pagina inicial do site, aonde o usuário terá a opção de efetuar seu loguin caso ja tenha uma conta cadastrada ou poderá criar uma caso seja novo.
 
 ![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/1-Tela%20inicial.jpg)
 
 
-### 2 - Tela de Cadastro
+### 2 - Quem Somos
+
+Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anteriormente, para acesso ao E-Li$t e visualizar as funcionalidades.
+
+![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/4%20-%20Pop%20Up%20Cadastro.jpg)
+
+### 3 - Tela de Cadastro
 
 Nessa tela, a pessoa escolherá um usuário e senha para a criação de uma nova conta no site.
 
 ![Exemplo de Wireframe](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/img/Wireframes/3%20-%20Cadastro.jpg)
 
 
-### 3 - Pop-up de conclusão de cadastro
+### 4 - Pop-up de conclusão de cadastro
 
 Após a conclusão do cadastro, o pop-up abaixo aparecerá. A pessoa poderá acessar sua conta com as credenciais de acesso cadastradas.
 
 ![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/3-Pop%20up%20conclus%C3%A3o%20de%20cadastro.jpg)
 
-### 4 - Tela de Login
-
-Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anteriormente, para acesso ao E-Li$t e visualizar as funcionalidades.
-
-![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/4%20-%20Pop%20Up%20Cadastro.jpg)
 
 ### 5 - Tela Inicial do Usuário
 

@@ -43,7 +43,7 @@ Após a conclusão do cadastro, o pop-up abaixo aparecerá. A pessoa poderá ace
 
 Nessa tela, o sistema permite ao Usuário selecionar o ano e o mês no qual ele quer acessar sua lista de gastos.
 
-![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/5-Tela%20inicial%20do%20usu%C3%A1rio.jpg)
+![Exemplo de Wireframe] (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/5%20-%20Tela%20Inicial%20do%20Usu%C3%A1rio.jpg)
 
  ### 6 - Tela de visualização de listas
  

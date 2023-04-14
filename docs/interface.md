@@ -1,7 +1,7 @@
 
 # Projeto de Interface
 
-O projeto de interface está organizado em 6 páginas, sendo elas: Home, login, cadastro de usuário, tela inicial do usuário, vizualização e personificação das listas. As páginas foram desenvolvolvidas de modo que o usuário cadastre sua lista e adicione seus gastos de forma personalizada por categoria e que seja adaptável a qualquer interface como por exemplo browser, smartphone ou tablet.
+O projeto de interface está organizado em 6 páginas, sendo elas: Tela inicial/login, Quem somos, cadastro de usuário com pop-up de conclusão, tela inicial do usuário, vizualização e personificação das listas. As páginas foram desenvolvolvidas de modo que o usuário cadastre sua lista e adicione seus gastos de forma personalizada por categoria e que seja adaptável a qualquer interface como por exemplo browser, smartphone ou tablet.
 
   
 

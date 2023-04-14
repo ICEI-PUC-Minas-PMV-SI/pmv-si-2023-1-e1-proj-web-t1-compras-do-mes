@@ -23,7 +23,7 @@ Nesta tela é apresentada a pagina inicial do site, aonde o usuário terá a op�
 
 Nessa tela, a pessoa irá inserir seu Usuário e a Senha que foram criadas anteriormente, para acesso ao E-Li$t e visualizar as funcionalidades.
 
-![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/4%20-%20Pop%20Up%2.jpg)
+![Exemplo de Wireframe] (https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/2%20-%20Quem%20Somos.jpg)
 
 ### 3 - Tela de Cadastro
 

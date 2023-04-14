@@ -21,7 +21,7 @@ Nesta tela é apresentada a pagina inicial do site, aonde o usuário terá a op�
 
 ### 2 - Quem Somos
 
-Nessa página o usuário consegue visualizar as informações sobre o projeto, a equipe de desenvolvedores, qual a versão da página e demais informações importantes da página.
+Nessa página o usuário consegue visualizar as informações sobre o projeto, a equipe de desenvolvedores, qual a versão da site/aplicativo e demais informações importantes da página.
 
 ![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/2%20-%20Quem%20Somos.jpg)
 

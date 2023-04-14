@@ -55,5 +55,5 @@ Nessa tela, o sistema permite ao Usuário selecionar o ano e o mês no qual ele 
 
  Esta página está direcionada aos gastos e compras por categoria do usuário onde ele poderá visualizar os itens que comprou e os valores que gastou em cada um.
 
-![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/7-Tela%20de%20personaliza%C3%A7%C3%A3o%20das%20listas.jpg)
+![Exemplo de Wireframe](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/img/Wireframes/7%20-%20Tela%20de%20personaliza%C3%A7%C3%A3o%20das%20listas.jpg?raw=true)
 

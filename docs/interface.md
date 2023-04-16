@@ -14,9 +14,9 @@ O projeto de interface está organizado em 6 páginas, sendo elas: Tela inicial/
 
 ### 1 - Tela Inicial e Login
 
-Nesta tela é apresentada a pagina inicial do site, aonde o usuário terá a opção de efetuar seu loguin caso ja tenha uma conta cadastrada ou poderá criar uma caso seja novo.
+Nesta tela é apresentada a pagina inicial do site, aonde o usuário poderá efetuar seu loguin e, caso seja novo, criar uma conta. Ainda apresenta no rodapé a opção para direcionar o usuário a página "Quem somos".
 
-![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/1-Tela%20inicial.jpg)
+![Exemplo de Wireframe](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Wireframes/1%20-%20Tela%20Inicial%20e%20Login.jpg)
 
 
 ### 2 - Quem Somos

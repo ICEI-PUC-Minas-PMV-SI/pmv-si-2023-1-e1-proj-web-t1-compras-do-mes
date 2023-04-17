@@ -7,7 +7,7 @@ O projeto de interface está organizado em 6 páginas, sendo elas: Tela inicial/
 
 ## User Flow
 
-![Exemplo de UserFlow](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/User%20Flow/User%20Flow%20-%20E-Li%24t%20.png)
+![Exemplo de UserFlow](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/User%20Flow/User-Flow%20v2.0.png)
 
 
 ## Wireframes

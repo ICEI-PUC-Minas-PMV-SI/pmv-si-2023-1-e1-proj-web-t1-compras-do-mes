@@ -82,7 +82,7 @@ footer a{
   margin-right: 10px;
 }
 
-footer :hover{
+footer a :hover{
   color: blueviolet;
   transition: all 0.3s;
 }

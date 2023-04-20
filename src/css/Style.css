@@ -1,0 +1,94 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dark-mode {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+header {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(43, 43, 43);
+}
+
+nav .modoescuro, .navbuttons, .logo{
+  display:inline-block;
+
+}
+
+nav .modoescuro{
+  float: right;
+  margin-right: 10px;
+}
+
+nav .navbuttons{
+  margin-left: 30px;
+}
+
+nav .navbuttons :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+nav .logo {
+  font-family: monoton;
+  font-size: 40px;
+  color: rgb(189, 255, 83);
+  margin-left: 10px;
+}
+
+#parte2{
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  padding: 10px;  
+}
+
+#parte2 h1{
+  border: 1px solid #000000;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#parte2 p{
+  border: 1px solid #000000;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/*Design do roda-pé*/
+footer {  
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  margin-top: auto;
+}
+
+/* Espaço entre links do roda-pé*/
+footer a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+/*Links visitados não alterados após clique*/
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: dashed;
+}

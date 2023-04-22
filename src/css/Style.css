@@ -76,19 +76,22 @@ nav .logo {
   width: 30%;
   padding: 10px;
   border-radius: 10px;  
+  max-height: auto;
 }
 
 #parte2 h1{
   border: 1px solid #7e7e7e;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
+  max-height: auto;
 }
 
 #parte2 p{
   border: 1px solid #7e7e7e;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  height: 300px;
+  min-height: 300px;
+  max-height: auto;
 }
 
 /*Design do roda-pé*/

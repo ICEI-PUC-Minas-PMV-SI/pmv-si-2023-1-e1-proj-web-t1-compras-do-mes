@@ -16,6 +16,8 @@ Apresente a paleta de cores que será utilizada. Uma ferramenta interessante par
 
 ## Tipografia
 
+No site serão utilizadas as fontes, com as respectivas funções, conforme descritos abaixo:
+
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
 

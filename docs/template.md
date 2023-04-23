@@ -42,6 +42,16 @@ body {
   padding:0px;
   font-family: Arial, Helvetica, sans-serif;}
 
+- Rodapé:
+footer {  
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  margin-top: none;}
+
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
 

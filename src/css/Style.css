@@ -8,6 +8,37 @@ body {
 
 }
 
+@media screen and (max-width: 600px) {
+  header .navbuttons  {display: none;}
+  header .icon {
+    float: right;
+    display: block;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    header.responsive {position: relative;}
+    header.responsive  {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    header.responsive {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .modoescuro a img{
+    width: 50px;
+  }
+  
+  .modoescuro :hover{
+    width: 55px;
+    cursor:pointer;
+    transition: all 0.3s
+  }
+  
 .dark-mode {
   background-color: rgb(32, 32, 32);
   color: white;
@@ -17,7 +48,7 @@ header {
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   background-color: rgb(43, 43, 43);
 }
 
@@ -55,21 +86,28 @@ nav .logo {
 }
 
 #parte2{
-  border: 1px solid black;
+  border: 1px solid #7e7e7e;
   text-align: center;
   margin: auto;
-  width: 20%;
-  padding: 10px;  
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;  
+  max-height: auto;
 }
 
 #parte2 h1{
-  border: 1px solid #000000;
-  font-family: Arial, Helvetica, sans-serif
+  border: 1px solid #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  max-height: auto;
 }
 
 #parte2 p{
-  border: 1px solid #000000;
-  font-family: Arial, Helvetica, sans-serif
+  border: 1px solid #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  min-height: 300px;
+  max-height: auto;
 }
 
 /*Design do roda-pé*/

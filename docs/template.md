@@ -23,8 +23,7 @@ nav .logo {
   font-family: monoton;
   font-size: 40px;
   color: rgb(189, 255, 83);
-  margin-left: 10px;
-}
+  margin-left: 10px;}
 
 - Cabeçalho:
 header {
@@ -32,8 +31,16 @@ header {
   border-end-start-radius: 10px;
   color: white;
   font-size: 25px;
-  background-color: rgb(43, 43, 43);
-}
+  background-color: rgb(43, 43, 43);}
+
+- Corpo de Texto:
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;}
 
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 

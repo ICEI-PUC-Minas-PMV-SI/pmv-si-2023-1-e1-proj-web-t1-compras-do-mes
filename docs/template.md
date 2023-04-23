@@ -26,6 +26,15 @@ nav .logo {
   margin-left: 10px;
 }
 
+- Cabeçalho:
+header {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  color: white;
+  font-size: 25px;
+  background-color: rgb(43, 43, 43);
+}
+
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
 

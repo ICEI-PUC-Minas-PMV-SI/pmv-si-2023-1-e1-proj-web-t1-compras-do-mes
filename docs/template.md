@@ -43,7 +43,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;}
 
 - Rodapé:
-footer {  
+footer {
   text-align: center;
   background-color: rgb(43, 43, 43);
   color: rgb(255, 255, 255);

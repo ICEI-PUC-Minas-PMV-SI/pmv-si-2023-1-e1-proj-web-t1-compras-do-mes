@@ -18,6 +18,14 @@ Apresente a paleta de cores que será utilizada. Uma ferramenta interessante par
 
 No site serão utilizadas as fontes, com as respectivas funções, conforme descritos abaixo:
 
+- Logo:
+nav .logo {
+  font-family: monoton;
+  font-size: 40px;
+  color: rgb(189, 255, 83);
+  margin-left: 10px;
+}
+
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
 

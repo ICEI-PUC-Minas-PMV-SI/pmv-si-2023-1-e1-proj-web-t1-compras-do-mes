@@ -29,7 +29,16 @@ body {
     }
   }
 
-
+  .modoescuro a img{
+    width: 50px;
+  }
+  
+  .modoescuro :hover{
+    width: 55px;
+    cursor:pointer;
+    transition: all 0.3s
+  }
+  
 .dark-mode {
   background-color: rgb(32, 32, 32);
   color: white;

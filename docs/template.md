@@ -85,6 +85,12 @@ O icone permitirá ao usuário adicionar um novo produto a uma lista de compras.
 ![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/basket-plus.png)
 
 
+### 5 - Usuário
+
+O icone irá mostrar o avatar do usuário.
+
+![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/account-circle-outline.png)
+
 > **Links Úteis**:
 >
 > -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)

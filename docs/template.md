@@ -64,11 +64,18 @@ O icone terá a função de excluir um item determinado pelo usuário.
 ![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/trash-can.png)
 
 
-### 1 - Adição
+### 2 - Adição
 
 O icone terá a função de permitir ao usuário adicionar um item novo.
 
 ![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/plus.png)
+
+
+### 3 - Dia e Noite
+
+O icone terá a função de alterar o modo de exibição do site, podendo mudar para o modo claro e escuro.
+
+![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/circle-slice-4.png)
 
 > **Links Úteis**:
 >

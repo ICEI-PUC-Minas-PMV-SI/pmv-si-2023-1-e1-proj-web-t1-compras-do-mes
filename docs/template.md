@@ -57,10 +57,12 @@ footer {
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+### 1 - Lata de lixo
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+O icone terá a função de excluir um item determinado pelo usuário.
+![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/trash-can.png)
+
+
 
 
 > **Links Úteis**:

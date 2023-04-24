@@ -12,7 +12,7 @@ Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo d
 ## Cores
 
 Nossa aplicação será composta por cores com tons de verde, roxo, cinza, preto e branco.
-
+![Exemplo de paleta](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/img/paleta%20de%20cores.jpeg?raw=true)
 
 
 ## Tipografia

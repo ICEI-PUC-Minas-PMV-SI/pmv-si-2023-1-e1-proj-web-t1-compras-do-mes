@@ -60,6 +60,7 @@ footer {
 ### 1 - Lata de lixo
 
 O icone terá a função de excluir um item determinado pelo usuário.
+
 ![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/trash-can.png)
 
 

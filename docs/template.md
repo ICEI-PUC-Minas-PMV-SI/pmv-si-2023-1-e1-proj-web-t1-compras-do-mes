@@ -77,6 +77,14 @@ O icone terá a função de alterar o modo de exibição do site, podendo mudar 
 
 ![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/circle-slice-4.png)
 
+
+### 4 - Cesta de compras
+
+O icone permitirá ao usuário adicionar um novo produto a uma lista de compras.
+
+![Exemplo de Iconografia](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/main/docs/img/Icons/basket-plus.png)
+
+
 > **Links Úteis**:
 >
 > -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)

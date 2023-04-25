@@ -1,0 +1,139 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width: 600px) {
+  header .navbuttons  {display: none;}
+  header .icon {
+    float: right;
+    display: block;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    header.responsive {position: relative;}
+    header.responsive  {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    header.responsive {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.modoescuro a img{
+  width: 50px;
+}
+  
+.modoescuro :hover{
+  width: 55px;
+  cursor:pointer;
+  transition: all 0.3s
+}
+  
+.dark-mode {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+header {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  color: white;
+  font-size: 25px;
+  background-color: rgb(43, 43, 43);
+}
+
+nav .modoescuro, .navbuttons, .logo{
+  display:inline-block;
+
+}
+
+nav .modoescuro{
+  float: right;
+  margin-right: 10px;
+}
+
+nav .navbuttons{
+  margin-left: 30px;
+}
+
+nav .navbuttons :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+nav .logo {
+  font-family: monoton;
+  font-size: 40px;
+  color: rgb(189, 255, 83);
+  margin-left: 10px;
+}
+
+#imglogo{
+  position: absolute;
+  left: 40px;
+  top:80px;
+
+}
+
+#parte2{
+  border: 1px solid #7e7e7e;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;  
+  max-height: auto;
+}
+
+#parte2 h1{
+  border: 1px solid #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  max-height: auto;
+}
+
+#parte2 p{
+  border: 1px solid #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  min-height: 300px;
+  max-height: auto;
+}
+
+/*Design do roda-pé*/
+footer {  
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  margin-top: none;
+}
+
+/* Espaço entre links do roda-pé*/
+footer a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer a :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+/*Links visitados não alterados após clique*/
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: dashed;
+}

@@ -53,8 +53,6 @@ footer {
   border-start-end-radius: 10px;
   margin-top: none;}
 
-*Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.*
-
 
 ## Iconografia
 

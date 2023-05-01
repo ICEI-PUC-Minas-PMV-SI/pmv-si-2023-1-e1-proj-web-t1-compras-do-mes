@@ -6,7 +6,13 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+O template padrão encontra-se no arquivo docs>img do repositorio.
+
+Aa imagem da logo está no arquivo docs/img do repositorio.
+
+O arquivo style.css encontra-se no diretorio src/css
+
+![Exemplo de design-do-template](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/img/design-do-template.jpg)
 
 
 ## Cores

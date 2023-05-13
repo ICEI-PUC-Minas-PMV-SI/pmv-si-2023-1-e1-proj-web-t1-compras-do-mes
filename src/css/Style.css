@@ -98,6 +98,7 @@ nav #navbarSupportedContent li :hover{
   border-radius: 10px;  
   max-height: auto;
   min-width: 450px;
+  background-image:url(src/imgs/listaexpandida.png)  ;
 }
 
 #parte2 h1{
@@ -111,10 +112,12 @@ nav #navbarSupportedContent li :hover{
   border: 1px solid #7e7e7e;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  min-height: 300px;
+  min-height: 800px;
   max-height: auto;
   margin: auto;
 }
+
+  
 
 /*Design do roda-pé*/
 footer {  
@@ -124,7 +127,7 @@ footer {
   padding: 10px;
   border-start-start-radius: 10px;
   border-start-end-radius: 10px;
-  margin-top: none;
+  margin-top:0 1em ;
 }
 
 /* Espaço entre links do roda-pé*/

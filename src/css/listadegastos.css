@@ -98,7 +98,8 @@ nav #navbarSupportedContent li :hover{
   border-radius: 10px;  
   max-height: auto;
   min-width: 450px;
-  background-image:url(src/imgs/listaexpandida.png)  ;
+  background-image:url(src/imgs/listaexpandida.png) ;
+  background-color: #7e7e7e;
 }
 
 #parte2 h1{

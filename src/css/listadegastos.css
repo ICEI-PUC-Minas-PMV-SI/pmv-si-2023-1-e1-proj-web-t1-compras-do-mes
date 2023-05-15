@@ -93,32 +93,22 @@ nav #navbarSupportedContent li :hover{
   border: 1px solid #7e7e7e;
   text-align: center;
   margin: auto;
-  width: 30%;
-  padding: 10px;
-  border-radius: 10px;  
+  width: 60%;
+  padding: 30px;
+  border-radius: 15x;  
   max-height: auto;
-  min-width: 450px;
+  min-width: 300px;
   background-image:url(src/imgs/listaexpandida.png) ;
   background-color: #7e7e7e;
 }
 
-#parte2 h1{
-  border: 1px solid #7e7e7e;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  max-height: auto;
+#parte2 td{
+  background-color: darkgray;
 }
 
-#parte2 p{
-  border: 1px solid #7e7e7e;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  min-height: 800px;
-  max-height: auto;
-  margin: auto;
+#parte2 caption tr{
+  background-color: darkgray;
 }
-
-  
 
 /*Design do roda-pé*/
 footer {  

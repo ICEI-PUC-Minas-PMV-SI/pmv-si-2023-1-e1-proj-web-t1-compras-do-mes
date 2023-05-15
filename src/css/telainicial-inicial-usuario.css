@@ -1,45 +1,4 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin:0px;
-  padding:0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-@media screen and (max-width: 600px) {
-  button .navbar-toggler {display:block;}
-  header .icon {
-    float: right;
-    display: block;}
-
-  header.responsive {position: relative;}
-  header.responsive  {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  header.responsive {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.navbar-toggler img{
-  width: 50px;  
-}
-
-.modoescuro a img{
-  width: 50px;
-}
- 
-.modoescuro :hover{
-  width: 55px;
-  cursor:pointer;
-  transition: all 0.3s
-}
-  
 .dark-mode {
   background-color: rgb(32, 32, 32);
 }
@@ -55,42 +14,6 @@ body {
 .dark-mode .meses h2{
   color: white;
 }
-
-header nav .logo {
-  font-family: monoton;
-  font-size: 40px;
-  color: rgb(189, 255, 83);
-  margin-left: 10px;
-}
-
-
-header {
-  border-end-end-radius: 10px;
-  border-end-start-radius: 10px;
-  color: white;
-  font-size: 25px;
-  background-color: rgb(43, 43, 43);
-}
-
-nav .modoescuro, .navbuttons, .logo{
-  display:inline-block;
-
-}
-
-nav .modoescuro{
-  float: right;
-  margin-right: 10px;
-}
-
-nav #navbarSupportedContent li {
-  margin-left: 30px;
-}
-
-nav #navbarSupportedContent li :hover{
-  color: blueviolet;
-  transition: all 0.3s;
-}
-
 
 #parte2{
   text-align: center;
@@ -190,32 +113,4 @@ form{
   margin-left: auto;
   margin-right: auto;
   min-width: 400px;
-}
-
-/*Design do roda-pé*/
-footer {  
-  text-align: center;
-  background-color: rgb(43, 43, 43);
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  border-start-start-radius: 10px;
-  border-start-end-radius: 10px;
-  margin-top:0 1em ;
-}
-
-/* Espaço entre links do roda-pé*/
-footer a{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-footer a :hover{
-  color: blueviolet;
-  transition: all 0.3s;
-}
-
-/*Links visitados não alterados após clique*/
-a, a:visited, a:hover, a:active {
-  color: inherit;
-  text-decoration: dashed;
 }

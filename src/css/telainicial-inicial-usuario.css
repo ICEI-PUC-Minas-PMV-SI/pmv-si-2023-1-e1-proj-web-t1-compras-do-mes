@@ -1,0 +1,221 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  button .navbar-toggler {display:block;}
+  header .icon {
+    float: right;
+    display: block;}
+
+  header.responsive {position: relative;}
+  header.responsive  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header.responsive {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navbar-toggler img{
+  width: 50px;  
+}
+
+.modoescuro a img{
+  width: 50px;
+}
+ 
+.modoescuro :hover{
+  width: 55px;
+  cursor:pointer;
+  transition: all 0.3s
+}
+  
+.dark-mode {
+  background-color: rgb(32, 32, 32);
+}
+
+.dark-mode h1{
+  color: white;
+}
+
+.dark-mode form h2{
+  color: white;
+}
+
+.dark-mode .meses h2{
+  color: white;
+}
+
+header nav .logo {
+  font-family: monoton;
+  font-size: 40px;
+  color: rgb(189, 255, 83);
+  margin-left: 10px;
+}
+
+
+header {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  color: white;
+  font-size: 25px;
+  background-color: rgb(43, 43, 43);
+}
+
+nav .modoescuro, .navbuttons, .logo{
+  display:inline-block;
+
+}
+
+nav .modoescuro{
+  float: right;
+  margin-right: 10px;
+}
+
+nav #navbarSupportedContent li {
+  margin-left: 30px;
+}
+
+nav #navbarSupportedContent li :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+
+#parte2{
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;  
+  max-height: auto;
+  min-width: 450px;
+}
+
+#parte2 h1{
+  border: 0px solid #7e7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#parte2 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 70%;
+  height: 400px;
+  object-fit: cover;
+  
+}
+
+#parte2 .meses{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#parte2 a{
+  display: inline-block;
+  font-size: 25px;
+  height: 40px;
+  width: 30%;
+  min-width: 250px;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+#parte2 .form-group{
+  display: inline;
+  font-size: 20px;
+  height: 40px;
+  width: 320px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin: auto;
+}
+
+form{
+  background-color: rgba(187, 187, 187, 0.365);
+  border-radius: 10px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  min-width: 300px;
+}
+
+#exampleFormControlSelect1{
+  display: inline;
+  text-align: center;
+  font-size: 25px;
+  height: 40%px;
+  width: 70%;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.meses{
+  background-color: rgba(187, 187, 187, 0.365);
+  border-radius: 10px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+}
+
+/*Design do roda-pé*/
+footer {  
+  text-align: center;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  margin-top:0 1em ;
+}
+
+/* Espaço entre links do roda-pé*/
+footer a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer a :hover{
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+/*Links visitados não alterados após clique*/
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: dashed;
+}

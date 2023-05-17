@@ -15,6 +15,10 @@
 .nav-item{
   position: relative;
   left: 800px;
+}/* Alinhamento do cabeçalho a direita*/
+
+.form-group{
+  display: flex;
 }
 
 body {

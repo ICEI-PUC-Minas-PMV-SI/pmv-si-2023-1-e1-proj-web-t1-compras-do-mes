@@ -12,10 +12,10 @@
   color: white;
 }
 
-.nav-item{
+/*.nav-item{
   position: relative;
   left: 800px;
-}/* Alinhamento do cabeçalho a direita*/
+}*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
 
 .form-group{
   display: flex;
@@ -57,15 +57,55 @@
   font-size: 25px;
 }
 
-#parte3 .Despesa{
+#parte3{
 background-color: #7e7e7e;
+padding: 10px;
+margin: 50px;
 }
+
 #parte3 h2{
   background-color: darkgray;
+  width: 200px;
   display: inline-block;
-  }
+}
 
-#parte3 p{
+#parte3 .valordespesa{
   background-color: darkgray;
-  display: block
+  width: 200px;
+  display: inline-block;
+  float: right;
+}
+
+#parte4{
+background-color: #7e7e7e;
+padding: 10px;
+margin: 50px;
+}
+      
+#parte4 h2{
+background-color: darkgray;
+width: 200px;
+}
+      
+#parte4 .valordespesa{
+background-color: darkgray;
+width: 200px;
+float: right;
+}
+
+#parte5{
+  background-color: #7e7e7e;
+  padding: 10px;
+  margin: 50px;
+}
+        
+#parte5 h2{
+  background-color: darkgray;
+  width: 200px;
+}
+        
+#parte5 .valordespesa{
+  background-color: darkgray;
+  width: 200px;
+  float: right;
 }

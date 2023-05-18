@@ -37,7 +37,7 @@
 #parte2{
   border: 1px solid #7e7e7e;
   text-align: center;
-  margin: auto;
+  margin: 5px auto auto auto;
   width: 90%;
   padding: 15px;
   border-radius: 5px;  
@@ -57,55 +57,78 @@
   font-size: 25px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.left {
+  justify-self: start;
+}
+
+.right {
+  justify-self: end;
+}
 #parte3{
 background-color: #7e7e7e;
-padding: 10px;
+padding: 30px;
 margin: 50px;
 }
 
 #parte3 h2{
   background-color: darkgray;
-  width: 200px;
-  display: inline-block;
-}
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  padding-left: 2px;
+  }
 
 #parte3 .valordespesa{
   background-color: darkgray;
   width: 200px;
   display: inline-block;
-  float: right;
+  text-align: center;
+  padding-left: 2px;
 }
 
 #parte4{
 background-color: #7e7e7e;
-padding: 10px;
+padding: 30px;
 margin: 50px;
 }
       
 #parte4 h2{
 background-color: darkgray;
-width: 200px;
+width: 300px;
+margin: 20px;
+text-align: center;
+padding-left: 2px;
 }
       
 #parte4 .valordespesa{
 background-color: darkgray;
 width: 200px;
-float: right;
+text-align: center;
+padding-left: 2px;
 }
 
 #parte5{
   background-color: #7e7e7e;
-  padding: 10px;
+  padding: 30px;
   margin: 50px;
 }
         
 #parte5 h2{
   background-color: darkgray;
-  width: 200px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  padding-left: 2px;
 }
         
 #parte5 .valordespesa{
   background-color: darkgray;
   width: 200px;
-  float: right;
+  text-align: center;
+  padding-left: 2px;
 }

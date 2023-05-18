@@ -86,8 +86,7 @@ margin: 50px;
 #parte3 .valordespesa{
   background-color: darkgray;
   width: 200px;
-  display: inline-block;
-  text-align: center;
+  text-align: left;
   padding-left: 2px;
 }
 
@@ -108,7 +107,7 @@ padding-left: 2px;
 #parte4 .valordespesa{
 background-color: darkgray;
 width: 200px;
-text-align: center;
+text-align: left;
 padding-left: 2px;
 }
 
@@ -129,6 +128,6 @@ padding-left: 2px;
 #parte5 .valordespesa{
   background-color: darkgray;
   width: 200px;
-  text-align: center;
+  text-align: left;
   padding-left: 2px;
 }

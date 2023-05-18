@@ -19,24 +19,53 @@
 
 .form-group{
   display: flex;
-  background-color: darkgray;
   border: 5px
 }
 
+.form-group h2{
+  background-color: darkgray;
+  width:300px;
+  border-radius: 5px;  
+  }
+
 .conteúdo{
   background-color: darkgray;
+  margin-bottom: 10px;
+  border-radius: 5px;  
 }
 
 #parte2{
   border: 1px solid #7e7e7e;
   text-align: center;
   margin: auto;
-  width: 60%;
-  padding: 30px;
-  border-radius: 15x;  
+  width: 90%;
+  padding: 15px;
+  border-radius: 5px;  
   max-height: auto;
   min-width: 300px;
   background-color: #7e7e7e;
 }
 
+#parte2 h1{
+  border: 0px solid #7e7e7e;
+  margin-bottom: 20px;
+}
 
+#parte2 h2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+#parte3 .Despesa{
+background-color: #7e7e7e;
+}
+#parte3 h2{
+  background-color: darkgray;
+  display: inline-block;
+  }
+
+#parte3 p{
+  background-color: darkgray;
+  display: block
+}

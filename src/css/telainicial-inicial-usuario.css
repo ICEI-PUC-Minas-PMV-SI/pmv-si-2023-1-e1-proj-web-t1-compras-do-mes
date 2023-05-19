@@ -15,6 +15,10 @@
   color: white;
 }
 
+.dark-mode .breadcrumb{
+  color: white;
+}
+
 #parte2{
   border: 0px solid #7e7e7e;
   text-align: center;
@@ -28,20 +32,20 @@
 }
 
 #parte2 h1{
-  border: 0px solid #7e7e7e;
   background-color: rgba(187, 187, 187, 0.365);
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 1%;
   width: 80%;
-  height: 80px;
+  height: 100px;
+  border: 0px solid #7e7e7e;
 }
 
 #parte2 img{
   display: block;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -59,7 +63,7 @@
   width: 80%;
 }
 
-#parte2 a{
+#parte2 .meses a{
   display: inline-block;
   font-size: 25px;
   height: 40px;

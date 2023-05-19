@@ -16,6 +16,7 @@
 }
 
 #parte2{
+  border: 0px solid #7e7e7e;
   text-align: center;
   margin: auto;
   margin-top: 30px;
@@ -28,25 +29,26 @@
 
 #parte2 h1{
   border: 0px solid #7e7e7e;
+  background-color: rgba(187, 187, 187, 0.365);
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  padding: 1%;
+  width: 80%;
+  height: 80px;
 }
 
 #parte2 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 20px;
-  width: 70%;
-  height: 400px;
   object-fit: cover;
-  
+  width: 80%;
+  height: auto;
 }
 
 #parte2 .meses{
@@ -96,7 +98,7 @@ form{
   display: inline;
   text-align: center;
   font-size: 25px;
-  height: 40%px;
+  height: 40%;
   width: 70%;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;

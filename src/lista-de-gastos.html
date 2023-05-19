@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E-Li$t</title>
+    <title>Tela Inicial</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/listadegastos.css">
+
+    <link rel="stylesheet" href="css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/listadegastos.css">
   </head>
+  <body>
   <body>
     <div id="parte1">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">            
-            <a class="logo" href="#">E-Li$t</a>
+            <a class="logo" href="">E-Li$t</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <img src="imgs/Icons/view-headline.png"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="navbuttons" aria-current="page" href="#">Tela Inicial</a>
+                  <a class="navbuttons" aria-current="page" href="tela de login.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbuttons" href="Lista de Gastos.html">Suas Listas</a>
+                  <a class="navbuttons" href="#">Suas Listas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbuttons" href="Lista de Gastos.html">fulaninho420</a>
+                  <a class="navbuttons" href="#">fulaninho420</a>
                 </li>
               </ul>
               <li class="d-flex">                
@@ -42,35 +45,85 @@
     </div>
     
     <div id=parte2>
-      <div class="conteúdo"> 
-        <table  class="tabela">
-          <caption><tr>Listas de Gastos</tr></caption>
-          <td>Orçamento do Mês</td>
-          <td>Valor Total Gasto</td>
-          <td> Valor Total Excedido</td>
-        </table>
+      <div class="conteúdo">        
+        <h1>Lista de Gastos</h1>
+      </div>
+        <div class="form-group">
+          <h2>Orçamento do Mês: R$</h2> <!--verficar como deixar o valor editável do Sifrão-->
+          <h2>Valor Total Gasto: R$</h2> <!--verficar como deixar o valor editável do Sifrão-->
+          <h2>Valor Total Excedido R$</h2> <!--verficar como deixar o valor editável do Sifrão-->
+        </div>
+      </div>
         
-      </div>    
+    <div id="parte3">
+      <div class="container">
+        <span class="left">
+          <div id="Despesa">
+            <h2>Alimentação</h2>
+          </div>
+        </span>
+        <span class="right">
+          <div class="valordespesa">
+            <p>Valor Gasto</p>
+            <p>Valor Determinado</p>
+          </div>
+        </span>
+      </div>
     </div>
-    <footer>            
-      <a href="">
-        Home
-      </a>
-      <a href="">
-        Quem Somos
-      </a>
-      <p> 
-        E-List &copy 2023 Copyright Todos os direitos reservados 
-      </p>
-    </footer>
-    <script>
-      function myFunction() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-  </body>
-  </html>
+    <div id="parte4">
+      <div class="container">
+        <span class="left">
+          <div id="Despesa">
+            <h2>Farmácia</h2>
+          </div>
+        </span>
+        <span class="right">
+          <div class="valordespesa">
+            <p>Valor Gasto</p>
+            <p>Valor Determinado</p>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div id="parte5">
+      <div class="container">
+        <span class="left">
+          <div id="Despesa">
+            <h2>Lazer</h2>
+          </div>
+        </span>
+        <span class="right">
+          <div class="valordespesa">
+            <p>Valor Gasto</p>
+            <p>Valor Determinado</p>
+          </div>
+        </span>
+      </div>
+    </div>
+  
+<footer>            
+  <a href="">
+    Home
+  </a>
+  <a href="">
+    Quem Somos
+  </a>
+  <p> 
+    E-List &copy 2023 Copyright Todos os direitos reservados 
+  </p>
+</footer>
+
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

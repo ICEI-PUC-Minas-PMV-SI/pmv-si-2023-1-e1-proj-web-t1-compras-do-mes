@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/teladelogin.css">
   </head>
   <body>
     <div id="parte1">
@@ -37,19 +38,34 @@
         </nav>     
      </header>
     </div>
+   
     
-    <div id=parte2>
-      <div class="conteúdo"> 
+    <div id="parte2">
+      <img src="imgs/logo.jpg">
+    <form class="form-inline">
+      <fieldset>
+        <div>
+          <label>Usuário</label>
+          <input type="text" name="usuario" id="usuario">
+        </div>
+
+        <div>
+          <label>Senha</label>
+          <input type="password" name="senha" id="senha">
+        </div>
         
-        <h1>
-          <form name="form_login" action="do_login.html" method="post">
-            <h1>Faça seu login!</h1>
-            <h2> Novo por aqui? Crie sua conta.</h2>
-          </form>
-        </h1>
-        
-      </div>    
-    </div>
+        <button class="botao" type="submit">Entrar</button>
+        <br>
+        <button class="botao" type="submit">Novo(a) por aqui? Crie sua conta!</button>
+      </fieldset>
+    </form>
+   </div>
+
+
+
+
+
+   </div>
     <footer>            
       <a href="">
         Home

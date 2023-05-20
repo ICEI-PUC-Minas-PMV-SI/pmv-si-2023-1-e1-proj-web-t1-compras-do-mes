@@ -15,7 +15,7 @@
 /*.nav-item{
   position: relative;
   left: 800px;
-}*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
+*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
 
 .form-group{
   display: flex;
@@ -77,7 +77,6 @@
 }
 
 #parte3{
-background-color: #7e7e7e;
 padding: 30px;
 margin: 50px;
 border-radius: 10px;
@@ -92,6 +91,15 @@ border-radius: 10px;
   font-size: 40px;
   border-radius: 10px;
   }
+.left{
+  background-color:  #7e7e7e;
+}
+.right{
+  background-color: #7e7e7e;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
 #parte3 .valordespesa{
   background-color: darkgray;
@@ -111,7 +119,6 @@ border-radius: 10px;
   }
 
 #parte4{
-background-color: #7e7e7e;
 padding: 30px;
 margin: 50px;
 border-radius: 10px;
@@ -145,7 +152,6 @@ border-radius: 10px;
 }
 
 #parte5{
-  background-color: #7e7e7e;
   padding: 30px;
   margin: 50px;
   border-radius: 10px;
@@ -179,7 +185,6 @@ border-radius: 10px;
 }
 
 #parte6{
-  background-color: #7e7e7e;
   padding: 30px;
   margin: 50px;
   text-align: center;
@@ -195,4 +200,12 @@ border-radius: 10px;
   padding-left: 2px;
   font-size: 40px;
   border-radius: 10px;
+}
+#AdicionarDespesa{
+  background-color: #7e7e7e;
+  height: 80px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
 }

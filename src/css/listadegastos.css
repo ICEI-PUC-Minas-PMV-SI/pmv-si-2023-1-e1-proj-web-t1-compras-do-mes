@@ -81,7 +81,7 @@ padding: 30px;
 margin: 50px;
 }
 
-#parte3 a{
+#parte3 h2{
   background-color: darkgray;
   width: 300px;
   margin: 20px;
@@ -111,7 +111,7 @@ padding: 30px;
 margin: 50px;
 }
       
-#parte4 a{
+#parte4 h2{
 background-color: darkgray;
 width: 300px;
 margin: 20px;
@@ -141,7 +141,7 @@ font-size: 20px;
   margin: 50px;
 }
         
-#parte5 a{
+#parte5 h2{
   background-color: darkgray;
   width: 300px;
   margin: 20px;
@@ -172,7 +172,7 @@ font-size: 20px;
   text-align: center;
   }
 
-#parte6 a{
+#parte6 h2{
   background-color: darkgray;
   width: 300px;
   margin-left: auto;

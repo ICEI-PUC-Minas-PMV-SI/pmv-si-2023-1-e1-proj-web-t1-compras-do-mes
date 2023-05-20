@@ -63,21 +63,24 @@
   margin-right: auto;
 }
 
-.grafico{
-  display: grid;
-  grid-template-columns: auto auto;
+.intermediaria {
+  display: inline-block;
 }
 
+#grafico{
+  display: inline-block;
+  width: 5px;
+ }
 
 .formulario {
   font-size: 20px;
   width: 500px;
-  margin-left: 59%;
-}
+  display: inline-block;
+  }
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .left {

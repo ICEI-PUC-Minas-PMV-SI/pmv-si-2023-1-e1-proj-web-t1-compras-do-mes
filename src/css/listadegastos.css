@@ -119,12 +119,12 @@ border-radius: 10px;
 }
 
 #parte3 .valordespesa{
-  background-color: darkgray;
   width: 200px;
   text-align: left;
   padding-left: 2px;
   font-size: 20px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 #parte3 p{
@@ -133,12 +133,13 @@ border-radius: 10px;
   text-align: left;
   padding-left: 2px;
   border-radius: 10px;
-  }
+  margin: 10px;
+}
 
 #parte4{
-padding: 30px;
-margin: 50px;
-border-radius: 10px;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
 }
       
 #parte4 h2{
@@ -152,12 +153,12 @@ border-radius: 10px;
 }
       
 #parte4 .valordespesa{
-background-color: darkgray;
 width: 200px;
 text-align: left;
 padding-left: 2px;
 font-size: 20px;
 border-radius: 10px;
+margin: 10px;
 }
 
 #parte4 p{
@@ -166,6 +167,7 @@ border-radius: 10px;
   text-align: left;
   padding-left: 2px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 #parte5{
@@ -185,12 +187,12 @@ border-radius: 10px;
 }
         
 #parte5 .valordespesa{
-  background-color: darkgray;
   width: 200px;
   text-align: left;
   padding-left: 2px;
   font-size: 20px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 #parte5 p{
@@ -199,6 +201,7 @@ border-radius: 10px;
   text-align: left;
   padding-left: 2px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 #parte6{
@@ -218,6 +221,7 @@ border-radius: 10px;
   font-size: 40px;
   border-radius: 10px;
 }
+
 #AdicionarDespesa{
   background-color: #7e7e7e;
   height: 80px;

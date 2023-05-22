@@ -15,7 +15,7 @@
 /*.nav-item{
   position: relative;
   left: 800px;
-}*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
+*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
 
 .form-group{
   display: flex;
@@ -23,19 +23,19 @@
 }
 
 .form-group h2{
-  background-color: darkgray;
+  background-color: #bdbebd;
   width:300px;
   border-radius: 5px;  
   }
 
 .conteúdo{
-  background-color: darkgray;
+  background-color: #bdbebd;
   margin-bottom: 10px;
-  border-radius: 5px;  
+  border-radius: 10px;  
 }
 
 #parte2{
-  border: 1px solid #7e7e7e;
+  border: 1px solid #d3d3d3;
   text-align: center;
   margin: 5px auto auto auto;
   width: 90%;
@@ -44,6 +44,7 @@
   max-height: auto;
   min-width: 300px;
   background-color: #7e7e7e;
+  border-radius: 10px;
 }
 
 #parte2 h1{
@@ -57,9 +58,29 @@
   font-size: 25px;
 }
 
+.imagemfundo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intermediaria {
+  display: inline-block;
+}
+
+#grafico{
+  display: inline-block;
+  width: 5px;
+ }
+
+.formulario {
+  font-size: 20px;
+  width: 500px;
+  display: inline-block;
+  }
+
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .left {
@@ -69,65 +90,170 @@
 .right {
   justify-self: end;
 }
+
 #parte3{
-background-color: #7e7e7e;
-padding: 30px;
-margin: 50px;
+ padding: 30px;
+ margin: 50px;
+ border-radius: 10px;
 }
 
 #parte3 h2{
-  background-color: darkgray;
-  width: 300px;
-  margin: 20px;
-  text-align: center;
-  padding-left: 2px;
-  }
+ background-color: darkgray;
+ width: 300px;
+ margin: 30px;
+ text-align: center;
+ padding-left: 2px;
+ font-size: 40px;
+ border-radius: 10px;
+ }
+
+.left{
+  background-color:  #7e7e7e;
+  border-radius: 10px;
+}
+.right{
+  background-color: #7e7e7e;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-radius: 10px;
+}
 
 #parte3 .valordespesa{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte3 p{
   background-color: darkgray;
   width: 200px;
   text-align: left;
   padding-left: 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte3 .valornumero{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 #parte4{
-background-color: #7e7e7e;
-padding: 30px;
-margin: 50px;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
 }
       
 #parte4 h2{
-background-color: darkgray;
-width: 300px;
-margin: 20px;
-text-align: center;
-padding-left: 2px;
+ background-color: darkgray;
+ width: 300px;
+ margin: 30px;
+ text-align: center;
+ padding-left: 2px;
+ font-size: 40px;
+ border-radius: 10px;
 }
       
 #parte4 .valordespesa{
-background-color: darkgray;
-width: 200px;
-text-align: left;
-padding-left: 2px;
+ width: 200px;
+ text-align: left;
+ padding-left: 2px;
+ font-size: 22px;
+ border-radius: 10px;
+ margin: 10px;
+}
+
+#parte4 p{
+  background-color: darkgray;
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte4 .valornumero{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 #parte5{
-  background-color: #7e7e7e;
   padding: 30px;
   margin: 50px;
+  border-radius: 10px;
 }
         
 #parte5 h2{
   background-color: darkgray;
   width: 300px;
-  margin: 20px;
+  margin: 30px;
   text-align: center;
   padding-left: 2px;
+  font-size: 40px;
+  border-radius: 10px;
 }
         
 #parte5 .valordespesa{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte5 p{
   background-color: darkgray;
   width: 200px;
   text-align: left;
   padding-left: 2px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte5 .valornumero{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte6{
+  padding: 30px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+#parte6 h2{
+  background-color: darkgray;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 2px;
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+#AdicionarDespesa{
+  background-color: #7e7e7e;
+  height: 80px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }

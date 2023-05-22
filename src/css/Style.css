@@ -66,6 +66,7 @@ header {
   color: white;
   font-size: 25px;
   background-color: rgb(43, 43, 43);
+  width: 100%;
 }
 
 nav .modoescuro, .navbuttons, .logo{
@@ -86,6 +87,10 @@ nav #navbarSupportedContent li :hover{
   color: blueviolet;
   transition: all 0.3s;
 }
+#parte1{
+display: flex;
+
+}
 
 
 #parte2{
@@ -96,7 +101,7 @@ nav #navbarSupportedContent li :hover{
   padding: 10px;
   border-radius: 10px;  
   max-height: auto;
-  min-width: 450px;
+  min-width: 10%;
   background-image:url(src/imgs/listaexpandida.png)  ;
 }
 
@@ -126,7 +131,7 @@ footer {
   padding: 10px;
   border-start-start-radius: 10px;
   border-start-end-radius: 10px;
-  margin-top:0 1em ;
+  margin-top:auto;
 }
 
 /* Espaço entre links do roda-pé*/

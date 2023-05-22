@@ -11,6 +11,7 @@
 }
 
 #parte2 { width: 80%; height: auto;
+    background-color: rgba(218, 214, 214, 0.365);
 
 }
 
@@ -35,16 +36,18 @@ margin-bottom: 20px;
 }
 
 .botao {
-    background-color:  #a9a9a9;
+    background-color: #ffff ;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin-top: 20px;
-    border: solid 0px cadetblue ;
+    border: solid 0px rgb(131, 125, 125) ;
+    opacity: 90%;
 }
 
 #parte2 input {
     border-radius: 10px;
+    background-color: #a9a9a9;
     
 }
 
@@ -53,11 +56,13 @@ margin-bottom: 20px;
     margin-right: 20px;
     width: 100px;
     border-radius: 10px;
+    color: black;
 }
 .usuario2 {
     background-color: #a9a9a9;
     margin-right: 20px;
     width: 100px;
     border-radius: 10px;
+    color: black;
 }
 

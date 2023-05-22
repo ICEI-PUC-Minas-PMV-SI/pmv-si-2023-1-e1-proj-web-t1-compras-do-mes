@@ -66,7 +66,6 @@ header {
   color: white;
   font-size: 25px;
   background-color: rgb(43, 43, 43);
-  width: 100%;
 }
 
 nav .modoescuro, .navbuttons, .logo{
@@ -86,10 +85,6 @@ nav #navbarSupportedContent li {
 nav #navbarSupportedContent li :hover{
   color: blueviolet;
   transition: all 0.3s;
-}
-#parte1{
-display: flex;
-
 }
 
 
@@ -131,7 +126,7 @@ footer {
   padding: 10px;
   border-start-start-radius: 10px;
   border-start-end-radius: 10px;
-  margin-top:auto;
+  margin-top:0 1em ;
 }
 
 /* Espaço entre links do roda-pé*/

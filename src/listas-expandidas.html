@@ -10,10 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/listasexpandidas.style.css">
-    <title>Alimentaçao</title>
   </head>
   <body>
-  
     
     <div id="parte1">
       <header>
@@ -42,47 +40,100 @@
      </header>
     </div>
 
-    
-<div class="topo">
-<section class="coluna linha"> 
-  <div class="nomedalista">Alimentação</div></section>
-  <section id="down">
-    <div id="p01">
-    <h1> Valor Total R$**</h1></div>
-      <div id="p02">
-      <h2>QTD. Total de itens</h2>
-      </div></section>
-   
-      
-</section></div>
-
-
- 
-    <div id=parte2></div>
-
     <main>
+      <div class="food-values">
+        <h1>Alimentação</h1>
+        <section id="down">
+          <h2> Valor Total R$**</h2>
+          <h2>QTD. Total de itens</h2>
+          <h2>Valor determinado R$**</h2>
+        </section>
+      </div>
+      
+      <ul class="content">
+        <li class="food-item">
+          <div class="title">
+            <h2>item n°1</h2>
+          </div>
+          <div class="values"> 
+            <div class="value">
+              <h2>valor:</h2>
+              <h2>R$</h2>
+            </div>
+            <div class="value">
+              <h2>QTD:</h2>
+              <h2>**</h2>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="content">
+        <li class="food-item">
+          <div class="title">
+            <h2>item n°2</h2>
+          </div>
+          <div class="values"> 
+            <div class="value">
+              <h2>valor:</h2>
+              <h2>R$</h2>
+            </div>
+            <div class="value">
+              <h2>QTD:</h2>
+              <h2>**</h2>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="content">
+        <li class="food-item">
+          <div class="title">
+            <h2>item n°3</h2>
+          </div>
+          <div class="values"> 
+            <div class="value">
+              <h2>valor:</h2>
+              <h2>R$</h2>
+            </div>
+            <div class="value">
+              <h2>QTD</h2>
+              <h2>**</h2>
+            </div>
+          </div>
+        </li>
+      </ul>
+  
+    <div id="parte7" class="add-item">
+      <button type="button" class="adcionar">
+        +
+      </button>
+    </div>
+    </main>
+
     <footer>            
-      <a href="telainicial.index.html">
-        Home
-      </a>
-
-      <a href="quemsomos.index.html">
-        Quem Somos
-      </a>
-      <p> 
-        E-List &copy 2023 Copyright Todos os direitos reservados 
-      </p>
+    <a href="">
+      Home
+    </a>
+    <a href="">
+      Quem Somos
+    </a>
+    <p> 
+      E-List &copy 2023 Copyright Todos os direitos reservados 
+    </p>
+    
+    
     </footer>
-</main>
 
-    <script>
-      function myFunction() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
-  </body>
-  </html>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

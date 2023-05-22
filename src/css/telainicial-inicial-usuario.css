@@ -28,7 +28,7 @@
   padding: 10px;
   border-radius: 10px;  
   max-height: auto;
-  min-width: 450px;
+  min-width: 10%;
 }
 
 #parte2 h1{
@@ -61,20 +61,21 @@
   margin-bottom: 20px;
   margin-top: 20px;
   width: 80%;
+  min-width: 100%;
 }
 
 #parte2 .meses a{
   display: inline-block;
   font-size: 25px;
   height: 40px;
-  width: 30%;
-  min-width: 250px;
+  width: 300px;
+  min-width: 30%;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
   margin: auto;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-right: 2%;
+  margin-left: 2%;
   margin-bottom: 20px;
 }
 
@@ -95,7 +96,7 @@ form{
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 #exampleFormControlSelect1{
@@ -110,6 +111,7 @@ form{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  min-width: 30%;
 }
 
 .meses{
@@ -118,5 +120,5 @@ form{
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
-  min-width: 400px;
+  min-width: 10%;
 }

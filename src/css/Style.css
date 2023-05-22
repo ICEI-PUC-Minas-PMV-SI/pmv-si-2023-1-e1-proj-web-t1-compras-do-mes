@@ -96,7 +96,7 @@ nav #navbarSupportedContent li :hover{
   padding: 10px;
   border-radius: 10px;  
   max-height: auto;
-  min-width: 450px;
+  min-width: 10%;
   background-image:url(src/imgs/listaexpandida.png)  ;
 }
 

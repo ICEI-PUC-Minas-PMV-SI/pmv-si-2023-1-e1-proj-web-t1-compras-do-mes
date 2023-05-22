@@ -75,103 +75,6 @@ padding:16px;
 
 
 
-#parte3{
-  background-color: #7e7e7e;
-  padding: 15px;
-  margin:10px;
-  border-radius: 90px;
-  opacity: 90%;
-  }
-        
-  #parte3 h2{
-  background-color: darkgray;
-  width: 300px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 90px;
-  opacity: 90%;
-  }
-        
-  #parte3 .valordespesa{
-  
-  text-align: center;
-  border-radius: 90px;
-  opacity: 90%;
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-
-#parte4{
-  background-color: #7e7e7e;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 90px;
-  opacity: 90%;
-  align-items: center;
- 
-  }
-        
-  #parte4 h2{
-  background-color: darkgray;
-  width: 300px;
-  margin: 10px;
-  border-radius: 90px;
-  opacity: 90%;
-  
-
-  }
-        
-  #parte4 .valordespesa{
-    display: flex;
-  
-  width: 200px;
-  text-align: center;
-  border-radius: 90px;
-  opacity: 90%;
-  justify-content: center;
-
-
-  
-}
-
-
-
-#parte5{
-  background-color: #7e7e7e;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 90px;
-  opacity: 90%;
-  align-items: center;
-  }
-        
-  #parte5 h2{
-  
-  width: 300px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 90px;
-  opacity: 90%;
-  }
-        
-  #parte5 .valordespesa{
-  background-color: darkgray;
-  width: 200px;
-  text-align: center;
-  padding-left: 2px;
-  border-radius: 90px;
-  opacity: 90%;
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-
-
 .content{
   
   padding: 15px;
@@ -220,31 +123,13 @@ text-align: center;
   flex:1;
 }
         
-  #parte6 h2{
-  width: 300px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 90px;
-  opacity: 90%;
-  }
-        
-  #parte6 .valordespesa{
-  background-color: darkgray;
-  width: 200px;
-  text-align: center;
-  padding-left: 2px;
-  border-radius: 90px;
-  opacity: 90%;
-  display: flex;
- justify-content: center;
-  
-  }
+
  
    
 
  
 
-
+/*botão*/
 .add-item {
   background-color: darkgray;
   padding: 15px;
@@ -269,11 +154,6 @@ font-size: 24px;
 
 
  
-@media screen and (max-width: 520px){
-
-
-}
-
   
 
   

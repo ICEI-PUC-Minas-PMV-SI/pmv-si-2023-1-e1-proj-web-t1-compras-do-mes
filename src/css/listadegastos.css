@@ -23,19 +23,19 @@
 }
 
 .form-group h2{
-  background-color: #bdbebd;
+  background-color: #ffffff;
   width:300px;
-  border-radius: 5px;  
+  border-radius: 90px;  
   }
 
 .conteúdo{
-  background-color: #bdbebd;
+  background-color: #ffffff;
   margin-bottom: 10px;
-  border-radius: 10px;  
+  border-radius: 90px;  
 }
 
 #parte2{
-  border: 1px solid #d3d3d3;
+  border: 1px solid #7e7e7e;
   text-align: center;
   margin: 5px auto auto auto;
   width: 90%;
@@ -93,18 +93,18 @@
 
 #parte3{
  padding: 30px;
- margin: 50px;
+ margin: 2px;
  border-radius: 10px;
 }
 
 #parte3 h2{
- background-color: darkgray;
+ background-color: #ffffff;
  width: 300px;
  margin: 30px;
  text-align: center;
  padding-left: 2px;
  font-size: 40px;
- border-radius: 10px;
+ border-radius: 90px;
  }
 
 .left{
@@ -129,11 +129,11 @@
 }
 
 #parte3 p{
-  background-color: darkgray;
+  background-color: #ffffff;
   width: 200px;
   text-align: left;
   padding-left: 2px;
-  border-radius: 10px;
+  border-radius: 90px;
   margin: 10px;
 }
 
@@ -148,18 +148,18 @@
 
 #parte4{
   padding: 30px;
-  margin: 50px;
+  margin: 2px;
   border-radius: 10px;
 }
       
 #parte4 h2{
- background-color: darkgray;
+ background-color: #ffffff;
  width: 300px;
  margin: 30px;
  text-align: center;
  padding-left: 2px;
  font-size: 40px;
- border-radius: 10px;
+ border-radius: 90px;
 }
       
 #parte4 .valordespesa{
@@ -172,11 +172,11 @@
 }
 
 #parte4 p{
-  background-color: darkgray;
+  background-color: #ffffff;
   width: 200px;
   text-align: left;
   padding-left: 2px;
-  border-radius: 10px;
+  border-radius: 90px;
   margin: 10px;
 }
 
@@ -191,18 +191,18 @@
 
 #parte5{
   padding: 30px;
-  margin: 50px;
+  margin: 2px;
   border-radius: 10px;
 }
         
 #parte5 h2{
-  background-color: darkgray;
+  background-color: #ffffff;
   width: 300px;
   margin: 30px;
   text-align: center;
   padding-left: 2px;
   font-size: 40px;
-  border-radius: 10px;
+  border-radius: 90px;
 }
         
 #parte5 .valordespesa{
@@ -215,11 +215,11 @@
 }
 
 #parte5 p{
-  background-color: darkgray;
+  background-color: #ffffff;
   width: 200px;
   text-align: left;
   padding-left: 2px;
-  border-radius: 10px;
+  border-radius: 90px;
   margin: 10px;
 }
 
@@ -233,27 +233,25 @@
 }
 
 #parte6{
-  padding: 30px;
-  margin: 50px;
-  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 90px;
 }
 
-#parte6 h2{
+.add-item {
   background-color: darkgray;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-left: 2px;
-  font-size: 40px;
-  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 90px;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
 }
-
-#AdicionarDespesa{
-  background-color: #7e7e7e;
-  height: 80px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+   
+.add-item button {
+  border-radius:50px;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  height: 50px;
 }

@@ -55,17 +55,17 @@ margin-bottom: 20px;
 }
 
 .senha2 {
-    background-color: #a9a9a9;
+    background-color:  rgb(131, 125, 125);
     margin-right: 20px;
     width: 100px;
-    border-radius: 10px;
+    border-radius: 90px;
     color: black;
 }
 .usuario2 {
-    background-color: #a9a9a9;
+    background-color:  rgb(131, 125, 125);
     margin-right: 20px;
     width: 100px;
-    border-radius: 10px;
+    border-radius: 90px;
     color: black;
 }
 

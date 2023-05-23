@@ -69,3 +69,7 @@
     border: solid 0px rgb(131, 125, 125) ;
     width: 100%;
 }
+
+#parte2 input {
+    border-radius: 90px;
+}

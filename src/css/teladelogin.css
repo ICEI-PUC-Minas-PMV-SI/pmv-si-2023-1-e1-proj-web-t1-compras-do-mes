@@ -39,15 +39,16 @@ margin-bottom: 20px;
     background-color: white ;
     border-radius: 90px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 35px;
+    margin-top: 10px;
     border: solid 0px rgb(131, 125, 125) ;
-    opacity: 90%;
+    width: 100%;
+    
 }
 
 #parte2 input {
     border-radius: 90px;
-    background-color: #a9a9a9;
+    background-color: darkgray; 
     
 }
 
@@ -65,4 +66,23 @@ margin-bottom: 20px;
     border-radius: 10px;
     color: black;
 }
+
+.botoes {
+    background-color: darkgray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes2 {
+    background-color: darkgray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+}
+
 

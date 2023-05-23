@@ -44,6 +44,8 @@ margin-bottom: 20px;
     border: solid 0px rgb(131, 125, 125) ;
     width: 100%;
     
+    
+    
 }
 
 #parte2 input {
@@ -74,6 +76,8 @@ margin-bottom: 20px;
     border-radius: 90px;
     display: flex;
     justify-content: center;
+   
+    
 }
 
 .botoes2 {
@@ -83,6 +87,7 @@ margin-bottom: 20px;
     border-radius: 90px;
     display: flex;
     justify-content: center;
+    
 }
 
 

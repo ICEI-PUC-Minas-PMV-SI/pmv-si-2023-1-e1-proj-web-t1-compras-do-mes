@@ -10,13 +10,34 @@
     object-fit: cover;
 }
 
-#parte2 { width: 80%; height: auto;
-    background-color: rgba(218, 214, 214, 0.365);
-
+#parte2 {
+    border: 0px solid #7e7e7e;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;  
+    max-height: auto;
+    min-width: 10%;
 }
 
-.senha { 
+#parte2 h1{
+    background-color: rgba(187, 187, 187, 0.365);
+    border-radius: 10px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    width: 80%;
+    height: 100px;
+    border: 0px solid #7e7e7e;
+}
 
+
+
+.senha { 
+background-color: rgba(187, 187, 187, 0.365);
 margin-top: 10px;
 border-radius: 10px;
 font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +47,7 @@ margin-bottom: 20px;
 }
 
 .usuario {
-    
+    background-color: rgba(187, 187, 187, 0.365);
     margin-top: 10px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,33 +57,64 @@ margin-bottom: 20px;
 }
 
 .botao {
-    background-color: #ffff ;
-    border-radius: 10px;
+    background-color: white ;
+    border-radius: 90px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 35px;
+    margin-top: 10px;
     border: solid 0px rgb(131, 125, 125) ;
-    opacity: 90%;
+    width: 100%;
+    
+    
+    
 }
 
 #parte2 input {
-    border-radius: 10px;
-    background-color: #a9a9a9;
+    border-radius: 90px;
+ 
     
 }
 
 .senha2 {
-    background-color: #a9a9a9;
-    margin-right: 20px;
-    width: 100px;
+    background-color: rgba(187, 187, 187, 0.365);
+    margin-top: 10px;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: black;
 }
 .usuario2 {
-    background-color: #a9a9a9;
-    margin-right: 20px;
-    width: 100px;
+    background-color: rgba(187, 187, 187, 0.365);
+    margin-top: 10px;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: black;
 }
+
+.botoes {
+    background-color: darkgray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.botoes2 {
+    background-color: darkgray;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 

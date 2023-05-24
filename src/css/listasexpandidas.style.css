@@ -19,7 +19,7 @@ border-radius: 50px;
 
 body {/*posiçao da imagem,não mexe*/
   background-color: white;
-  background-image:url("file:///C:/Users/khapu/Downloads/undraw_diary_re_4jpc.svg");
+  background-image:url(src/imgs/undraw_diary_re_4jpc.svg);
   background-repeat: no-repeat;
   background-position: top;
 }

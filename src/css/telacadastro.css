@@ -73,3 +73,11 @@
 #parte2 input {
     border-radius: 90px;
 }
+
+@media screen  (max-width: 600px) ; {
+    #parte2-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}

@@ -57,7 +57,7 @@
     margin: 10px;
     border-radius: 90px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .botao {

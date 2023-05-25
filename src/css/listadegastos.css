@@ -113,6 +113,11 @@
   margin-right: auto;
  }
 
+ .imagemfundo img{
+  width: 100%;
+  height: 100%;
+}
+
 .intermediaria {
   display: inline-block;
  }

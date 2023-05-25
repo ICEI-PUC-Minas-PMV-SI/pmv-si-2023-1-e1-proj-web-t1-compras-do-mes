@@ -73,3 +73,15 @@
 #parte2 input {
     border-radius: 90px;
 }
+
+.img {
+    display: center;
+    
+}
+
+@media screen and (max-width: 600px) {
+    #parte2-container{
+        width: 100%;
+        flex-direction: column;
+    }    
+}

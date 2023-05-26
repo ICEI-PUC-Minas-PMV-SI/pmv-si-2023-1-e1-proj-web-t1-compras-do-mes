@@ -1,51 +1,158 @@
-@import url(https://fonts.googleapis.com/css2?family=Monoton&display=swap);
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 100%;
+
+html{
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
 }
-body {
-    background-color: #f5f5f5;
+
+a{
+    text-decoration:none;
+    color: #fff;
 }
-.participantes {
-    width: 100px;
-    height: 100px;
- 
-   
+
+section{
+    padding: 10rem 0;
+    background-color: #fff;
 }
-h1 {
+
+.heading{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.card-wrapper {
     display: flex;
-    justify-content: center;
-    margin: 5rm 0 5rm 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
-.cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 980px;
-    margin: 0 auto;
-    grid-gap: 20px;
-}
-.card {
-    border-radius: 18px;
-    background-color: white;
-    display:flex;
+
+.card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 30px;
-    box-shadow: 6px 6px 10px #00000075
-    
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem .3rem rgba(0,0,0,0.2);
 }
-.card h3 {
-    font-family:Arial, Helvetica, sans-serif
+
+.card.card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 81.79%, 0% 100%);
 }
-p{
+
+.profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+}
+.card h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;   
+}
+
+.Título {
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.Sobre {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    color: #333;
+}
+
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color:#eee; 
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem .2rem rgba(0,0,0,0.2);
+}
+
+.card .btn:active {
+    transform: translateY(0);
+    box-shadow: none;  
+}
+
+.redes-sociais {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.redes-sociais i {
+    font-size: 3rem;
+    transition: color .5s;
+}
+
+.fa-github {
+    color: #000;
+}
+.fa-linkedin {
+    color: #0077b5;
+}
+    
+.fa-github:hover,
+.fa-linkedin:hover {
+    color: #45e19f;
+}
+
+@media screen and (min-width: 700px) {
+
+    .card-wrapper{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem;
+    }
 }

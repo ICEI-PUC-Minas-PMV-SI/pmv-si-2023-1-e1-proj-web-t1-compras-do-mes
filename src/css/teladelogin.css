@@ -71,6 +71,7 @@ margin-bottom: 20px;
 
 #parte2 input {
     border-radius: 90px;
+    width: 100%;
  
     
 }
@@ -114,6 +115,14 @@ margin-bottom: 20px;
     border-radius: 90px;
     display: flex;
     justify-content: center;
+    
+}
+
+@media screen and (max-width: 600px) {
+    #parte2-container{
+        width: 100%;
+        flex-direction: column;
+    }
     
 }
 

@@ -3,14 +3,87 @@
   background-color: rgb(32, 32, 32);
 }
 .dark-mode h1{
+  color: black;
+}
+
+.dark-mode li{
   color: white;
 }
-.dark-mode form h2{
+
+.dark-mode label{
   color: white;
 }
-.dark-mode .meses h2{
-  color: white;
-}
+
+
+@media only screen and (max-width: 600px) {
+  #parte2 .form-group {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+ .grafico .container-a{
+   width: 100%;
+   display: inline-block;
+     }
+    }
+  
+@media only screen and (max-width: 600px) {
+  .grafico .container-b{
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  .grafico .container-c{
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  #parte3 .container {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  #parte4 .container {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  #parte5 .container {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  #parte3 .right  {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+  #parte4 .right  {
+    width: 100%;
+    display: inline-block;
+     }
+    }
+
+@media only screen and (max-width: 600px) {
+   #parte5 .right  {
+    width: 100%;
+    display: inline-block;
+     }
+    }
 
 /*.nav-item{
   position: relative;
@@ -19,14 +92,16 @@
 
 .form-group{
   display: flex;
-  border: 5px
+  justify-content: space-evenly;
+  border: 5px;
 }
 
 .form-group h2{
   background-color: #ffffff;
   width:300px;
-  border-radius: 90px;  
-  }
+  border-radius: 90px;
+  min-width: 150px;
+}
 
 .conteúdo{
   background-color: #ffffff;
@@ -56,32 +131,56 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 25px;
-}
+ }
 
 .imagemfundo{
   margin-left: auto;
   margin-right: auto;
+ }
+
+ .imagemfundo img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 
 .intermediaria {
   display: inline-block;
-}
+ }
 
-#grafico{
+.grafico h1{
   display: inline-block;
   width: 5px;
- }
+  min-width: 150px;
+  padding-left: 20px;
+  }
 
 .formulario {
   font-size: 20px;
-  width: 500px;
+  width: 300px;
   display: inline-block;
+  padding-left: 20px;
   }
 
 .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+.container-a {
   display: grid;
   grid-template-columns: auto auto auto;
-}
+ }
+
+.container-b {
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
+
+.container-c {
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
 
 .left {
   justify-self: start;
@@ -92,7 +191,7 @@
 }
 
 #parte3{
- padding: 30px;
+ padding: 10px;
  margin: 2px;
  border-radius: 10px;
 }
@@ -110,14 +209,24 @@
 .left{
   background-color:  #7e7e7e;
   border-radius: 10px;
-}
+  }
 .right{
   background-color: #7e7e7e;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
   border-radius: 10px;
-}
+  min-width: auto;
+ }
+
+#Despesa {
+  background-color: #7e7e7e;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-radius: 10px;
+  min-width: auto;
+ }
 
 #parte3 .valordespesa{
   width: 200px;
@@ -138,7 +247,7 @@
 }
 
 #parte3 .valornumero{
-  width: 200px;
+  width: 100%;
   text-align: left;
   padding-left: 2px;
   font-size: 22px;
@@ -147,7 +256,7 @@
 }
 
 #parte4{
-  padding: 30px;
+  padding: 10px;
   margin: 2px;
   border-radius: 10px;
 }
@@ -181,7 +290,7 @@
 }
 
 #parte4 .valornumero{
-  width: 200px;
+  width: 100%;
   text-align: left;
   padding-left: 2px;
   font-size: 22px;
@@ -190,7 +299,7 @@
 }
 
 #parte5{
-  padding: 30px;
+  padding: 10px;
   margin: 2px;
   border-radius: 10px;
 }
@@ -224,7 +333,7 @@
 }
 
 #parte5 .valornumero{
-  width: 200px;
+  width: 100%;
   text-align: left;
   padding-left: 2px;
   font-size: 22px;
@@ -233,7 +342,7 @@
 }
 
 #parte6{
-  padding: 15px;
+  padding: 20px;
   margin: 5px;
   border-radius: 90px;
 }

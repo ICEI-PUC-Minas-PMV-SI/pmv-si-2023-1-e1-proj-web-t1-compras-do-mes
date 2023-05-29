@@ -97,7 +97,6 @@ nav #navbarSupportedContent li :hover{
   border-radius: 10px;  
   max-height: auto;
   min-width: 10%;
-  background-image:url(src/imgs/listaexpandida.png)  ;
 }
 
 #parte2 h1{
@@ -126,7 +125,7 @@ footer {
   padding: 10px;
   border-start-start-radius: 10px;
   border-start-end-radius: 10px;
-  margin-top:0 1em ;
+  margin-top:5em ;
 }
 
 /* Espaço entre links do roda-pé*/

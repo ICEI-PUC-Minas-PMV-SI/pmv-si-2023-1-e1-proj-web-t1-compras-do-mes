@@ -156,3 +156,10 @@ section{
         margin: 2rem;
     }
 }
+
+.dark-mode section {
+    background-color: rgb(32, 32, 32);
+}
+.dark-mode .heading {
+    color: #ebeef8;
+}

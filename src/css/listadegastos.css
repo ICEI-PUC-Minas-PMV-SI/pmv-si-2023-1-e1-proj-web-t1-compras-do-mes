@@ -68,7 +68,7 @@
   #parte3 .right  {
     width: 100%;
     display: inline-block;
-    }
+   }
   }
 
 @media only screen and (max-width: 600px) {
@@ -86,10 +86,24 @@
   }
 
 @media only screen and (max-width: 600px) {
-  .container .left {
+  #parte3 .left {
     width: 100%;
     display: inline-block;
     }
+  }
+
+@media only screen and (max-width: 600px) {
+  #parte4 .left {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+  #parte5 .left {
+    width: 100%;
+    display: inline-block;
+     }
   }
 
  @media only screen and (max-width: 600px) {
@@ -185,23 +199,28 @@
   display: inline-block;
   padding-left: 100px;
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .container .left {
   display: flex;
   justify-content: center;
-  width: 500px;
+  width: 1200px;
+  margin-right: 10px;
+  justify-self: start;
 }
 
 .container .right {
   display: flex;
   justify-content: center;
-  width: 600px;
+  width: 1500px;
+  justify-self: end;
 }
 
 .container-a {
@@ -219,18 +238,16 @@
   grid-template-columns: auto auto auto;
 }
 
-.left {
-  justify-self: start;
-}
-
-.right {
-  justify-self: end;
-}
-
 #parte3{
  padding: 10px;
  margin: 2px;
  border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ background-color:#7e7e7e;
+ width: 90%;
+ margin-left: auto ;
+ margin-right: auto;
 }
 
 #parte3 h2{
@@ -246,6 +263,8 @@
 .left{
   background-color:  #7e7e7e;
   border-radius: 10px;
+  width: 100%;
+  margin-right: 10px;
 }
 
 .right{
@@ -255,6 +274,7 @@
   grid-template-columns: auto auto;
   border-radius: 10px;
   min-width: auto;
+  margin-left: 20px;
 }
 
 #Despesa {
@@ -297,6 +317,12 @@
   padding: 10px;
   margin: 2px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #7e7e7e;
+  width: 90%;
+  margin-left: auto ;
+  margin-right: auto;
 }
       
 #parte4 h2{
@@ -340,6 +366,12 @@
   padding: 10px;
   margin: 2px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #7e7e7e;
+  width: 90%;
+  margin-left: auto ;
+  margin-right: auto;
 }
         
 #parte5 h2{
@@ -383,6 +415,9 @@
   padding: 20px;
   margin: 5px;
   border-radius: 90px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+
 }
 
 .add-item {

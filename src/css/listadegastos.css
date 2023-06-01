@@ -15,105 +15,105 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte2 .form-group {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
  .grafico .container-a{
    width: 100%;
    display: inline-block;
     }
   }
   
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .grafico .container-b{
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .grafico .container-c{
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte3 .container {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte4 .container {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte5 .container {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte3 .right  {
     width: 100%;
     display: inline-block;
    }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte4 .right  {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
    #parte5 .right  {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte3 .left {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte4 .left {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #parte5 .left {
     width: 100%;
     display: inline-block;
      }
   }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width:950px) {
   .container .right {
     width: 100%;
     display: inline-block;
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #despesa {
     width: 100%;
     display: inline-block;
@@ -293,6 +293,7 @@
   font-size: 22px;
   border-radius: 10px;
   margin: 10px;
+  margin-right: 100px;
 }
 
 #parte3 p{
@@ -342,6 +343,7 @@
  font-size: 22px;
  border-radius: 10px;
  margin: 10px;
+ margin-right: 100px;
 }
 
 #parte4 p{
@@ -391,6 +393,7 @@
   font-size: 22px;
   border-radius: 10px;
   margin: 10px;
+  margin-right: 100px;
 }
 
 #parte5 p{

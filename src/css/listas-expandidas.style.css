@@ -1,8 +1,20 @@
 
+  .dark-mode {
+  background-color: rgb(32, 32, 32);
+}
+
+
+ .dark-mode .breadcrumb-item {
+color: white;
+}
+
+
+ 
 
 
 
-h1{/*'alimentaçao'*/
+
+ h1{/*'alimentaçao'*/
 color: black  ;
 text-align: center;
 font-size:4rem;

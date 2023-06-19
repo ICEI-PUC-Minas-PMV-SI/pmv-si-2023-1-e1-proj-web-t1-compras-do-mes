@@ -14,6 +14,6 @@ function cadastrar(){
     
     //caso as informações nos campos de "senha" e "confirme senha" não estejam iguais, o código acima não será rodado e a mensagem abaixo aparecerá
 
-    else {alert('"Senha" e "Confirme a senha" devem ser o mesmo dado.')}
+    else {alert('"Senha" e "Confirme a senha" devem conter o mesmo dado.')}
     
    }

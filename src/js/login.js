@@ -8,7 +8,7 @@ function buscaUsuario(nome, senha){
         if (document.getElementById("usuario").value === pessoa.nome && senha === pessoa.senha) {
             alert("Seja bem vindo(a)!");
             localStorage.setItem("usuario_logado",pessoa.nome)
-            location.href = "/src/tela-inicial-usuario.html";
+            location.href = "/src/calendario-de-listas.html";
             
         }
         else{

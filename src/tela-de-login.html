@@ -65,7 +65,7 @@
         </div>
 
         <div class="botoes">
-        <button class="botao" type="submit">Entrar</button>
+        <button class="botao" type="reset" onclick="buscaUsuario(document.getElementById('usuario').value, document.getElementById('senha').value);" data-bs-toggle="modal" data-bs-target="#modalConfirmar">Entrar</button>
         </div>
         
         <div class="botoes2">
@@ -93,6 +93,7 @@
         E-List &copy 2023 Copyright Todos os direitos reservados 
       </p>
     </footer>
+    <script src="js\login.js"></script>
     <script>
       function myFunction() {
          var element = document.body;

@@ -5,11 +5,10 @@ function buscaUsuario(nome, senha){
 //se jt não é igual a null(não estiver vazio), buscar os dados presentes no local storage. Se não, mostrar mensagem de "Seus dados estão incorretos, tente novamente"
     if(jt!=null){ 
         let pessoa = JSON.parse(jt); 
-        if (document.getElementById("usuario").value === pessoa.nome && senha === pessoa.senha) {
+        if (senha === pessoa.senha) {
             alert("Seja bem vindo(a)!");
             localStorage.setItem("usuario_logado",pessoa.nome)
             location.href = "/src/calendario-de-listas.html";
-            
         }
         else{
           alert("Seus dados estão incorretos, tente novamente");

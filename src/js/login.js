@@ -6,7 +6,7 @@ function buscaUsuario(nome, senha){
     if(jt!=null){ 
         let pessoa = JSON.parse(jt); 
         if (document.getElementById("usuario").value === pessoa.nome && senha === pessoa.senha) {
-            alert("Seja bem vindo!");
+            alert("Seja bem vindo(a)!");
             localStorage.setItem("usuario_logado",pessoa.nome)
             location.href = "/src/tela-inicial-usuario.html";
             

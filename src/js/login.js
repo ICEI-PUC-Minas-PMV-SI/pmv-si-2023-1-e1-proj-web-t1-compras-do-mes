@@ -14,10 +14,10 @@ function buscaUsuario(nome, senha){
         else{
            window.alert("Seus dados estão incorretos, tente novamente");
         }
+      }else if (jt === null) {alert("Insira seus dados para continuar!")}
     }
 
     // Caso o jt esteja vazio mostrar mensagem abaixo
-    if(jt=null){
-      alert("Insira seus dados para continuar!")
-    } 
-}
+    
+
+     

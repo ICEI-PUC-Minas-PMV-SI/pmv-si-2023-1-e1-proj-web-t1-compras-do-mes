@@ -1,7 +1,7 @@
 window.onload = function usuarioLogado() {
     let nomeUsuario = localStorage.getItem('usuario_logado');
     if(nomeUsuario==null || nomeUsuario=="" || nomeUsuario=="null"){
-       location.href = "/src/tela-de-login.html";
+       location.href = "/src/calendario-de-lista.html";
  
     }
     var tagA = document.getElementById("nome");

@@ -106,7 +106,7 @@ padding:16px;
 }
 
 .food-item .title {
-  flex:3;
+  flex:4;
   padding: 16px;
   border-radius: 8px;
   background-color: #7e7e7e;

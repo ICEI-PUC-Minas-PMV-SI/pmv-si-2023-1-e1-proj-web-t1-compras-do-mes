@@ -73,13 +73,41 @@
         <div class="container0">
           <div class="grafico">
             <div class="container-a">
-              <h1>Gráfico 1</h1>
-            <div class="container-b">
-              <h1>Gráfico 2</h1>
-            </div>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", {packages:["corechart"]});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ['gasto mensal', 'Speakers (in millions)'],
+                    ['Habitação',  4.85],
+                    ['Alimentação',  1.4],
+                    ['Lazer', 0.4],
+                    ['Saúde', 0.3],
+                    ['Transporte', 0.3],
+                  
+                    
+                  ]);
+          
+                var options = {
+                  legend: '0',
+                  pieSliceText: '0',
+                  title: 'Gastos mensais (padrão brasileiro)',
+                  pieStartAngle: 100,
+                };
+          
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                  chart.draw(data, options);
+                }
+              </script>
+            </head>
+            <body>
+              <div id="piechart" style="width: 770px; height: 470px;"></div>
+            </body>
+          </html>
                 <div class="container-c">
                   <div class="formulario">
-                    <label for="exampleFormControlTextarea1">Minhas Metas</label>
+                    <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
                   </div>
                 </div>

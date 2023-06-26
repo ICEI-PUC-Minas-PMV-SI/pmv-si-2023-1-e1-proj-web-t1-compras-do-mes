@@ -65,6 +65,20 @@
   }
 
 @media only screen and (max-width: 950px) {
+  #parte6 .container {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+@media only screen and (max-width: 950px) {
+  #parte7 .container {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+@media only screen and (max-width: 950px) {
   #parte3 .right  {
     width: 100%;
     display: inline-block;
@@ -80,6 +94,20 @@
 
 @media only screen and (max-width: 950px) {
    #parte5 .right  {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+@media only screen and (max-width: 950px) {
+  #parte6 .right  {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+@media only screen and (max-width: 950px) {
+  #parte7 .right  {
     width: 100%;
     display: inline-block;
     }
@@ -106,6 +134,20 @@
      }
   }
 
+ @media only screen and (max-width: 950px) {
+  #parte6 .left {
+    width: 100%;
+    display: inline-block;
+     }
+  }
+
+ @media only screen and (max-width: 950px) {
+    #parte7 .left {
+    width: 100%;
+    display: inline-block;
+      }
+  }
+
  @media only screen and (max-width:950px) {
   .container .right {
     width: 100%;
@@ -123,7 +165,8 @@
 /*.nav-item{
   position: relative;
   left: 800px;
-*//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
+*//* Alinhamento do cabeçalho a direita, 
+ver como vamos fazer.*/
 
 .form-group{
   display: flex;
@@ -415,12 +458,115 @@
 }
 
 #parte6{
+  padding: 10px;
+  margin: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #7e7e7e;
+  width: 90%;
+  margin-left: auto ;
+  margin-right: auto;
+}
+        
+#parte6 h2{
+  background-color: #ffffff;
+  width: 100%;
+  margin: 30px;
+  text-align: center;
+  padding-left: 2px;
+  font-size: 40px;
+  border-radius: 90px;
+}
+        
+#parte6 .valordespesa{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 100px;
+}
+
+#parte6 p{
+  background-color: #ffffff;
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  border-radius: 90px;
+  margin: 10px;
+}
+
+#parte6 .valornumero{
+  width: 100%;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#parte7{
+  padding: 10px;
+  margin: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #7e7e7e;
+  width: 90%;
+  margin-left: auto ;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+        
+#parte7 h2{
+  background-color: #ffffff;
+  width: 100%;
+  margin: 30px;
+  text-align: center;
+  padding-left: 2px;
+  font-size: 40px;
+  border-radius: 90px;
+}
+        
+#parte7 .valordespesa{
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 100px;
+}
+
+#parte7 p{
+  background-color: #ffffff;
+  width: 200px;
+  text-align: left;
+  padding-left: 2px;
+  border-radius: 90px;
+  margin: 10px;
+}
+
+#parte7 .valornumero{
+  width: 100%;
+  text-align: left;
+  padding-left: 2px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* OBSERVAÇÃO: Retirado conforme reunião do grupo
+em 25/06/2023.
+
+#parte6{
   padding: 20px;
   margin: 5px;
   border-radius: 90px;
   margin-top: 30px;
   margin-bottom: 5px;
-
 }
 
 .add-item {
@@ -440,3 +586,5 @@
   font-size: 24px;
   height: 50px;
 }
+
+*/

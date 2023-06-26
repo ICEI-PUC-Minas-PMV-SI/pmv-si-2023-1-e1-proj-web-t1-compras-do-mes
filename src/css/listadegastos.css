@@ -19,6 +19,7 @@
   #parte2 .form-group {
     width: 100%;
     display: inline-block;
+  
     }
   }
 
@@ -126,9 +127,8 @@
 *//* Alinhamento do cabeçalho a direita, ver como vamos fazer.*/
 
 .form-group{
-  display: flex;
-  justify-content: space-evenly;
-  border: 5px;
+  display: flexbox;
+ align-items: center; 
 }
 
 .form-group h2{
@@ -181,26 +181,7 @@
   opacity: 0.8;
 }
 
-.intermediaria {
-  display: inline-block;
-}
 
-.grafico h1{
-  display: inline-block;
-  width: 5px;
-  min-width: 150px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.formulario {
-  font-size: 20px;
-  width: 350px;
-  display: inline-block;
-  padding-left: 100px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-}
 
 .container{
   display: flex;
@@ -439,4 +420,10 @@
   border: none;
   font-size: 24px;
   height: 50px;
+}
+
+label {
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 50px;
 }

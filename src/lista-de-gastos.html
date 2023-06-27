@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/listadegastos.css">
   </head>
   <body>
-  <body>
     <div id="parte1">
       <header>
         <nav class="navbar navbar-expand-lg">
@@ -37,6 +36,7 @@
                   <a class="navbuttons" href="tela-de-login.html">fulaninho420</a>
                 </li>
               </ul>
+              
               <li class="d-flex">                
                 <div class="modoescuro"><a onclick="myFunction()"> 
                   <img src="imgs/Icons/circle-slice-4.png"> </a></div>
@@ -59,14 +59,22 @@
       <div class="conteúdo">        
         <h1>Lista de Gastos</h1>
       </div>
-        <div class="form-group">
-          <div id="orçamento-v.total-excedida"></div>
-          <label for="target1">Orçamento do Mês:</label>
-            <input type="number" id="target1" placeholder="R$"> 
-            <label for="target1">Valor Total Gasto:</label>
-            <input type="number" id="target1" placeholder="R$"> 
-            <label for="target1">valor Total Excedido:</label>
-            <input type="number" id="target1" placeholder="R$">
+      <div class="form-group">
+        <label for="orcamento-mes">Orçamento do Mês:</label>
+        <input type="number" id="orcamento-mes" placeholder="R$">
+        <label for="valor-gasto">Valor Total Gasto:</label>
+        <input type="number" id="valor-gasto" placeholder="R$">
+        <label for="valor-excedido">Valor Total Excedido:</label>
+        <input type="number" id="valor-excedido" placeholder="R$">
+        <button class="save-button" onclick="gravarJSON()">Salvar</button>
+      </div>
+            <div id="dataa">
+            <form>
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data">
+              <button type="submit">Salvar</button>
+            </form></div>
+            
           </div> 
         </div>
     </div>
@@ -107,10 +115,10 @@
                 }
               </script>
             </head>
-            <body>
+           
               <div id="piechart" style="width: 770px; height: 470px;"></div>
             </body>
-          </html>
+        
                 <div class="container-c">
                   <div class="formulario">
                     <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
@@ -118,8 +126,7 @@
                   </div>
                 </div>
             </div>
-          </div>
-        </div>
+        
     </div>
   
     <div id="parte3">
@@ -240,9 +247,3 @@
     element.classList.toggle("dark-mode");
   }
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-</body>
-</html>

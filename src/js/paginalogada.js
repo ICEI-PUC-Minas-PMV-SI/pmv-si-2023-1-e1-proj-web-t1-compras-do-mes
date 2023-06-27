@@ -5,7 +5,7 @@ window.onload = function usuarioLogado() {
  
     }
     var tagA = document.getElementById("nome");
-    tagA.innerHTML = `${nomeUsuario}`; 
+    tagA.innerHTML = `${}`; 
     
  }
  

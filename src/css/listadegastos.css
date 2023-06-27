@@ -2,9 +2,12 @@
 .dark-mode {
   background-color: rgb(32, 32, 32);
 }
-.dark-mode h1{
-  color: black;
+
+
+ .dark-mode, .breadcrumb-item.active {
+color: white;
 }
+
 
 
 
@@ -159,34 +162,17 @@
     }
   }
 
-/*.nav-item{
-  position: relative;
-  left: 800px;
-*//* Alinhamento do cabeçalho a direita, 
-ver como vamos fazer.*/
 
-.form-group{
-  display: flexbox;
- align-items: center; 
-}
-
-.form-group h2{
-  background-color: #ffffff;
-  width:300px;
-  border-radius: 90px;
-  min-width: 150px;
-}
-
-.conteúdo{
+.conteúdo{ /*lista de gastos(titulo)*/
+  color: black;
   background-color: #ffffff;
   margin-bottom: 10px;
   border-radius: 90px;  
 }
 
 #parte2{
-  border: 1px solid #7e7e7e;
-  text-align: center;
-  margin: 5px auto auto auto;
+  
+  
   width: 90%;
   padding: 15px;
   border-radius: 5px;  
@@ -199,12 +185,14 @@ ver como vamos fazer.*/
 #parte2 h1{
   border: 0px solid #7e7e7e;
   margin-bottom: 20px;
+
 }
 
 #parte2 h2{
   margin-left: auto;
   margin-right: auto;
   font-size: 25px;
+  
 }
 
 .imagemfundo{

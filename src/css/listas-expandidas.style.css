@@ -4,7 +4,7 @@
 }
 
 
- .dark-mode .breadcrumb-item {
+ .dark-mode, breadcrumb {
 color: white;
 }
 

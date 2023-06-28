@@ -170,6 +170,22 @@ color: white;
   border-radius: 90px;  
 }
 
+
+#logout {
+  background-color: #f44336; 
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#logout:hover {
+  background-color: #d32f2f; 
+}
+
+
+
 #parte2{
   
   

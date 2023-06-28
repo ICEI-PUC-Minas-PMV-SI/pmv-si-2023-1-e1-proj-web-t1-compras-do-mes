@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/listadegastos.css">
+    <!-- BOOSTRAP e JQUERY -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   </head>
   <body>
     <div id="parte1">
@@ -117,7 +123,7 @@
             </head>
            
               <div id="piechart" style="width: 770px; height: 470px;"></div>
-            </body>
+            
         
                 <div class="container-c">
                   <div class="formulario">
@@ -129,105 +135,99 @@
         
     </div>
   
-    <div id="parte3">
-      <div class="container">
-        <span class="left">
-          <div id="Despesa">
-            <h2><a href="listas-expandidas.html">Alimentação</a></h2>
+    <div class="container">
+      <br />
+      <h2>
+          
+          <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
+              data-toggle="modal" data-target="#produto-modal">
+              <i class="fa fa-plus"></i> Adicionar
+          </a>
+      </h2>
+      <hr />
+      <div class="row">
+          <div class="col-12">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th width=5%>#</th>
+                          <th width=30%>Produto</th>
+                          <th width=15%>Valor (Un.)</th>
+                          <th width=15%>Quantidade</th>
+                          <th width=15%>Valor Total</th>
+                          <th width=20%></th>
+                      </tr>
+                  </thead>
+                  <tbody id='produto-list'>
+                  </tbody>
+              </table>
           </div>
-        </span>
-        <span class="right">
-          <div class="valordespesa">
-            <p>Valor Gasto</p>
-            <p>R$</p>
-          </div>
-          <div class="valornumero">
-            <p>Valor Determinado </p>
-            <p>R$ </p>
-          </div>
-        </span>
       </div>
-    </div>
+  </div>
 
-    <div id="parte4">
-      <div class="container">
-        <span class="left">
-          <div id="Despesa">
-            <h2><a href="listas-expandidas.html">Saúde</a></h2>
+  <!--
+          Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados
+      -->
+  <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Confirmação de remoção</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  Você realmente deseja remover o produto <span id="id-prod"></span>?
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                  <button type="button" class="btn btn-primary" id="btn-delete">Sim</button>
+              </div>
           </div>
-        </span>
-        <span class="right">
-          <div class="valordespesa">
-            <p>Valor Gasto</p>
-            <p>R$</p>
-          </div>
-          <div class="valornumero">
-            <p>Valor Determinado </p>
-            <p>R$ </p>
-          </div>
-        </span>
       </div>
-    </div>
+  </div>
 
-    <div id="parte5">
-      <div class="container">
-        <span class="left">
-          <div id="Despesa">
-            <h2><a href="listas-expandidas.html">Lazer</a></h2>
+  <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
+
+  <div class="modal fade" id="produto-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Produto <span id="edit-prod-id"></span></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form id="produto-form" method="post" action="">
+                      <div class="form-group">
+                          <label for="produto-id" class="col-form-label">Código:</label>
+                          <input type="number" class="form-control" id="produto-id" min="1" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="produto-nome" class="col-form-label">Descrição:</label>
+                          <input type="text" class="form-control" id="produto-nome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="produto-vlr" class="col-form-label">Valor:</label>
+                          <input type="number" step="0.01" class="form-control" id="produto-vlr" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="produto-qtd" class="col-form-label">Quantidade:</label>
+                          <input type="number" class="form-control" id="produto-qtd" required>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Salvar</button>
+                      </div>
+                  </form>
+              </div>
           </div>
-        </span>
-        <span class="right">
-          <div class="valordespesa">
-            <p>Valor Gasto</p>
-            <p>R$</p>
-          </div>
-          <div class="valornumero">
-            <p>Valor Determinado </p>
-            <p>R$ </p>
-          </div>
-        </span>
       </div>
-    </div>
+  </div>
+
   
-    <div id="parte6">
-      <div class="container">
-        <span class="left">
-          <div id="Despesa">
-            <h2><a href="listas-expandidas.html">Habitação</a></h2>
-          </div>
-        </span>
-        <span class="right">
-          <div class="valordespesa">
-            <p>Valor Gasto</p>
-            <p>R$</p>
-          </div>
-          <div class="valornumero">
-            <p>Valor Determinado </p>
-            <p>R$ </p>
-          </div>
-        </span>
-      </div>
-    </div>
-    
-    <div id="parte7">
-      <div class="container">
-        <span class="left">
-          <div id="Despesa">
-            <h2><a href="listas-expandidas.html">Transporte</a></h2>
-          </div>
-        </span>
-        <span class="right">
-          <div class="valordespesa">
-            <p>Valor Gasto</p>
-            <p>R$</p>
-          </div>
-          <div class="valornumero">
-            <p>Valor Determinado </p>
-            <p>R$ </p>
-          </div>
-        </span>
-      </div>
-    </div>
 
 <footer>            
   <a href="tela-de-login.html">
@@ -240,10 +240,14 @@
     E-List &copy 2023 Copyright Todos os direitos reservados 
   </p>
 </footer>
+
 <script src="js/paginalogada.js"></script>
+<script src="js/main.js"></script>
 <script>
   function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
 </script>
+</body>
+</html>

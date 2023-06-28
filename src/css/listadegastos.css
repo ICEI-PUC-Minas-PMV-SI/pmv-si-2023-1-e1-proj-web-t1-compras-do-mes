@@ -565,13 +565,7 @@ input[type="number"]::placeholder {
 
 
 
-/*data*/
-  form {
-  display: flex;
-justify-content: right;
-padding-top: 1px;
 
-}
 
 
 input[type="date"] {
@@ -615,4 +609,13 @@ button[type=submit]:hover {
 
 .save-button:hover {
   background-color: purple; 
+}
+
+
+.modal-delete{
+}
+
+.modal-body{
+background-color:#7e7e7e ;
+
 }

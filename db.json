@@ -17,6 +17,12 @@
       "nome": "arroz dca",
       "vlr": "60",
       "qtd": "3"
+    },
+    {
+      "id": "1",
+      "nome": "teste",
+      "vlr": "40",
+      "qtd": "2"
     }
   ]
 }

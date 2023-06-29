@@ -14,6 +14,7 @@ fetch(URL)
             lista_produtos += `
             <tr>
                 <th>${produtos[i].id}</th>
+                <td>${produtos[i].categoria}</td>
                 <td>${produtos[i].nome}</td>
                 <td>R$${(parseFloat(produtos[i].vlr)).toFixed(2)}</td>
                 <td>${produtos[i].qtd}</td>
@@ -60,6 +61,7 @@ function getProduto(id){
         $('#edit-prod-id').text("");
         $( "#produto-id" ).prop( "disabled", false );
         $('#produto-id').val("");
+        $('#produto-categoria').val("");
         $('#produto-nome').val("");
         $('#produto-vlr').val("");
         $('#produto-qtd').val("");
@@ -69,6 +71,7 @@ function getProduto(id){
         .then(data => {
             $( "#produto-id" ).prop( "disabled", true );
             $('#produto-id').val(data.id);
+            $('#produto-categoria').text(data.categoria);
             $('#produto-nome').val(data.nome);
             $('#produto-vlr').val(data.vlr);
             $('#produto-qtd').val(data.qtd);
@@ -90,6 +93,7 @@ produtoForm.addEventListener('submit', (e) => {
     // RECUPERA OS DADOS DO PRODUTO
     const produto = JSON.stringify({
         id: document.getElementById('produto-id').value,
+        categoria: document.getElementById('produto-categoria').value,
         nome: document.getElementById('produto-nome').value,
         vlr: document.getElementById('produto-vlr').value,
         qtd: document.getElementById('produto-qtd').value

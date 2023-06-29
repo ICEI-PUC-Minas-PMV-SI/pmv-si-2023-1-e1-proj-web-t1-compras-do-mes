@@ -2,26 +2,37 @@
   "produtos": [
     {
       "id": "8",
+      "categoria": "Alimentação",
       "nome": "arroz",
       "vlr": "10",
       "qtd": "2"
     },
     {
       "id": "9",
+      "categoria": "Alimentação",
       "nome": "arroz abc",
       "vlr": "20",
       "qtd": "3"
     },
     {
       "id": "10",
+      "categoria": "Alimentação",
       "nome": "arroz dca",
       "vlr": "60",
       "qtd": "3"
     },
     {
       "id": "1",
+      "categoria": "Alimentação",
       "nome": "teste",
       "vlr": "40",
+      "qtd": "2"
+    },
+    {
+      "id": "12",
+      "categoria": "Lazer",
+      "nome": "Cinema",
+      "vlr": "20",
       "qtd": "2"
     }
   ]

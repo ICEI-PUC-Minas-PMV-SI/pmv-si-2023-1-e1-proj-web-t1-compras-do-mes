@@ -31,12 +31,6 @@
                 <li class="nav-item">
                   <a class="navbuttons" aria-current="page" href="tela-de-login.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="navbuttons" href="calendario-de-listas.html">Calendário de Listas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbuttons" href="lista-de-gastos.html">Lista de Gastos</a>
-                </li>
                 <li class="nav-item login">
                   <a class="navbuttons" href="">fulaninho420</a>
                 </li>
@@ -54,7 +48,6 @@
      <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="tela-de-login.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="calendario-de-listas.html">Calendário de Listas</a></li>
         <li class="breadcrumb-item active" aria-current="page">Lista de Gastos</li>
       </ol>
     </nav>
@@ -105,7 +98,6 @@
                     ['Saúde', 0.3],
                     ['Transporte', 0.3],
                   
-                    
                   ]);
           
                 var options = {
@@ -150,6 +142,7 @@
                   <thead>
                       <tr>
                           <th width=5%>#</th>
+                          <th width=30%>Categoria</th>
                           <th width=30%>Produto</th>
                           <th width=15%>Valor (Un.)</th>
                           <th width=15%>Quantidade</th>
@@ -204,6 +197,16 @@
                           <label for="produto-id" class="col-form-label">Código:</label>
                           <input type="number" class="form-control" id="produto-id" min="1" required>
                       </div>
+                      <div class="form-group">
+                        <label for="produto-categoria" class="col-form-label">Categoria:</label>
+                        <select class="form-control" id="produto-categoria" required> 
+                            <option value="Habitação">Habitação</option>
+                            <option value="Alimentação">Alimentação</option>
+                            <option value="Lazer">Lazer</option>
+                            <option value="Saúde">Saúde</option>
+                            <option value="Transporte">Transporte</option>
+                        </select>
+                    </div>
                       <div class="form-group">
                           <label for="produto-nome" class="col-form-label">Descrição:</label>
                           <input type="text" class="form-control" id="produto-nome" required>

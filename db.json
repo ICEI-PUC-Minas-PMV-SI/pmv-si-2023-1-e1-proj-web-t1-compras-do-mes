@@ -1,39 +1,46 @@
 {
   "produtos": [
     {
-      "id": "8",
-      "categoria": "Alimentação",
-      "nome": "arroz",
-      "vlr": "10",
+      "id": "1",
+      "categoria": "Habitação",
+      "nome": "Conta Água",
+      "vlr": "20",
       "qtd": "2"
     },
     {
-      "id": "9",
+      "id": "2",
       "categoria": "Alimentação",
-      "nome": "arroz abc",
-      "vlr": "20",
+      "nome": "Brócolis",
+      "vlr": "15",
       "qtd": "3"
     },
     {
-      "id": "10",
-      "categoria": "Alimentação",
-      "nome": "arroz dca",
-      "vlr": "60",
-      "qtd": "3"
+      "id": "3",
+      "categoria": "Lazer",
+      "nome": "Cinema",
+      "vlr": "20",
+      "qtd": "5"
     },
     {
       "id": "4",
-      "categoria": "Alimentação",
-      "nome": "batata",
-      "vlr": "0.02",
-      "qtd": "2"
+      "categoria": "Saúde",
+      "nome": "Remédio",
+      "vlr": "52",
+      "qtd": "4"
     },
     {
-      "id": "15",
+      "id": "5",
+      "categoria": "Transporte",
+      "nome": "Gasolina",
+      "vlr": "90",
+      "qtd": "1"
+    },
+    {
+      "id": "6",
       "categoria": "Diversos",
-      "nome": "Maquiagem ",
-      "vlr": "30",
-      "qtd": "3"
+      "nome": "Calças",
+      "vlr": "100",
+      "qtd": "2"
     }
   ]
 }

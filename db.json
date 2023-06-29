@@ -34,6 +34,20 @@
       "nome": "Cinema",
       "vlr": "20",
       "qtd": "2"
+    },
+    {
+      "id": "65",
+      "categoria": "Lazer",
+      "nome": "shopping",
+      "vlr": "65",
+      "qtd": "1"
+    },
+    {
+      "id": "85",
+      "categoria": "Alimentação",
+      "nome": "bala",
+      "vlr": "20",
+      "qtd": "2"
     }
   ]
 }

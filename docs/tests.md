@@ -39,11 +39,12 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Resultado esperado** | O site não apresentar problemas durante a navegação.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
+**Caso de Teste** | **CT03 -Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade**
  :--------------: | ------------
-**Procedimento**  | 1) A págimna deverá estar disponível 99% do tempo para o usuário.
-**Requisitos associados** | RF-002
-**Resultado esperado** | O site não apresentar problemas durante a navegação.
+**Procedimento**  | 1) O usuário deverá criar um usuário.
+2) O usuário deverá logar na sua conta.
+**Requisitos associados** | RF-003
+**Resultado esperado** | O usuário conseguir utilizar sua conta.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
@@ -61,12 +62,15 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D002%2D%20Disponibilidade%20da%20p%C3%A1gina%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
 
-|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
+|*Caso de Teste*                                 |*TC-03 - Cadastro e Utilização de Senha *                                         |
 |---|---|
-|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
+|Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D003%2D%20Utiliza%C3%A7%C3%A3o%20de%20senha%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+
+|*Caso de Teste*                                 |*TC-04 -*                                         |
+|---|---|
+|Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
-
-
 
 ## Avaliação dos Testes de Software
 

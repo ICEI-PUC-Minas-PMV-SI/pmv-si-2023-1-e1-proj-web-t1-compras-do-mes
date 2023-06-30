@@ -233,14 +233,14 @@ $(document).ready(function() {
       };
       
       $.ajax({
-        url: 'http://localhost:3000/salvar-data',
+        url: 'http://localhost:3000/dates',
         type: 'POST',
         data: jsonData,
         success: function(response) {
           console.log(response);
           alert('Data salva com sucesso!');
         },
-        error: function(error) {
+        error: function(error) {         
           console.log(error);
           alert('Erro ao salvar a data!');
         }

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/listadegastos.css">
   </head>
-  <body>
+  <body onload="vlrTotal()">
     <div id="parte1">
       <header>
         <nav class="navbar navbar-expand-lg">
@@ -58,7 +58,6 @@
         <h1>Lista de Gastos</h1>
       </div>
       <div class="form-group">
-        <button onclick="vlrTotal()">teste</button>
         <label for="orcamento-mes">Orçamento do Mês:</label>
         <input type="number" id="orcamento-mes" placeholder="R$">
         <label for="valor-gasto">Valor Total Gasto:</label>
@@ -66,6 +65,7 @@
         <label for="valor-excedido">Valor Total Excedido:</label>
         <input type="number" id="valor-excedido" placeholder="R$">
         <button class="save-button" onclick="gravarJSON()">Salvar</button>
+        <div id="valor-total"></div>
       </div>
             <div id="dataa">
             <form>
@@ -88,30 +88,6 @@
             <div class="container-a">
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
-                google.charts.load("current", {packages:["corechart"]});
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
-                  var data = google.visualization.arrayToDataTable([
-                    ['gasto mensal', 'Speakers (in millions)'],
-                    ['Habitação',  4.85],
-                    ['Alimentação',  1.4],
-                    ['Lazer', 0.4],
-                    ['Saúde', 0.3],
-                    ['Transporte', 0.3],
-                    ['Diversos', 0.2]
-                  
-                  ]);
-          
-                var options = {
-                  legend: '0',
-                  pieSliceText: '0',
-                  title: 'Gastos mensais (padrão brasileiro)',
-                  pieStartAngle: 100,
-                };
-          
-                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                  chart.draw(data, options);
-                }
               </script>
             </head>
            

@@ -41,6 +41,20 @@
       "nome": "Calças",
       "vlr": "100",
       "qtd": "2"
+    },
+    {
+      "id": "7",
+      "categoria": "Alimentação",
+      "nome": "Bala",
+      "vlr": "2",
+      "qtd": "2"
+    },
+    {
+      "id": "8",
+      "categoria": "Alimentação",
+      "nome": "wwsdsd",
+      "vlr": "234",
+      "qtd": "2"
     }
   ]
 }

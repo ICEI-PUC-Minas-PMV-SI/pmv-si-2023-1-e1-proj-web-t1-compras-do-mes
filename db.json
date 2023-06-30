@@ -1,38 +1,45 @@
 {
   "produtos": [
     {
-      "id": "8",
-      "categoria": "Alimentação",
-      "nome": "arroz",
-      "vlr": "10",
-      "qtd": "2"
-    },
-    {
-      "id": "9",
-      "categoria": "Alimentação",
-      "nome": "arroz abc",
-      "vlr": "20",
-      "qtd": "3"
-    },
-    {
-      "id": "10",
-      "categoria": "Alimentação",
-      "nome": "arroz dca",
-      "vlr": "60",
-      "qtd": "3"
-    },
-    {
       "id": "1",
-      "categoria": "Alimentação",
-      "nome": "teste",
-      "vlr": "40",
+      "categoria": "Habitação",
+      "nome": "Conta Água",
+      "vlr": "20",
       "qtd": "2"
     },
     {
-      "id": "12",
+      "id": "2",
+      "categoria": "Alimentação",
+      "nome": "Brócolis",
+      "vlr": "15",
+      "qtd": "3"
+    },
+    {
+      "id": "3",
       "categoria": "Lazer",
       "nome": "Cinema",
       "vlr": "20",
+      "qtd": "5"
+    },
+    {
+      "id": "4",
+      "categoria": "Saúde",
+      "nome": "Remédio",
+      "vlr": "52",
+      "qtd": "4"
+    },
+    {
+      "id": "5",
+      "categoria": "Transporte",
+      "nome": "Gasolina",
+      "vlr": "90",
+      "qtd": "1"
+    },
+    {
+      "id": "6",
+      "categoria": "Diversos",
+      "nome": "Calças",
+      "vlr": "100",
       "qtd": "2"
     },
     {

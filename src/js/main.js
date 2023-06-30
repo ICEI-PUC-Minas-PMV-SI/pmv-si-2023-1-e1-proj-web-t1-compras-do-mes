@@ -34,8 +34,29 @@ fetch(URL)
             </tr>
             `;
             produtoList.innerHTML = lista_produtos;
+
         }
     });
+//=================================================================================================
+
+//Valor Total Lista
+
+fetch(URL)
+  .then(response => response.json())
+  .then(data => {
+    let valorTotal = 0;
+
+    data.forEach(produto => {
+      const valor = parseFloat(produto.vlr);
+      const quantidade = parseInt(produto.qtd);
+      valorTotal += valor * quantidade;
+    });
+
+    console.log('Valor total:', valorTotal);
+  })
+
+
+  
 //=================================================================================================
 
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
@@ -71,7 +92,7 @@ function getProduto(id){
         .then(data => {
             $( "#produto-id" ).prop( "disabled", true );
             $('#produto-id').val(data.id);
-            $('#produto-categoria').text(data.categoria);
+            $('#produto-categoria').val(data.categoria);
             $('#produto-nome').val(data.nome);
             $('#produto-vlr').val(data.vlr);
             $('#produto-qtd').val(data.qtd);
@@ -123,3 +144,13 @@ produtoForm.addEventListener('submit', (e) => {
     }      
 })
 //=================================================================================================
+
+/*
+// Função para calcular a soma dos números no JSON 
+function calcularSoma(json) { let soma = 0; // Verifica se o JSON possui a chave "numeros" e se é uma lista 
+if (json.hasOwnProperty("numeros") && Array.isArray(json.numeros)) { // Percorre a lista de números e realiza a soma 
+    json.numeros.forEach(numero => { soma += numero; }); } return soma; } // Chamada da função para calcular a soma dos números no JSON 
+    const somaTotal = calcularSoma(json); console.log("A soma total é:", somaTotal);
+*/
+function vlrTotal(){
+}

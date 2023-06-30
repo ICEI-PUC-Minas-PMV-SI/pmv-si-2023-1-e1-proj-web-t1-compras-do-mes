@@ -41,7 +41,8 @@ fetch(URL)
 
 //Valor Total Lista
 
-fetch(URL)
+function vlrTotal(){
+    fetch(URL)
   .then(response => response.json())
   .then(data => {
     let valorTotal = 0;
@@ -52,11 +53,72 @@ fetch(URL)
       valorTotal += valor * quantidade;
     });
 
-    console.log('Valor total:', valorTotal);
+    document.getElementById('valor-total').innerHTML = `R$${valorTotal} `;
+ 
+
+    totalVLR = `<p>$${valorTotal}</p>`;
   })
+  document.getElementById('valor-total').innerHTML = totalVLR;
+}
 
+// Valor total Categoroias
 
-  
+fetch('http://localhost:3000/produtos')
+  .then(response => response.json())
+  .then(data => {
+    const categorias = {};
+
+    // Calculando o valor total por categoria
+    data.forEach(produto => {
+      const categoria = produto.categoria;
+      const valor = parseFloat(produto.vlr);
+      const quantidade = parseInt(produto.qtd);
+      const subtotal = valor * quantidade;
+
+      if (categorias[categoria]) {
+        categorias[categoria] += subtotal;
+      } else {
+        categorias[categoria] = subtotal;
+      }
+    });
+
+    // Exibindo os totais por categoria
+    for (const categoria in categorias) {
+      console.log(`Categoria: ${categoria} - Total: ${categorias[categoria]}`);
+    }
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error);
+  });
+
+// FUNCTION GRÁFICOS
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {    
+    var data = google.visualization.arrayToDataTable([
+      ['gasto mensal', 'Speakers (in millions)'],
+      ['Habitação',  4.85],
+      ['Alimentação',  1.4],
+      ['Lazer', 0.4],
+      ['Saúde', 0.3],
+      ['Transporte', 0.3],
+      ['Diversos', 0.2]
+    
+    ]);
+
+  var options = {
+    legend: '0',
+    pieSliceText: '0',
+    title: 'Gastos mensais (padrão brasileiro)',
+    pieStartAngle: 100,
+  };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+  }
+
 //=================================================================================================
 
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
@@ -181,3 +243,4 @@ $(document).ready(function() {
     });
   });
 
+// Gráfico

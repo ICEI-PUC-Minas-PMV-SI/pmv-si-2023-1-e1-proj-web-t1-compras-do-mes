@@ -25,19 +25,25 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Adaptável a qualquer interface - Browser, Smartphone ou Tablet**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Procedimento**  | 1) O site apresentará interface adaptável em diferentes tipos de dispositivo (Tablet, Smartphone, Browser)
+**Requisitos associados** | RNF-001.
+**Resultado esperado** | O site apresentar responsividade.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
+**Procedimento**  | 1) A página deverá estar disponível 99% do tempo para o usuário.
+**Requisitos associados** | RF-002
+**Resultado esperado** | O site não apresentar problemas durante a navegação.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
+ :--------------: | ------------
+**Procedimento**  | 1) A págimna deverá estar disponível 99% do tempo para o usuário.
+**Requisitos associados** | RF-002
+**Resultado esperado** | O site não apresentar problemas durante a navegação.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
@@ -45,15 +51,21 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
+|*Caso de Teste*                                 |*TC-01 - Responsividade *                                           |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D001%2DResponsividade%20de%20tela%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments| 
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
+|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D002%2D%20Disponibilidade%20da%20p%C3%A1gina%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+
+|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
+|---|---|
+|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
 
 
 ## Avaliação dos Testes de Software

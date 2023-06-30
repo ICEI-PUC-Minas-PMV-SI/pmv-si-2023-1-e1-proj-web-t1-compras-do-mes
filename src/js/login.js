@@ -17,7 +17,11 @@ function buscaUsuario(nome, senha){
       }else {alert("Insira seus dados para continuar!")}
     }
 
-
-    
-
-     
+    onload = function usuarioLogado() {
+      let nomeUsuario = localStorage.getItem('usuario_logado');
+      
+      var tagA = document.getElementById("nome");
+      tagA.innerHTML = `${nomeUsuario}`; 
+      
+   }
+   

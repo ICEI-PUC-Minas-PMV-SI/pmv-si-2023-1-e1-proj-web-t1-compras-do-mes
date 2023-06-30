@@ -41,8 +41,8 @@ fetch(URL)
 
 //Valor Total Lista
 
-function vlrTotal(){
-    fetch(URL)
+window.onload = function vlrTotal(totalVLR){
+  fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
     let valorTotal = 0;
@@ -53,12 +53,12 @@ function vlrTotal(){
       valorTotal += valor * quantidade;
     });
 
-    document.getElementById('valor-total').innerHTML = `R$${valorTotal} `;
- 
+  totalVLR = `R$${valorTotal}`;
 
-    totalVLR = `<p>$${valorTotal}</p>`;
-  })
   document.getElementById('valor-total').innerHTML = totalVLR;
+  });
+
+
 }
 
 // Valor total Categoroias
@@ -214,8 +214,6 @@ if (json.hasOwnProperty("numeros") && Array.isArray(json.numeros)) { // Percorre
     json.numeros.forEach(numero => { soma += numero; }); } return soma; } // Chamada da função para calcular a soma dos números no JSON 
     const somaTotal = calcularSoma(json); console.log("A soma total é:", somaTotal);
 */
-function vlrTotal(){
-}
 
 /* salvar data*/
 $(document).ready(function() {

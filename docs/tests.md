@@ -28,7 +28,7 @@
  :--------------: | ------------
 **Procedimento**  | 1) O site deve apresentar uma média de resposta de 3s.
 **Requisitos associados** | RNF-004
-**Resultado esperado** | O site responder em até 4 segundos.
+**Resultado esperado** | O site responder em até 3 segundos.
 **Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software

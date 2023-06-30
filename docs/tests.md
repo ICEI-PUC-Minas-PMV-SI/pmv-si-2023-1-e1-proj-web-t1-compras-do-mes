@@ -41,8 +41,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT03 -Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário deverá criar um usuário.
-2) O usuário deverá logar na sua conta.
+**Procedimento**  | 1) O usuário deverá criar um usuário. 2) O usuário deverá logar na sua conta.
 **Requisitos associados** | RF-003
 **Resultado esperado** | O usuário conseguir utilizar sua conta.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.

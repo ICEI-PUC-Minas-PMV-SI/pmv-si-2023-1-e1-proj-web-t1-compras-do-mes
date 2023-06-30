@@ -154,3 +154,30 @@ if (json.hasOwnProperty("numeros") && Array.isArray(json.numeros)) { // Percorre
 */
 function vlrTotal(){
 }
+
+/* salvar data*/
+$(document).ready(function() {
+    $('#form-data').submit(function(event) {
+      event.preventDefault();
+      
+      var inputData = $('#data').val();
+      var jsonData = {
+        data: inputData
+      };
+      
+      $.ajax({
+        url: 'http://localhost:3000/salvar-data',
+        type: 'POST',
+        data: jsonData,
+        success: function(response) {
+          console.log(response);
+          alert('Data salva com sucesso!');
+        },
+        error: function(error) {
+          console.log(error);
+          alert('Erro ao salvar a data!');
+        }
+      });
+    });
+  });
+

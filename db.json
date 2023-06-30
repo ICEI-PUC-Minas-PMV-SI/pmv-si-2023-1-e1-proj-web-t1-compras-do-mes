@@ -40,7 +40,14 @@
       "categoria": "Diversos",
       "nome": "Calças",
       "vlr": "100",
-      "qtd": "2"
+      "qtd": "3"
+    },
+    {
+      "id": "8",
+      "categoria": "Lazer",
+      "nome": "piquenique",
+      "vlr": "20",
+      "qtd": "1"
     }
   ]
 }

@@ -40,21 +40,14 @@
       "categoria": "Diversos",
       "nome": "Calças",
       "vlr": "100",
-      "qtd": "2"
-    },
-    {
-      "id": "7",
-      "categoria": "Alimentação",
-      "nome": "Bala",
-      "vlr": "2",
-      "qtd": "2"
+      "qtd": "3"
     },
     {
       "id": "8",
-      "categoria": "Alimentação",
-      "nome": "wwsdsd",
-      "vlr": "234",
-      "qtd": "2"
+      "categoria": "Lazer",
+      "nome": "piquenique",
+      "vlr": "20",
+      "qtd": "1"
     }
   ]
 }

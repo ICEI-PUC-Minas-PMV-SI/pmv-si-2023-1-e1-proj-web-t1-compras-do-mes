@@ -207,4 +207,40 @@ produtoForm.addEventListener('submit', (e) => {
 })
 //=================================================================================================
 
+/*
+// Função para calcular a soma dos números no JSON 
+function calcularSoma(json) { let soma = 0; // Verifica se o JSON possui a chave "numeros" e se é uma lista 
+if (json.hasOwnProperty("numeros") && Array.isArray(json.numeros)) { // Percorre a lista de números e realiza a soma 
+    json.numeros.forEach(numero => { soma += numero; }); } return soma; } // Chamada da função para calcular a soma dos números no JSON 
+    const somaTotal = calcularSoma(json); console.log("A soma total é:", somaTotal);
+*/
+function vlrTotal(){
+}
+
+/* salvar data*/
+$(document).ready(function() {
+    $('#form-data').submit(function(event) {
+      event.preventDefault();
+      
+      var inputData = $('#data').val();
+      var jsonData = {
+        data: inputData
+      };
+      
+      $.ajax({
+        url: 'http://localhost:3000/salvar-data',
+        type: 'POST',
+        data: jsonData,
+        success: function(response) {
+          console.log(response);
+          alert('Data salva com sucesso!');
+        },
+        error: function(error) {
+          console.log(error);
+          alert('Erro ao salvar a data!');
+        }
+      });
+    });
+  });
+
 // Gráfico

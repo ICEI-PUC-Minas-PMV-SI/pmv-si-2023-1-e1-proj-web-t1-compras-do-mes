@@ -12,16 +12,23 @@
 **Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
  :--------------: | ------------
 **Procedimento**  | 1) A página deverá estar disponível 99% do tempo para o usuário.
-**Requisitos associados** | RF-002
+**Requisitos associados** | RNF-002
 **Resultado esperado** | O site não apresentar problemas durante a navegação.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT03 -Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá criar um usuário. 2) O usuário deverá logar na sua conta.
-**Requisitos associados** | RF-003
+**Requisitos associados** | RNF-003
 **Resultado esperado** | O usuário conseguir utilizar sua conta.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT04 Tempo de resposta de até a 3s para solicitação ao usuário**
+ :--------------: | ------------
+**Procedimento**  | 1) O site deve apresentar uma média de resposta de 3s.
+**Requisitos associados** | RNF-004
+**Resultado esperado** | O site responder em até 4 segundos.
 **Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software
@@ -41,10 +48,10 @@
 |Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/lvzI1 | 
 
-|*Caso de Teste*                                 |*TC-04 -*                                         |
-|---|---|
-|Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|*Caso de Teste* |*TC-04 - Tempo de Resposta de 3s *                                          |
+|---|---| 
+|Requisito Associado | RF-004 - Tempo de resposta de até a 3s para solicitação ao usuário.|
+|Link do vídeo do teste realizado: | https://shre.ink/lEqp | 
 
 ## Avaliação dos Testes de Software
 

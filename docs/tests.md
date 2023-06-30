@@ -1,29 +1,6 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
-
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
-
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
-
-A documentação dos testes é dividida nas seguintes seções:
-
- - [Plano de Testes de Software](#plano-de-testes-de-software)
- - [Registro dos Testes de Software](#registro-dos-testes-de-software)
- - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
- - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
- - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
-
-# Teste de Software
-
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
-
 ## Plano de Testes de Software
-
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
 
 **Caso de Teste** | **CT01 - Adaptável a qualquer interface - Browser, Smartphone ou Tablet**
  :--------------: | ------------
@@ -35,41 +12,46 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
  :--------------: | ------------
 **Procedimento**  | 1) A página deverá estar disponível 99% do tempo para o usuário.
-**Requisitos associados** | RF-002
+**Requisitos associados** | RNF-002
 **Resultado esperado** | O site não apresentar problemas durante a navegação.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT03 -Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá criar um usuário. 2) O usuário deverá logar na sua conta.
-**Requisitos associados** | RF-003
+**Requisitos associados** | RNF-003
 **Resultado esperado** | O usuário conseguir utilizar sua conta.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT04 Tempo de resposta de até a 3s para solicitação ao usuário**
+ :--------------: | ------------
+**Procedimento**  | 1) O site deve apresentar uma média de resposta de 3s.
+**Requisitos associados** | RNF-004
+**Resultado esperado** | O site responder em até 3 segundos.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
-
-|*Caso de Teste*                                 |*TC-01 - Responsividade *                                           |
+|*Caso de Teste* |*TC-01 - Responsividade *|
 |---|---|
 |Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D001%2DResponsividade%20de%20tela%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments| 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/jPTY8 | 
 
-|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
+|*Caso de Teste* |*TC-02 - Disponibilidade da Página *|
 |---|---|
 |Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D002%2D%20Disponibilidade%20da%20p%C3%A1gina%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/efiLZ | 
 
-|*Caso de Teste*                                 |*TC-03 - Cadastro e Utilização de Senha *                                         |
+|*Caso de Teste* |*TC-03 - Cadastro e Utilização de Senha *|
 |---|---|
 |Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D003%2D%20Utiliza%C3%A7%C3%A3o%20de%20senha%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/lvzI1 | 
 
-|*Caso de Teste*                                 |*TC-04 -*                                         |
-|---|---|
-|Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|*Caso de Teste* |*TC-04 - Tempo de Resposta de 3s *|
+|---|---| 
+|Requisito Associado | RF-004 - Tempo de resposta de até a 3s para solicitação ao usuário.|
+|Link do vídeo do teste realizado: | https://shre.ink/lEqp | 
 
 ## Avaliação dos Testes de Software
 

@@ -54,17 +54,17 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste* |*TC-01 - Responsividade *                                           |
 |---|---|
 |Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D001%2DResponsividade%20de%20tela%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments| 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/jPTY8 | 
 
 |*Caso de Teste* |*TC-02 - Disponibilidade da Página *                        |
 |---|---|
 |Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D002%2D%20Disponibilidade%20da%20p%C3%A1gina%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/efiLZ | 
 
 |*Caso de Teste* |*TC-03 - Cadastro e Utilização de Senha *                                         |
 |---|---|
 |Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
-|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D003%2D%20Utiliza%C3%A7%C3%A3o%20de%20senha%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/lvzI1 | 
 
 |*Caso de Teste*                                 |*TC-04 -*                                         |
 |---|---|

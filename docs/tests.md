@@ -56,10 +56,16 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D001%2DResponsividade%20de%20tela%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments| 
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
+|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1440249_sga_pucminas_br/_layouts/15/onedrive.aspx?login_hint=1440249%40sga%2Epucminas%2Ebr&id=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FRNF%2D002%2D%20Disponibilidade%20da%20p%C3%A1gina%2Emp4&parent=%2Fpersonal%2F1440249%5Fsga%5Fpucminas%5Fbr%2FDocuments | 
+
+|*Caso de Teste*                                 |*TC-02 - Disponibilidade da Página *                                         |
+|---|---|
+|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
 
 
 ## Avaliação dos Testes de Software

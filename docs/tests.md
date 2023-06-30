@@ -32,11 +32,18 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Resultado esperado** | O site apresentar responsividade.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
+**Procedimento**  | 1) A página deverá estar disponível 99% do tempo para o usuário.
+**Requisitos associados** | RF-002
+**Resultado esperado** | O site não apresentar problemas durante a navegação.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT02 - A página deverá ter disponibilidade em 99% do tempo**
+ :--------------: | ------------
+**Procedimento**  | 1) A págimna deverá estar disponível 99% do tempo para o usuário.
+**Requisitos associados** | RF-002
+**Resultado esperado** | O site não apresentar problemas durante a navegação.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 

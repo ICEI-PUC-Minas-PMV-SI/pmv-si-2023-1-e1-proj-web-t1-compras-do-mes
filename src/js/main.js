@@ -58,8 +58,15 @@ window.onload = function vlrTotal(totalVLR){
   document.getElementById('valor-total').innerHTML = totalVLR;
   });
 
+// usuário logado
+    let nomeUsuario = localStorage.getItem('usuario_logado');
+    
+    var tagA = document.getElementById("nome");
+    tagA.innerHTML = `${nomeUsuario}`; 
+    
 
 }
+
 
 // Valor total Categoroias
 
@@ -243,11 +250,3 @@ $(document).ready(function() {
 
 // Gráfico
 
-// Usuário em navbar
-onload = function usuarioLogado() {
-  let nomeUsuario = localStorage.getItem('usuario_logado');
-  
-  var tagA = document.getElementById("nome");
-  tagA.innerHTML = `${nomeUsuario}`; 
-  
-}

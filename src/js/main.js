@@ -67,58 +67,6 @@ window.onload = function vlrTotal(totalVLR){
 
 }
 
-
-// Gráfico com Valor total Categoroias
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-  fetch('http://localhost:3000/produtos')
-    .then(response => response.json())
-    .then(data => {
-      const categorias = {};
-
-      // Calculando o valor total por categoria
-      data.forEach(produto => {
-        const categoria = produto.categoria;
-        const valor = parseFloat(produto.vlr);
-        const quantidade = parseInt(produto.qtd);
-        const subtotal = valor * quantidade;
-
-        if (categorias[categoria]) {
-          categorias[categoria] += subtotal;
-        } else {
-          categorias[categoria] = subtotal;
-        }
-      });
-
-      // Montando o array de dados para o gráfico
-      const chartData = [['gasto mensal', 'C']];
-
-      for (const categoria in categorias) {
-        chartData.push([categoria, categorias[categoria]]);
-      }
-
-      // Criando o gráfico
-      var data = google.visualization.arrayToDataTable(chartData);
-
-      var options = {
-        legend: '0',
-        pieSliceText: '0',
-        title: 'Gastos mensais (padrão brasileiro)',
-        pieStartAngle: 100,
-      };
-
-      var chart = new google.visualization.PieChart(
-        document.getElementById('piechart')
-      );
-      chart.draw(data, options);
-    })
-    .catch(error => {
-      console.error('Erro na requisição:', error);
-    });
-}
-
 //=================================================================================================
 
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
@@ -241,5 +189,54 @@ $(document).ready(function() {
     });
   });
 
-// Gráfico
 
+// Gráfico com Valor total Categoroias
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  fetch('http://localhost:3000/produtos')
+    .then(response => response.json())
+    .then(data => {
+      const categorias = {};
+
+      // Calculando o valor total por categoria
+      data.forEach(produto => {
+        const categoria = produto.categoria;
+        const valor = parseFloat(produto.vlr);
+        const quantidade = parseInt(produto.qtd);
+        const subtotal = valor * quantidade;
+
+        if (categorias[categoria]) {
+          categorias[categoria] += subtotal;
+        } else {
+          categorias[categoria] = subtotal;
+        }
+      });
+
+      // Montando o array de dados para o gráfico
+      const chartData = [['gasto mensal', 'C']];
+
+      for (const categoria in categorias) {
+        chartData.push([categoria, categorias[categoria]]);
+      }
+
+      // Criando o gráfico
+      var data = google.visualization.arrayToDataTable(chartData);
+
+      var options = {
+        legend: '0',
+        pieSliceText: '0',
+        title: 'Gastos mensais (padrão brasileiro)',
+        pieStartAngle: 100,
+      };
+
+      var chart = new google.visualization.PieChart(
+        document.getElementById('piechart')
+      );
+      chart.draw(data, options);
+    })
+    .catch(error => {
+      console.error('Erro na requisição:', error);
+    });
+}

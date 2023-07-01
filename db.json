@@ -20,6 +20,13 @@
       "nome": "Gasolina",
       "vlr": "90",
       "qtd": "1"
+    },
+    {
+      "id": "6",
+      "categoria": "Alimentação",
+      "nome": "Arroz",
+      "vlr": "20",
+      "qtd": "3"
     }
   ],
   "dates": [

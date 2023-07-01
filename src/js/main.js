@@ -93,7 +93,7 @@ function drawChart() {
       });
 
       // Montando o array de dados para o gráfico
-      const chartData = [['gasto mensal', 'Speakers (in millions)']];
+      const chartData = [['gasto mensal', 'C']];
 
       for (const categoria in categorias) {
         chartData.push([categoria, categorias[categoria]]);
@@ -118,6 +118,23 @@ function drawChart() {
       console.error('Erro na requisição:', error);
     });
 }
+
+//=================================================================================================
+
+// DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
+const produtoDelete = document.getElementById('btn-delete');
+
+produtoDelete.addEventListener('click', (e) => {
+
+    let id = $('#id-prod').text();
+
+    fetch(`${URL}/${id}`, {
+        method: 'DELETE',
+    })
+    .then(res => res.json())
+    .then(() => location.reload());
+
+})
 //=================================================================================================
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API

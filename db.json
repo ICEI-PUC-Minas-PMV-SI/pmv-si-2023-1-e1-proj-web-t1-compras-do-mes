@@ -1,20 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "categoria": "Habitação",
-      "nome": "Conta Água",
-      "vlr": "20",
-      "qtd": "2"
-    },
-    {
-      "id": "2",
-      "categoria": "Alimentação",
-      "nome": "Brócolis",
-      "vlr": "15",
-      "qtd": "4"
-    },
-    {
       "id": "3",
       "categoria": "Lazer",
       "nome": "Cinema",
@@ -26,7 +12,7 @@
       "categoria": "Saúde",
       "nome": "Remédio",
       "vlr": "52",
-      "qtd": "4"
+      "qtd": "2"
     },
     {
       "id": "5",

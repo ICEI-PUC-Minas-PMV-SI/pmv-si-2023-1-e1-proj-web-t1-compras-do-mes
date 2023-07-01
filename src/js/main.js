@@ -1,10 +1,50 @@
 // URL DA API DE DADOS
 URL = 'http://localhost:3000/produtos'
+
+function getCategoriesToChart(products) {
+    const categorias = {};
+
+    // Calculando o valor total por categoria
+    products.forEach(produto => {
+      const categoria = produto.categoria;
+      const valor = parseFloat(produto.vlr);
+      const quantidade = parseInt(produto.qtd);
+      const subtotal = valor * quantidade;
+
+      if (categorias[categoria]) {
+        categorias[categoria] += subtotal;
+      } else {
+        categorias[categoria] = subtotal;
+      }
+    });
+
+    return Object.entries(categorias);
+}
+
+function drawChart(categories) {
+    function callback() {
+        var data = google.visualization.arrayToDataTable([
+            ['gasto mensal', 'Speakers (in millions)'],
+            ...categories    
+        ]);
+    
+        var options = {
+            legend: '0',
+            pieSliceText: '0',
+            title: 'Gastos mensais (padrão brasileiro)',
+            pieStartAngle: 100,
+        };
+    
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+    }
+
+    return callback;
+}
+
 //=================================================================================================
 // GET - Recupera todos os produtos e adiciona na tabela
-
 const produtoList = document.getElementById('produto-list');
-
 fetch(URL)
     .then(res => res.json())
     .then(produtos => {
@@ -34,8 +74,12 @@ fetch(URL)
             </tr>
             `;
             produtoList.innerHTML = lista_produtos;
-
         }
+
+
+        // FUNCTION GRÁFICOS
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
     });
 //=================================================================================================
 
@@ -97,34 +141,6 @@ fetch('http://localhost:3000/produtos')
   .catch(error => {
     console.error('Erro na requisição:', error);
   });
-
-// FUNCTION GRÁFICOS
-
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart() {    
-    var data = google.visualization.arrayToDataTable([
-      ['gasto mensal', 'Speakers (in millions)'],
-      ['Habitação',  4.85],
-      ['Alimentação',  1.4],
-      ['Lazer', 0.4],
-      ['Saúde', 0.3],
-      ['Transporte', 0.3],
-      ['Diversos', 0.2]
-    
-    ]);
-
-  var options = {
-    legend: '0',
-    pieSliceText: '0',
-    title: 'Gastos mensais (padrão brasileiro)',
-    pieStartAngle: 100,
-  };
-
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
 
 //=================================================================================================
 
@@ -224,6 +240,17 @@ if (json.hasOwnProperty("numeros") && Array.isArray(json.numeros)) { // Percorre
 
 /* salvar data*/
 $(document).ready(function() {
+    $.ajax({
+        url: 'http://localhost:3000/dates/1',
+        type: 'GET',
+        success: function(response) {
+          $('#data').val(response.data)
+        },
+        error: function(error) {         
+          console.log(error);
+        }
+      });
+
     $('#form-data').submit(function(event) {
       event.preventDefault();
       
@@ -233,8 +260,8 @@ $(document).ready(function() {
       };
       
       $.ajax({
-        url: 'http://localhost:3000/dates',
-        type: 'POST',
+        url: 'http://localhost:3000/dates/1',
+        type: 'PUT',
         data: jsonData,
         success: function(response) {
           console.log(response);
@@ -246,7 +273,7 @@ $(document).ready(function() {
         }
       });
     });
-  });
+});
 
 // Gráfico
 

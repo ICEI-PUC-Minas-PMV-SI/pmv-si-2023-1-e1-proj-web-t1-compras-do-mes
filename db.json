@@ -29,24 +29,16 @@
       "qtd": "4"
     },
     {
-      "id": "5",
+      "id": "15",
       "categoria": "Transporte",
-      "nome": "Gasolina",
-      "vlr": "90",
+      "nome": "teste ",
+      "vlr": "151",
       "qtd": "1"
-    },
-    {
-      "data": "2001-12-07",
-      "id": "2-EUX7S"
-    },
-    {
-      "data": "2001-12-07",
-      "id": "Pl7ZzLn"
     }
   ],
   "dates": [
     {
-      "data": "2022-11-07",
+      "data": "2001-01-01",
       "id": 1
     }
   ]

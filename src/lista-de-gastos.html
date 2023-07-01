@@ -9,131 +9,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/listadegastos.css">
   </head>
-  <body>
-    <div id="parte1">
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">            
-            <a class="logo" href="">E-Li$t</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="imgs/Icons/view-headline.png"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="navbuttons" aria-current="page" href="tela-de-login.html">Home</a>
-                </li>
-                <li class="nav-item login">
-                  <div  id="nome" onload="usuarioLogado()"></div>
-                </li>
-              </ul>
-              
-              <li class="d-flex">                
-                <div class="modoescuro"><a onclick="myFunction()"> 
-                  <img src="imgs/Icons/circle-slice-4.png"> </a></div>
-                  <button type="reset" id="logout" onclick="logout()" >Logout</button>         
+<body>
+  <div id="parte1">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">            
+          <a class="logo" href="">E-Li$t</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="imgs/Icons/view-headline.png"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="navbuttons" aria-current="page" href="tela-de-login.html">Home</a>
               </li>
-            </div>
+              <li class="nav-item login">
+                <div  id="nome" onload="usuarioLogado()"></div>
+              </li>
+            </ul>
+            
+            <li class="d-flex">                
+              <div class="modoescuro"><a onclick="myFunction()"> 
+                <img src="imgs/Icons/circle-slice-4.png"> </a></div>
+                <button type="reset" id="logout" onclick="logout()" >Logout</button>         
+            </li>
           </div>
-        </nav>     
-     </header>
-     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="tela-de-login.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Lista de Gastos</li>
-      </ol>
-    </nav>
-    </div>
-    
-    <div id=parte2>
-      <div class="conteúdo">        
-        <h1>Lista de Gastos</h1>
-      </div>
-      <div class="form-group">
-        <label for="orcamento-mes">Orçamento do Mês:</label>
-        <input type="number" id="orcamento-mes" placeholder="R$">
-        <label for="valor-gasto">Valor Total Gasto:</label>
-        <input type="number" id="valor-gasto" placeholder="R$">
-        <label for="valor-excedido">Valor Total Excedido:</label>
-        <input type="number" id="valor-excedido" placeholder="R$">
-        <button class="save-button" onclick="gravarJSON()">Salvar</button>
-        <div id="valor-total"></div>
-      </div>
-            <div id="dataa">
-            <form id="form-data">
-              <label for="data">Data:</label>
-              <input type="date" id="data" name="data">
-              <button type="submit">Salvar</button>
-            </form></div>
-          </div> 
         </div>
-    </div>
+      </nav>     
+    </header>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="tela-de-login.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lista de Gastos</li>
+    </ol>
+  </nav>
+  </div>
   
-    <div class="imagemfundo"> 
-      <img src="imgs/lista-de-gastos.svg.svg" height="500px">
+  <div id=parte2>
+    <div class="conteúdo">        
+      <h1>Lista de Gastos</h1>
     </div>
-
-    <div class="intermediaria">
-        <div class="container0">
-          <div class="grafico">
-            <div class="container-a">
-              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-              <script type="text/javascript">
-              </script> 
-              <div id="piechart" style="width: 770px; height: 470px;"></div>
-
-              
-                <div class="container-c">
-                  <div class="formulario">
-                    <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
-                  </div>
-                </div>
-              </div>
-        
+    <div class="form-group">
+      <label for="orcamento-mes">Orçamento do Mês:</label>
+      <input type="number" id="orcamento-mes" placeholder="R$">
+      <label for="valor-gasto">Valor Total Gasto:</label>
+      <input type="number" id="valor-gasto" placeholder="R$">
+      <label for="valor-excedido">Valor Total Excedido:</label>
+      <input type="number" id="valor-excedido" placeholder="R$">
+      <button class="save-button" onclick="gravarJSON()">Salvar</button>
+      <div id="valor-total"></div>
     </div>
+    <div id="dataa">
+      <form id="form-data">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
   
-    <div class="container">
-      <br />
-      <h2>
-          
-          <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
-              data-toggle="modal" data-target="#produto-modal">
-              <i class="fa fa-plus"></i> Adicionar
-          </a>
-      </h2>
-      <hr />
-      <div class="row">
-          <div class="col-12">
-              <table class="table">
-                  <thead>
-                      <tr>
-                          <th width=5%>#</th>
-                          <th width=30%>Categoria</th>
-                          <th width=30%>Produto</th>
-                          <th width=15%>Valor (Un.)</th>
-                          <th width=15%>Quantidade</th>
-                          <th width=15%>Valor Total</th>
-                          <th width=20%></th>
-                      </tr>
-                  </thead>
-                  <tbody id='produto-list'>
-                  </tbody>
-              </table>
-          </div>
-      </div>
+  <div class="imagemfundo"> 
+    <img src="imgs/lista-de-gastos.svg.svg" height="500px">
   </div>
 
-  <!--
-          Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados
-      -->
+  <div class="intermediaria">
+    <div class="container0">
+      <div class="grafico">
+        <div class="container-a">
+          <div id="piechart" style="width: 770px; height: 470px;"></div>
+          <div class="container-c">
+            <div class="formulario">
+              <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>          
+        <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
+            data-toggle="modal" data-target="#produto-modal">
+            <i class="fa fa-plus"></i> Adicionar
+        </a>
+    </h2>
+    <hr />
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width=5%>#</th>
+                        <th width=30%>Categoria</th>
+                        <th width=30%>Produto</th>
+                        <th width=15%>Valor (Un.)</th>
+                        <th width=15%>Quantidade</th>
+                        <th width=15%>Valor Total</th>
+                        <th width=20%></th>
+                    </tr>
+                </thead>
+                <tbody id='produto-list'></tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados -->
   <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -155,7 +145,6 @@
   </div>
 
   <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
-
   <div class="modal fade" id="produto-modal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -202,31 +191,31 @@
               </div>
           </div>
       </div>
-  </div>
+  </div>  
 
-  
+  <footer>            
+    <a href="tela-de-login.html">
+      Home
+    </a>
+    <a href="quem-somos.html">
+      Quem Somos
+    </a>
+    <p> 
+      E-List &copy 2023 Copyright Todos os direitos reservados 
+    </p>
+  </footer>
 
-<footer>            
-  <a href="tela-de-login.html">
-    Home
-  </a>
-  <a href="quem-somos.html">
-    Quem Somos
-  </a>
-  <p> 
-    E-List &copy 2023 Copyright Todos os direitos reservados 
-  </p>
-</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script src="js/paginalogada.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-  function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/paginalogada.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>

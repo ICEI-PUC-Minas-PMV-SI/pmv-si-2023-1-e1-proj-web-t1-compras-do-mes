@@ -68,80 +68,56 @@ window.onload = function vlrTotal(totalVLR){
 }
 
 
-// Valor total Categoroias
-
-fetch('http://localhost:3000/produtos')
-  .then(response => response.json())
-  .then(data => {
-    const categorias = {};
-
-    // Calculando o valor total por categoria
-    data.forEach(produto => {
-      const categoria = produto.categoria;
-      const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      const subtotal = valor * quantidade;
-
-      if (categorias[categoria]) {
-        categorias[categoria] += subtotal;
-      } else {
-        categorias[categoria] = subtotal;
-      }
-    });
-
-    // Exibindo os totais por categoria
-    for (const categoria in categorias) {
-      console.log(`Categoria: ${categoria} - Total: ${categorias[categoria]}`);
-    }
-  })
-  .catch(error => {
-    console.error('Erro na requisição:', error);
-  });
-
-// FUNCTION GRÁFICOS
-
-google.charts.load("current", {packages:["corechart"]});
+// Gráfico com Valor total Categoroias
+google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
-  function drawChart() {    
-    var data = google.visualization.arrayToDataTable([
-      ['gasto mensal', 'Speakers (in millions)'],
-      ['Habitação',  4.85],
-      ['Alimentação',  1.4],
-      ['Lazer', 0.4],
-      ['Saúde', 0.3],
-      ['Transporte', 0.3],
-      ['Diversos', 0.2]
-    
-    ]);
+function drawChart() {
+  fetch('http://localhost:3000/produtos')
+    .then(response => response.json())
+    .then(data => {
+      const categorias = {};
 
-  var options = {
-    legend: '0',
-    pieSliceText: '0',
-    title: 'Gastos mensais (padrão brasileiro)',
-    pieStartAngle: 100,
-  };
+      // Calculando o valor total por categoria
+      data.forEach(produto => {
+        const categoria = produto.categoria;
+        const valor = parseFloat(produto.vlr);
+        const quantidade = parseInt(produto.qtd);
+        const subtotal = valor * quantidade;
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
+        if (categorias[categoria]) {
+          categorias[categoria] += subtotal;
+        } else {
+          categorias[categoria] = subtotal;
+        }
+      });
 
-//=================================================================================================
+      // Montando o array de dados para o gráfico
+      const chartData = [['gasto mensal', 'Speakers (in millions)']];
 
-// DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
-const produtoDelete = document.getElementById('btn-delete');
+      for (const categoria in categorias) {
+        chartData.push([categoria, categorias[categoria]]);
+      }
 
-produtoDelete.addEventListener('click', (e) => {
+      // Criando o gráfico
+      var data = google.visualization.arrayToDataTable(chartData);
 
-    let id = $('#id-prod').text();
+      var options = {
+        legend: '0',
+        pieSliceText: '0',
+        title: 'Gastos mensais (padrão brasileiro)',
+        pieStartAngle: 100,
+      };
 
-    fetch(`${URL}/${id}`, {
-        method: 'DELETE',
+      var chart = new google.visualization.PieChart(
+        document.getElementById('piechart')
+      );
+      chart.draw(data, options);
     })
-    .then(res => res.json())
-    .then(() => location.reload());
-
-})
+    .catch(error => {
+      console.error('Erro na requisição:', error);
+    });
+}
 //=================================================================================================
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API

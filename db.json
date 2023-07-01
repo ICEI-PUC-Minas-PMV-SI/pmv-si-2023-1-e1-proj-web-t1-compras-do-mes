@@ -12,7 +12,7 @@
       "categoria": "Alimentação",
       "nome": "Brócolis",
       "vlr": "15",
-      "qtd": "3"
+      "qtd": "4"
     },
     {
       "id": "3",
@@ -34,14 +34,6 @@
       "nome": "Gasolina",
       "vlr": "90",
       "qtd": "1"
-    },
-    {
-      "data": "2001-12-07",
-      "id": "2-EUX7S"
-    },
-    {
-      "data": "2001-12-07",
-      "id": "Pl7ZzLn"
     }
   ],
   "dates": [

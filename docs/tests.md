@@ -38,32 +38,46 @@
 **Resultado esperado** | O site mudar para o modo escuro.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT06 -Permitir que o usuário cadastre uma lista de gastos mensais**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário deverá criar uma lista de gastos.
+**Requisitos associados** | RF-001
+**Resultado esperado** | O usuário conseguir criar uma lista.
+**Dados de entrada** | Inserção de dados válidos no formulário da lista.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
 |*Caso de Teste* |*TC-01 - Responsividade *|
 |---|---|
-|Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
+|Requisito Associado | RNF-001 - Usuários encontraram responsividade em diversas interfaces.|
 |Link do vídeo do teste realizado: |https://encurtador.com.br/yIPS4 | 
 
 |*Caso de Teste* |*TC-02 - Disponibilidade da Página *|
 |---|---|
-|Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
+|Requisito Associado | RNF-002 - Site estar dispónivel para navegação.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/dBVX5 | 
 
 |*Caso de Teste* |*TC-03 - Cadastro e Utilização de Senha *|
 |---|---|
-|Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
+|Requisito Associado | RNF-003 - Utilização de Senha para bloqueio.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/rsxJT | 
 
 |*Caso de Teste* |*TC-04 - Tempo de Resposta de 3s *|
 |---|---| 
-|Requisito Associado | RF-004 - Tempo de resposta de até a 3s para solicitação ao usuário.|
+|Requisito Associado | RNF-004 - Tempo de resposta de até a 3s para solicitação ao usuário.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/ipBM4 | 
 
 |*Caso de Teste* |*TC-05 - Permitir a visualização em modo escuro *|
 |---|---| 
-|Requisito Associado | RF-005 - Mudança para o modo escuro.|
+|Requisito Associado | RNF-005 - Mudança para o modo escuro.|
 |Link do vídeo do teste realizado: | https://shre.ink/lzuO | 
+
+|*Caso de Teste* |*TC-06 - Permitir a criação de uma lista *|
+|---|---| 
+|Requisito Associado | RF-001 - Criar uma lista.|
+|Link do vídeo do teste realizado: | https://encurtador.com.br/bABNU | 
+
 
 ## Avaliação dos Testes de Software
 

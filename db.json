@@ -20,11 +20,25 @@
       "nome": "teste ",
       "vlr": "151",
       "qtd": "1"
+    },
+    {
+      "id": "88",
+      "categoria": "Diversos",
+      "nome": "bola de volei",
+      "vlr": "150",
+      "qtd": "5"
+    },
+    {
+      "id": "77",
+      "categoria": "Alimentação",
+      "nome": "bolo de milho",
+      "vlr": "10",
+      "qtd": "3"
     }
   ],
   "dates": [
     {
-      "data": "2001-01-01",
+      "data": "2025-01-01",
       "id": 1
     }
   ]

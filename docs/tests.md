@@ -31,27 +31,39 @@
 **Resultado esperado** | O site responder em até 3 segundos.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT05 Permitir a visualização em modo escuro**
+ :--------------: | ------------
+**Procedimento**  | 1) O site deve permitir o modo escuro após o acionamento do botão "modo escuro".
+**Requisitos associados** | RNF-005
+**Resultado esperado** | O site mudar para o modo escuro.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
 |*Caso de Teste* |*TC-01 - Responsividade *|
 |---|---|
 |Requisito Associado | RF-001 - Usuários encontraram responsividade em diversas interfaces.|
-|Link do vídeo do teste realizado: | https://encurtador.com.br/jPTY8 | 
+|Link do vídeo do teste realizado: |https://encurtador.com.br/yIPS4 | 
 
 |*Caso de Teste* |*TC-02 - Disponibilidade da Página *|
 |---|---|
 |Requisito Associado | RF-002 - Site estar dispónivel para navegação.|
-|Link do vídeo do teste realizado: | https://encurtador.com.br/efiLZ | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/dBVX5 | 
 
 |*Caso de Teste* |*TC-03 - Cadastro e Utilização de Senha *|
 |---|---|
 |Requisito Associado | RF-003 - Utilização de Senha para bloqueio.|
-|Link do vídeo do teste realizado: | https://encurtador.com.br/lvzI1 | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/rsxJT | 
 
 |*Caso de Teste* |*TC-04 - Tempo de Resposta de 3s *|
 |---|---| 
 |Requisito Associado | RF-004 - Tempo de resposta de até a 3s para solicitação ao usuário.|
-|Link do vídeo do teste realizado: | https://shre.ink/lEqp | 
+|Link do vídeo do teste realizado: | https://encurtador.com.br/ipBM4 | 
+
+|*Caso de Teste* |*TC-05 - Permitir a visualização em modo escuro *|
+|---|---| 
+|Requisito Associado | RF-005 - Mudança para o modo escuro.|
+|Link do vídeo do teste realizado: | https://shre.ink/lzuO | 
 
 ## Avaliação dos Testes de Software
 

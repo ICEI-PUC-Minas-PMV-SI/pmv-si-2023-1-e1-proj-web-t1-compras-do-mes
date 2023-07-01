@@ -274,6 +274,3 @@ $(document).ready(function() {
       });
     });
 });
-
-// Gráfico
-

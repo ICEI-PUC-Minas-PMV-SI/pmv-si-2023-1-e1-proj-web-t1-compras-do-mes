@@ -20,11 +20,18 @@
       "nome": "teste ",
       "vlr": "151",
       "qtd": "1"
+    },
+    {
+      "id": "5",
+      "categoria": "Diversos",
+      "nome": "Roupas",
+      "vlr": "50",
+      "qtd": "3"
     }
   ],
   "dates": [
     {
-      "data": "2001-01-01",
+      "data": "2023-08-01",
       "id": 1
     }
   ]

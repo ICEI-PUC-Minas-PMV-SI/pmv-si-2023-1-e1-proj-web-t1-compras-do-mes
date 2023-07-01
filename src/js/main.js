@@ -31,7 +31,7 @@ function drawChart(categories) {
         var options = {
             legend: '0',
             pieSliceText: '0',
-            title: 'Gastos mensais (padrão brasileiro)',
+            title: 'Gastos mensais',
             pieStartAngle: 100,
         };
     

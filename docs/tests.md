@@ -46,6 +46,14 @@
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT07 -Permitir que o usuário cadastre uma categoria de gasto na lista**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário deverá criar uma lista de gastos. 2) O usuário deve escolher uma categoria de gasto para aquela lista.
+**Requisitos associados** | RF-002
+**Resultado esperado** | O usuário conseguir escolher uma categoria.
+**Dados de entrada** | Inserção de dados válidos no formulário da lista.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
 |*Caso de Teste* |*TC-01 - Responsividade *|
@@ -77,6 +85,11 @@
 |---|---| 
 |Requisito Associado | RF-001 - Criar uma lista.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/bABNU | 
+
+|*Caso de Teste* |*TC-07 - Permitir a escolha de uma categoria na lista de gastos *|
+|---|---| 
+|Requisito Associado | RF-002 - Cadastrar uma categotia.|
+|Link do vídeo do teste realizado: | https://encurtador.com.br/swOZ4 | 
 
 
 ## Avaliação dos Testes de Software

@@ -14,7 +14,6 @@
       "vlr": "151",
       "qtd": "1"
     }
-   
   ],
   "dates": [
     {
@@ -24,7 +23,7 @@
   ],
   "orcamentos": [
     {
-      "orcamento": "6000",
+      "orcamento": "200",
       "id": 1
     }
   ]

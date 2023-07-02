@@ -68,7 +68,7 @@
 **Requisitos associados** | RF-003
 **Resultado esperado** |Emitir um alerta de excedente de gasto.
 **Dados de entrada** | Inserção de dados válidos no limite de orçamento.
-**Resultado obtido** |
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT10 -Permitir que o usuário defina uma meta de orçamento mensal**
  :--------------: | ------------
@@ -76,7 +76,7 @@
 **Requisitos associados** | RF-004
 **Resultado esperado** |Permitir a criação de um limite de orçamento.
 **Dados de entrada** | Inserção de dados válidos no limite de orçamento.
-**Resultado obtido** | Sucesso
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT11 -Personalização da lista de despesas por necessidade do usuário**
  :--------------: | ------------
@@ -84,7 +84,7 @@
 **Requisitos associados** | RF-005
 **Resultado esperado** |Permitir a personalização de uma lista.
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
-**Resultado obtido** | Sucesso
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT12 -Emitir um gráfico com os gastos por tipos de despesas**
  :--------------: | ------------
@@ -92,7 +92,7 @@
 **Requisitos associados** | RF-006
 **Resultado esperado** |Permitir a vizualização de um gráfico por tipo de gasto.
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
-**Resultado obtido** | Sucesso
+**Resultado obtido** | Sucesso.
 
 
 
@@ -137,7 +137,7 @@
 |*Caso de Teste* |*TC-09 - Emitir um alerta de excedente de gasto *|
 |---|---| 
 |Requisito Associado | RF-003 - Emitir um alerta de excedente de gasto.|
-|Link do vídeo do teste realizado: |  
+|Link do vídeo do teste realizado: |  https://encurtador.com.br/oCGL6 |
 
 |*Caso de Teste* |*TC-10 - Emitir um alerta de excedente de gasto *|
 |---|---| 
@@ -232,10 +232,10 @@ Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensa
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 90,21 segundos |
 
     Comentários dos usuários: 
+   
+    • O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock seria bom.   
     
-    • O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock seria bom.
-
-   • Acredito que as imagens atrapalham um pouco a vizualização. 
+    • Acredito que as imagens atrapalham um pouco a vizualização. 
 
 
 Cenário 4: Você é uma Dona de Casa que busca cadastrar compras por categoria.
@@ -257,11 +257,10 @@ Cenário 4: Você é uma Dona de Casa que busca cadastrar compras por categoria.
 
 Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
+ A aplicação obteve também uma boa satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo). É preciso salientar que em um dos cenários, houve uma avaliação 3(regular) e a média ficou em 3,6, provando ser necessário realizar alguns ajustes no site.
 
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
+Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc. Porém isso prova que necessitamos intervir e analisar os feedbacks para melhorarmos a usablidade e tempo dos usuários.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
-
+Os comentários nos mostraram, no geral, que os usuários aprovaram a aplicação, porém gostariam que ela fosse mais simples e direta. Como meta, buscaremos analisar o tamanho das imagens, o design do site e alguns pontos do cadastro de listas.
 
 

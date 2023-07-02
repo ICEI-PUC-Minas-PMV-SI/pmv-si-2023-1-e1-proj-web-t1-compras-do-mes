@@ -191,8 +191,8 @@ Cenário 1: Você é uma pessoa consumista que deseja definir um orçamento mens
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 4                    | 178.90 segundos                 |
 | 2       | SIM             | 4                    | 390.57 segundos                 |
-| **Média**|100%            | 4                    | 284,73 segundos                 |
-| **Tempo para conclusão pelo especialista**| SIM | 4| 100,5 segundos |
+| **Média**|100%            | 4                    | 284.73 segundos                 |
+| **Tempo para conclusão pelo especialista**| SIM | 5| 100.5 segundos |
 
     Comentários dos usuários: 
     
@@ -206,46 +206,51 @@ Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 3                    | 240.08 segundos                 |
-
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| 2       | SIM             | 4                    | 265.37 segundos                 |
+| 3       | SIM             | 4                    | 214.21 segundos                 |
+| **Média**| 100%           | 3,6                  | 239.88 segundos                 |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 105.2 segundos|
 
  Comentários dos usuários: 
     
     • O site funciona bem e cumpre com sua proposta, porém as imagens estão grandes e poluem a tela. As listas de gastos poderiam ser mais objetivas. Na parte de cadastro do usuário poderia haver um aviso de "Caps Locks" ativa.
+
+    • Gostei do layout do site. As tabelas são simples e de fácil entendimento. As imagens atrapalham um pouco pois poluem a tela.
+
+    • Poderia haver a opção de recuperar senha.
 
 
 Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensais.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 342.9 segundos                 |
-
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| 1       | SIM             | 4                    | 342.9 segundos                  |
+| 2       | SIM             | 5                    | 265.7 segundos                  |
+| 3       | SIM             | 4                    | 376.8 segundos                  |
+| 4       | SIM             | 4                    | 397.15 segundos                 |
+| **Média**| 100%           | 4,25                 | 345.63 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 90,21 segundos |
 
     Comentários dos usuários: 
     
     • O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock seria bom.
 
+   • Acredito que as imagens atrapalham um pouco a vizualização. 
 
-Cenário 4: Você é uma pessoa endividada que busca controlar seus gastos mensais.
+
+Cenário 4: Você é uma Dona de Casa que busca cadastrar compras por categoria.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 450.62                          |
-
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| 1       | SIM             | 4                    | 450.62 segundos                 |
+| **Média**| 100%           | 4                    | 450.62 segundos                 |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 95.57 segundos |
 
     Comentários dos usuários: 
     
-    • O sistema de cadastro de listas está muito bom e de facil entendimento. Gostaria de ter uma opção de recuperar a senha. As imagens poderiam ser um pouco menores. Site está muito bonito.
+    • O sistema de cadastro de listas está muito bom e de facil entendimento. Gostaria de ter uma opção de recuperar a senha. As imagens poderiam ser um pouco menores.
 
-
+    • Site está muito bonito
 
 ## Avaliação dos Testes de Usabilidade
 

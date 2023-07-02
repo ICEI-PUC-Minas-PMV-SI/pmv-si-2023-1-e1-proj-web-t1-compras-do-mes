@@ -22,11 +22,19 @@
       "qtd": "1"
     },
     {
+<<<<<<< Updated upstream
       "id": "5",
       "categoria": "Diversos",
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
+=======
+      "id": "16",
+      "categoria": "Diversos",
+      "nome": "roupa",
+      "vlr": "25.00",
+      "qtd": "1"
+>>>>>>> Stashed changes
     }
   ],
   "dates": [

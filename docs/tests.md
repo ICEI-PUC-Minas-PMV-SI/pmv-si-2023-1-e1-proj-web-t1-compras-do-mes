@@ -214,7 +214,9 @@ Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus 
  Comentários dos usuários: 
     
     • O site funciona bem e cumpre com sua proposta, porém as imagens estão grandes e poluem a tela. As listas de gastos poderiam ser mais objetivas. Na parte de cadastro do usuário poderia haver um aviso de "Caps Locks" ativa.
+
     • Gostei do layout do site. As tabelas são simples e de fácil entendimento. As imagens atrapalham um pouco pois poluem a tela.
+
     • Poderia haver a opção de recuperar senha.
 
 
@@ -233,6 +235,8 @@ Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensa
     
     • O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock seria bom.
 
+   • Acredito que as imagens atrapalham um pouco a vizualização. 
+
 
 Cenário 4: Você é uma Dona de Casa que busca cadastrar compras por categoria.
 
@@ -244,9 +248,9 @@ Cenário 4: Você é uma Dona de Casa que busca cadastrar compras por categoria.
 
     Comentários dos usuários: 
     
-    • O sistema de cadastro de listas está muito bom e de facil entendimento. Gostaria de ter uma opção de recuperar a senha. As imagens poderiam ser um pouco menores. Site está muito bonito.
+    • O sistema de cadastro de listas está muito bom e de facil entendimento. Gostaria de ter uma opção de recuperar a senha. As imagens poderiam ser um pouco menores.
 
-
+    • Site está muito bonito
 
 ## Avaliação dos Testes de Usabilidade
 

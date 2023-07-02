@@ -338,10 +338,13 @@ window.onload = function vlrExcedido() {
         .then(data => {
           const vlrOrcamento = parseInt(data.orcamento);
           const valorExcedido = vlrOrcamento - vlrTotal;
-if (vlrOrcamento >= 0){
-          document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);}
-          else{document.getElementById('valor-excedido').textContent = 0}
-          
+
+          if (valorExcedido < 0) {
+            document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
+            alert('Cuidado! Você gastou mais do que havia planejado!');
+          } else {
+            document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
+          }
         })
         .catch(error => {
           console.error('Erro na requisição do orçamento:', error);
@@ -351,3 +354,4 @@ if (vlrOrcamento >= 0){
       console.error('Erro na requisição dos produtos:', error);
     });
 }
+

@@ -48,110 +48,6 @@ color: #333;}
     }
   }
 
-@media only screen and (max-width: 950px) {
-  #parte3 .container {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte4 .container {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte5 .container {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte6 .container {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte7 .container {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte3 .right  {
-    width: 100%;
-    display: inline-block;
-   }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte4 .right  {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-   #parte5 .right  {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte6 .right  {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte7 .right  {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte3 .left {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte4 .left {
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  #parte5 .left {
-    width: 100%;
-    display: inline-block;
-     }
-  }
-
- @media only screen and (max-width: 950px) {
-  #parte6 .left {
-    width: 100%;
-    display: inline-block;
-     }
-  }
-
- @media only screen and (max-width: 950px) {
-    #parte7 .left {
-    width: 100%;
-    display: inline-block;
-      }
-  }
 
  @media only screen and (max-width:950px) {
   .container .right {
@@ -190,8 +86,9 @@ color: #333;}
 }
 
 
-
-
+.grafico{
+  display: inline-block;
+}
 
 
 #parte2{
@@ -260,6 +157,7 @@ color: #333;}
   grid-template-columns: auto auto auto;
 }
 
+
 .container-b {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -292,60 +190,6 @@ color: #333;}
  border-radius: 90px;
 }
 
-.left{
-  background-color:  #7e7e7e;
-  border-radius: 10px;
-  width: 100%;
-  margin-right: 10px;
-}
-
-.right{
-  background-color: #7e7e7e;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  border-radius: 10px;
-  min-width: auto;
-  margin-left: 20px;
-}
-
-#Despesa {
-  background-color: #7e7e7e;
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-  min-width: auto;
-  justify-content: center;
-}
-
-#parte3 .valordespesa{
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-right: 100px;
-}
-
-#parte3 p{
-  background-color: #ffffff;
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 90px;
-  margin: 10px;
-}
-
-#parte3 .valornumero{
-  width: 100%;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
 #parte4{
   padding: 10px;
   margin: 2px;
@@ -358,197 +202,6 @@ color: #333;}
   margin-right: auto;
 }
       
-#parte4 h2{
- background-color: #ffffff;
- width: 100%;
- margin: 30px;
- text-align: center;
- padding-left: 2px;
- font-size: 40px;
- border-radius: 90px;
-}
-      
-#parte4 .valordespesa{
- width: 200px;
- text-align: left;
- padding-left: 2px;
- font-size: 22px;
- border-radius: 10px;
- margin: 10px;
- margin-right: 100px;
-}
-
-#parte4 p{
-  background-color: #ffffff;
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 90px;
-  margin: 10px;
-}
-
-#parte4 .valornumero{
-  width: 100%;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-#parte5{
-  padding: 10px;
-  margin: 2px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #7e7e7e;
-  width: 90%;
-  margin-left: auto ;
-  margin-right: auto;
-}
-        
-#parte5 h2{
-  background-color: #ffffff;
-  width: 100%;
-  margin: 30px;
-  text-align: center;
-  padding-left: 2px;
-  font-size: 40px;
-  border-radius: 90px;
-}
-        
-#parte5 .valordespesa{
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-right: 100px;
-}
-
-#parte5 p{
-  background-color: #ffffff;
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 90px;
-  margin: 10px;
-}
-
-#parte5 .valornumero{
-  width: 100%;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-#parte6{
-  padding: 10px;
-  margin: 2px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #7e7e7e;
-  width: 90%;
-  margin-left: auto ;
-  margin-right: auto;
-}
-        
-#parte6 h2{
-  background-color: #ffffff;
-  width: 100%;
-  margin: 30px;
-  text-align: center;
-  padding-left: 2px;
-  font-size: 40px;
-  border-radius: 90px;
-}
-        
-#parte6 .valordespesa{
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-right: 100px;
-}
-
-#parte6 p{
-  background-color: #ffffff;
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 90px;
-  margin: 10px;
-}
-
-#parte6 .valornumero{
-  width: 100%;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-#parte7{
-  padding: 10px;
-  margin: 2px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #7e7e7e;
-  width: 90%;
-  margin-left: auto ;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-        
-#parte7 h2{
-  background-color: #ffffff;
-  width: 100%;
-  margin: 30px;
-  text-align: center;
-  padding-left: 2px;
-  font-size: 40px;
-  border-radius: 90px;
-}
-        
-#parte7 .valordespesa{
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-right: 100px;
-}
-
-#parte7 p{
-  background-color: #ffffff;
-  width: 200px;
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 90px;
-  margin: 10px;
-}
-
-#parte7 .valornumero{
-  width: 100%;
-  text-align: left;
-  padding-left: 2px;
-  font-size: 22px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-
-
 label {
   color: #333;
   font-size: 16px;
@@ -570,7 +223,9 @@ input[type="number"]::placeholder {
 
 
 
-
+.container0 {
+  display: inline-block;
+}
 
 
 input[type="date"] {
@@ -599,7 +254,6 @@ button[type=submit]{
 button[type=submit]:hover {
   background-color: purple;
 
-
 }
 
 /*botão dos valores de lista de gastos*/
@@ -614,10 +268,6 @@ button[type=submit]:hover {
 
 .save-button:hover {
   background-color: purple; 
-}
-
-
-.modal-delete{
 }
 
 .modal-body{

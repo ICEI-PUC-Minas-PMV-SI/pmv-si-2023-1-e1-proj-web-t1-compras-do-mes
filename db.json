@@ -36,7 +36,11 @@
   ],
   "metas": [
     {
+<<<<<<< HEAD
       "metas": "Blabla\n\n\n\n\n",
+=======
+      "metas": "Insira aqui sua meta\n\n\n\n\n\n",
+>>>>>>> 9e2f245b47ad93f72f48f98cec9b49a796ca9c3e
       "id": 1
     }
   ]

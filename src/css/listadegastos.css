@@ -318,3 +318,7 @@ input[type="number"] {
 color: #d32f2f;
 
 }
+
+#produto-modal input{
+  background-color: white;
+}

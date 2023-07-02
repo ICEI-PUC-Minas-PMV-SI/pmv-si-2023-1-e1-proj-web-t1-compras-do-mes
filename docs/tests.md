@@ -171,38 +171,14 @@ Como meta futura, pretendemos manter o bom funcionamento dos tópicos aqui lista
 
 # Testes de Usabilidade
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
-
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
-
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
-
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
-
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
-
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-
 ## Cenários de Teste de Usabilidade
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
 | 1             | Você é uma pessoa consumista que deseja definir um orçamento mensal e receber um alerta de excedente de gastos. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 2             | Você é uma pessoa iniciante em finanças que busca controlar seus gastos|
+| 3             | Você é uma pessoa endividada que busca controlar seus gastos mensais|
+
 
 
 
@@ -212,10 +188,11 @@ Cenário 1: Você é uma pessoa consumista que deseja definir um orçamento mens
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 178.90 segundos                |
+| 1       | SIM             | 4                    | 178.90 segundos                 |
+| 2       | SIM             | 4                    | 178.90 segundos                  |
 
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos | 
 
 
     Comentários dos usuários: O site é bem intuitivo e funciona bem, o cadastro das listas é feito de maneira simples e fácil. Acredito que a imagem na tela de gastos seja grande e desnecessária e que o campo de minhas metas poderia ser retirado, focando apenas nas listas de gastos
@@ -228,14 +205,24 @@ Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 3                    | 240.08 segundos                 |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
+
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensais.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 342.9 segundos                 |
+
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, porém acredito que as imagens estão poluindo um pouco a tela e alguns tópicos poderiam ser mais simples, como a parter de cadastro de lista, retirando a questão de "código" e "descrição". Poderia também exister um alerta de Caps Lock para o usuário não se confundir ao fazer o login.
+
+    Comentários dos usuários: O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock.
 
 
 

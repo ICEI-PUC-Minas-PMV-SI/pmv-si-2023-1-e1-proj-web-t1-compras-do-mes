@@ -37,3 +37,10 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 | Senha          | Texto             | Cadastrar Senha do usuário                | 1234                                           |
 | Status da conta do Uusário  | Texto  | Efetivação do Cadastro | Cadastro realizado! Realize seu login!                          |
 
+## Realização do Login
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| Id Usuário     | Numero (Inteiro)  | Preencher Tela de Login                   | 2                                             |
+| Nome           | Texto             | Informar Usuário                          | Cowboy Top                                     |
+| Senha          | Texto             | Informar Senha do usuário                 | 1234                                           |
+| Acesso a Plataforma  | Texto       | Realização do Acesso                      | Seja bem vindo(a)!                    |

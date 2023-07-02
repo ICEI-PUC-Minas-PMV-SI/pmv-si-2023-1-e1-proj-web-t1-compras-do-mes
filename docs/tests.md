@@ -162,9 +162,11 @@
 ## Avaliação dos Testes de Software
 
 Os testes de softaware provaram o bom funcionamento dos requisitos funcionais e não funcionais do site. Todos os tópicos que foram listados na etapa de planejamento alcançaram excelentes resultados. Como pontos fortes podemos citar:
+
 • Boa fluídez das páginas.
 • Design intuitívo e simples.
 • Tempo de resposta das solicitações.
+
 Como meta futura, pretendemos manter o bom funcionamento dos tópicos aqui listados e implementar novas funcionalidades.
 
 # Testes de Usabilidade

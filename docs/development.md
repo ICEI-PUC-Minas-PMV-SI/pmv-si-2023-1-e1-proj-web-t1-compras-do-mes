@@ -17,6 +17,16 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 |RF-005| Personalização da lista de despesas por necessidade do usuário   | MÉDIA | |
 |RF-006| Emitir um gráfico com os gastos por tipos de despesas | BAIXA |  |
 
+### Requisitos não Funcionais
+
+|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
+|------|------------------------|------------|-----------------|
+|RNF-001| Adaptável a qualquer interface - Browser, Smartphone ou Tablet | ALTA | |
+|RNF-002| A página deverá ter disponibilidade em 99% do tempo |  ALTA | |
+|RNF-003| Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade | ALTA | |
+|RNF-004| Tempo de resposta de até a 3s para solicitação ao usuário |  MÉDIA | |
+|RNF-005| Permitir a visualização em modo escuro | MÉDIA |  |
+
 ## Descrição das estruturas:
 
 ## Notícia

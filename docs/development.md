@@ -50,3 +50,13 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
 | Id Usuário     | Numero (Inteiro)  | Identificador Único do Usuário            | 3                                              |
 | Tipo de entrada | Numero (Inteiro) | Usuário realiza a entrada de dados da receita do Mês                          | 5000       |
+
+## Registro do Gasto no Mês
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| Id Usuário     | Numero (Inteiro)  | Identificador único do usuári                | 4                                           |
+| Tipo de entrada  | Texto           | Categoria do Gasto a ser informado (Habitação, Alimentação, Lazer, Saúde, Transporte e Diversos)   | Lazer           |
+| Produto        | Texto             | Nome da despesa dado pelo usuário            | Cinema                                      |
+| Valor          | Numero (Inteiro)  | Valor da despesa adicionada                  | 15                                          |
+| Quantidade     | Numero (Inteiro)  | Quantidade das despesas adicionadas          | 2                                           |
+

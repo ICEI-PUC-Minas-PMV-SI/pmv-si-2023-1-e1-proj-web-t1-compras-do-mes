@@ -10,7 +10,7 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| Permitir que o usuário cadastre uma lista de gastos mensais | ALTA |  |
+|RF-001| Permitir que o usuário cadastre uma lista de gastos mensais | ALTA |  | Para atender ao requisito RF-001 foi desenvolvido a página lista-de-gastos.html 
 |RF-002| Permitir que o usuário cadastre seus gastos por categorias (Lazer, Alimentação, etc.)   | ALTA | |
 |RF-003| Emitir um alerta de excedente de gasto   | ALTA | |
 |RF-004| Permitir que o usuário defina uma meta de orçamento mensal | ALTA |  |

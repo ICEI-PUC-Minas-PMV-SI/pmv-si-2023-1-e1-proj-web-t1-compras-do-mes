@@ -1,17 +1,10 @@
 {
   "produtos": [
     {
-      "id": "4",
-      "categoria": "Saúde",
-      "nome": "Remédio",
-      "vlr": "52",
-      "qtd": "2"
-    },
-    {
       "id": "15",
       "categoria": "Transporte",
-      "nome": "teste ",
-      "vlr": "151",
+      "nome": "gasolina",
+      "vlr": "300",
       "qtd": "1"
     },
     {
@@ -20,17 +13,24 @@
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
+    },
+    {
+      "id": "2",
+      "categoria": "Alimentação",
+      "nome": "cartão alimentação",
+      "vlr": "400",
+      "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2023-08-01",
+      "data": "2023-07-02",
       "id": 1
     }
   ],
   "orcamentos": [
     {
-      "orcamento": "5000",
+      "orcamento": "1800",
       "id": 1
     }
   ]

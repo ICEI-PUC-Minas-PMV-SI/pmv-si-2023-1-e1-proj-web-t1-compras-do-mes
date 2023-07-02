@@ -275,7 +275,46 @@ background-color:#7e7e7e ;
 
 }
 
- 
- 
-   
 
+
+
+#definir-orcamento {
+  width: 90%;
+  padding: 15px;
+  display: flex;
+  margin:auto;
+  borde:none;
+  justify-content:center ;
+  border-radius: 5px;  
+  max-height: auto;
+  border-radius: 10px;
+}
+
+
+
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: #7e7e7e;
+  border:none;
+
+}
+
+.save-button {
+  background-color:greenyellow;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color:purple;
+}
+
+#valor-excedido{
+color: #d32f2f;
+
+}

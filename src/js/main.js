@@ -354,4 +354,23 @@ window.onload = function vlrExcedido() {
       console.error('Erro na requisição dos produtos:', error);
     });
 }
+//Campo de texto dinâmico
+function salvarMetas() {
+  var textarea = document.getElementById('exampleFormControlTextarea1');
+  var metas = textarea.value;
 
+  // Verifique se o campo de metas não está vazio antes de salvar
+  if (metas.trim() !== '') {
+    var metasSalvas = document.getElementById('metasSalvas');
+
+    // Crie um novo elemento de parágrafo para exibir as metas
+    var paragrafo = document.createElement('p');
+    paragrafo.textContent = metas;
+
+    // Adicione o novo elemento de parágrafo às metas salvas
+    metasSalvas.appendChild(paragrafo);
+
+    // Limpe o conteúdo do campo de metas após salvar
+    textarea.value = '';
+  }
+}

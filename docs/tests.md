@@ -261,6 +261,6 @@ Tomando como base os resultados obtidos, foi possível verificar que a aplicaç�
 
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc. Porém isso prova que necessitamos intervir e analisar os feedbacks para melhorarmos a usablidade e tempo dos usuários.
 
-Os comentários nos mostraram, no geral, que os usuários aprovaram a aplicação, porém gostariam que ela fosse mais simples e direta. Como meta, buscaremos analisar o tamanho das imagens, o design do site e alguns pontos do cadastro de listas.
+Os comentários nos mostraram, no geral, que os usuários aprovaram a aplicação, porém gostariam que ela fosse mais simples e direta. Como meta, buscaremos analisar o tamanho das imagens, o design do site e alguns pontos do cadastro de listas. Algo que se mostrou relevante nos testes é que, quanto maior a familiaridade das pessoas com tecnologia, maior era a capacidade de utilizar e analisar as funcionalidades do site. Porém como nossa proposta busca facilitar o uso para todos os públicos, devemos focar em melhorar nossa aplicação web para que todos possam desfrutar das funcionalidade disponíveis.
 
 

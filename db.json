@@ -1,13 +1,6 @@
 {
   "produtos": [
     {
-      "id": "3",
-      "categoria": "Lazer",
-      "nome": "Cinema",
-      "vlr": "20",
-      "qtd": "5"
-    },
-    {
       "id": "4",
       "categoria": "Saúde",
       "nome": "Remédio",
@@ -22,24 +15,22 @@
       "qtd": "1"
     },
     {
-<<<<<<< Updated upstream
       "id": "5",
       "categoria": "Diversos",
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
-=======
-      "id": "16",
-      "categoria": "Diversos",
-      "nome": "roupa",
-      "vlr": "25.00",
-      "qtd": "1"
->>>>>>> Stashed changes
     }
   ],
   "dates": [
     {
       "data": "2023-08-01",
+      "id": 1
+    }
+  ],
+  "orcamentos": [
+    {
+      "orcamento": "6000",
       "id": 1
     }
   ]

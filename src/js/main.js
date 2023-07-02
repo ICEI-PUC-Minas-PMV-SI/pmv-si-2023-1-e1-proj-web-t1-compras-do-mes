@@ -95,9 +95,10 @@ window.onload = function vlrTotal(totalVLR){
       const valor = parseFloat(produto.vlr);
       const quantidade = parseInt(produto.qtd);
       valorTotal += valor * quantidade;
+      
     });
 
-  totalVLR = `R$${valorTotal}`;
+  totalVLR = `${valorTotal}`;
 
   document.getElementById('valor-total').innerHTML = totalVLR;
   });
@@ -274,3 +275,71 @@ $(document).ready(function() {
       });
     });
 });
+
+// Definir orçamento
+
+function gravarJSON() {
+  const inputOrcamento = document.getElementById('orcamento-definido');
+  const novoOrcamento = inputOrcamento.value;
+
+  const dadosAtualizados = {
+    orcamento: novoOrcamento
+  };
+
+  fetch('http://localhost:3000/orcamentos/1', {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosAtualizados)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Orçamento atualizado:', data);
+    const elementoOrcamento = document.getElementById('orcamento-valor');
+    elementoOrcamento.textContent = data.orcamento;
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error);
+  });
+
+  inputOrcamento.value = '';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('http://localhost:3000/orcamentos/1')
+    .then(response => response.json())
+    .then(data => {
+      const elementoOrcamento = document.getElementById('orcamento-valor');
+      elementoOrcamento.textContent = data.orcamento;
+    })
+    .catch(error => {
+      console.error('Erro na requisição:', error);
+    });
+});
+
+//Valor Excedido
+/*
+window.onload = function vlrExcedido(){
+  fetch(URL)
+  .then(response => response.json())
+  .then(data => {
+    let vlrTotal = 0;
+
+    data.forEach(produto => {
+      const valor = parseFloat(produto.vlr);
+      const quantidade = parseInt(produto.qtd);
+      vlrTotal += valor * quantidade;
+
+    let valorOrcamento = 0;
+
+    data2.forEach(orcamentos => {
+      const vlrOrcamento = parseFloat(orcamentos.orcamento);
+      valorOrcamento += vlrOrcamento
+
+      const valorExcedido = valorOrcamento - vlrTotal;
+
+      document.getElementById('valor-excedido').innerHTML = valorExcedido;
+    }
+    
+    )})})}*/

@@ -57,14 +57,14 @@
       <h1>Lista de Gastos</h1>
     </div>
     <div class="form-group">
-      <label for="orcamento-mes">Orçamento do Mês:</label>
-      <input type="number" id="orcamento-mes" placeholder="R$">
-      <label for="valor-gasto">Valor Total Gasto:</label>
-      <input type="number" id="valor-gasto" placeholder="R$">
+      <label for="orcamento-mes">Orçamento do Mês(R$):</label>
+      <label id="orcamento-valor"></label>       
+      <label for="valor-gasto">Valor Total Gasto(R$):</label>
+      <label id="valor-total"></label>
       <label for="valor-excedido">Valor Total Excedido:</label>
-      <input type="number" id="valor-excedido" placeholder="R$">
+      <label id="valor-excedido"></label>
       <button class="save-button" onclick="gravarJSON()">Salvar</button>
-      <div id="valor-total"></div>
+  
     </div>
     <div id="dataa">
       <form id="form-data">
@@ -74,7 +74,11 @@
       </form>
     </div>
   </div>
-  
+  <div id="definir-orcamento">
+    <label for="defina-orcamento">Defina o seu Orçamento:</label>
+    <input type="number" id="orcamento-definido" placeholder="R$">
+    <button class="save-button" onclick="gravarJSON()">Salvar</button>
+  </div>
   <div class="imagemfundo"> 
     <img src="imgs/lista-de-gastos.svg.svg" height="500px">
   </div>
@@ -83,7 +87,7 @@
     <div class="container0">
       <div class="grafico">
         <div class="container-a">
-          <div id="piechart" style="width: 770px; height: 470px;"></div>
+          <div id="piechart" style="width: 500px; height: 470px;"></div>
           <div class="container-c">
             <div class="formulario">
               <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>

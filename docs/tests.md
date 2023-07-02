@@ -139,7 +139,7 @@
 |Requisito Associado | RF-003 - Emitir um alerta de excedente de gasto.|
 |Link do vídeo do teste realizado: |  https://encurtador.com.br/oCGL6 |
 
-|*Caso de Teste* |*TC-10 - Emitir um alerta de excedente de gasto *|
+|*Caso de Teste* |*TC-10 - Permitir que o usuário defina uma meta de orçamento mensal *|
 |---|---| 
 |Requisito Associado | RF-004 - Permitir que o usuário defina uma meta de orçamento mensal.|
 |Link do vídeo do teste realizado: |https://encurtador.com.br/ryPRT | 

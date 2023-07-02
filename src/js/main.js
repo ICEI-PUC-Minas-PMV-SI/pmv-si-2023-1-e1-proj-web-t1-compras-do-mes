@@ -340,8 +340,8 @@ window.onload = function vlrExcedido() {
           const valorExcedido = vlrOrcamento - vlrTotal;
 if (vlrOrcamento >= 0){
           document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);}
-
-          else{document.getElementById('valor-excedido').textContent = '0';}
+          else{document.getElementById('valor-excedido').textContent = 0}
+          
         })
         .catch(error => {
           console.error('Erro na requisição do orçamento:', error);

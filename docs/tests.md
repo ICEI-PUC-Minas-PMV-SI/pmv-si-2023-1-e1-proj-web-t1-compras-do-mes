@@ -24,14 +24,14 @@
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT04 Tempo de resposta de até a 3s para solicitação ao usuário**
+**Caso de Teste** | **CT04 -Tempo de resposta de até a 3s para solicitação ao usuário**
  :--------------: | ------------
 **Procedimento**  | 1) O site deve apresentar uma média de resposta de 3s.
 **Requisitos associados** | RNF-004
 **Resultado esperado** | O site responder em até 3 segundos.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT05 Permitir a visualização em modo escuro**
+**Caso de Teste** | **CT05 -Permitir a visualização em modo escuro**
  :--------------: | ------------
 **Procedimento**  | 1) O site deve permitir o modo escuro após o acionamento do botão "modo escuro".
 **Requisitos associados** | RNF-005
@@ -86,7 +86,7 @@
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
 **Resultado obtido** | Sucesso.
  
- 
+
 ## Registro dos Testes de Software
 
 |*Caso de Teste* |*TC-01 - Responsividade *|
@@ -201,7 +201,7 @@ Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus 
 | **Média**| 100%           | 3,6                  | 239.88 segundos                 |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 105.2 segundos|
 
- Comentários dos usuários: 
+    Comentários dos usuários: 
     
     • O site funciona bem e cumpre com sua proposta, porém as imagens estão grandes e poluem a tela. As listas de gastos poderiam ser mais objetivas. Na parte de cadastro do usuário poderia haver um aviso de "Caps Locks" ativa.
 
@@ -218,7 +218,7 @@ Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensa
 | 2       | SIM             | 5                    | 265.7 segundos                  |
 | 3       | SIM             | 4                    | 376.8 segundos                  |
 | 4       | SIM             | 4                    | 397.15 segundos                 |
-| **Média**| 100%           | 4,25                 | 345.63 segundos                           |
+| **Média**| 100%           | 4,25                 | 345.63 segundos                 |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 90,21 segundos |
 
     Comentários dos usuários: 

@@ -85,7 +85,7 @@ fetch(URL)
 
 //Valor Total Lista
 
-window.onload = function vlrTotal(totalVLR){
+
   fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
@@ -100,6 +100,8 @@ window.onload = function vlrTotal(totalVLR){
 
   totalVLR = `${valorTotal}`;
 
+
+  
   document.getElementById('valor-total').innerHTML = totalVLR;
   });
 
@@ -110,7 +112,6 @@ window.onload = function vlrTotal(totalVLR){
     tagA.innerHTML = `${nomeUsuario}`; 
     
 
-}
 
 
 // Valor total Categoroias
@@ -319,27 +320,32 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 //Valor Excedido
-/*
-window.onload = function vlrExcedido(){
-  fetch(URL)
-  .then(response => response.json())
-  .then(data => {
-    let vlrTotal = 0;
 
-    data.forEach(produto => {
-      const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      vlrTotal += valor * quantidade;
+window.onload = function vlrExcedido() {
+  fetch('http://localhost:3000/produtos')
+    .then(response => response.json())
+    .then(data => {
+      let vlrTotal = 0;
 
-    let valorOrcamento = 0;
+      data.forEach(produto => {
+        const valor = parseFloat(produto.vlr);
+        const quantidade = parseInt(produto.qtd);
+        vlrTotal += valor * quantidade;
+      });
 
-    data2.forEach(orcamentos => {
-      const vlrOrcamento = parseFloat(orcamentos.orcamento);
-      valorOrcamento += vlrOrcamento
+      fetch('http://localhost:3000/orcamentos/1')
+        .then(response => response.json())
+        .then(data => {
+          const vlrOrcamento = parseInt(data.orcamento);
+          const valorExcedido = vlrOrcamento - vlrTotal;
 
-      const valorExcedido = valorOrcamento - vlrTotal;
-
-      document.getElementById('valor-excedido').innerHTML = valorExcedido;
-    }
-    
-    )})})}*/
+          document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
+        })
+        .catch(error => {
+          console.error('Erro na requisição do orçamento:', error);
+        });
+    })
+    .catch(error => {
+      console.error('Erro na requisição dos produtos:', error);
+    });
+}

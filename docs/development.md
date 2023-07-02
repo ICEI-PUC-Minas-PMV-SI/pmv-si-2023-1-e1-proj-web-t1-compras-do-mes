@@ -44,3 +44,9 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 | Nome           | Texto             | Informar Usuário                          | Cowboy Top                                     |
 | Senha          | Texto             | Informar Senha do usuário                 | 1234                                           |
 | Acesso a Plataforma  | Texto       | Realização do Acesso                      | Seja bem vindo(a)!                    |
+
+## Registro do Orçamento do Mês
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| Id Usuário     | Numero (Inteiro)  | Identificador Único do Usuário            | 3                                              |
+| Tipo de entrada | Numero (Inteiro) | Usuário realiza a entrada de dados da receita do Mês                          | 5000       |

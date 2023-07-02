@@ -343,7 +343,7 @@ window.onload = function vlrExcedido() {
             document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
             alert('Cuidado! Você gastou mais do que havia planejado!');
           } else {
-            document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
+            document.getElementById('valor-excedido').textContent = 0;
           }
         })
         .catch(error => {

@@ -191,10 +191,8 @@ Cenário 1: Você é uma pessoa consumista que deseja definir um orçamento mens
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 4                    | 178.90 segundos                 |
 | 2       | SIM             | 4                    | 390.57 segundos                 |
-
-|  |  |  |  |
 | **Média**|100%            | 4                    | 284,73 segundos                 |
-| **Tempo para conclusão pelo especialista** | SIM | 4| 100,5 segundos |
+| **Tempo para conclusão pelo especialista**| SIM | 4| 100,5 segundos |
 
     Comentários dos usuários: 
     

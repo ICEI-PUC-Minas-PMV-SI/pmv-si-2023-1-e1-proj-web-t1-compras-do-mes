@@ -22,9 +22,9 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
 |RNF-001| Adaptável a qualquer interface - Browser, Smartphone ou Tablet | ALTA | "Media screen" em teladelogin.css|
-|RNF-002| A página deverá ter disponibilidade em 99% do tempo |  ALTA | |
+|RNF-002| A página deverá ter disponibilidade em 99% do tempo |  ALTA | - |
 |RNF-003| Utilização de Senha para bloqueio – Sistema de Segurança/Privacidade | ALTA |tela-de-login.html |
-|RNF-004| Tempo de resposta de até a 3s para solicitação ao usuário |  MÉDIA | |
+|RNF-004| Tempo de resposta de até 3s para solicitação ao usuário |  MÉDIA | - |
 |RNF-005| Permitir a visualização em modo escuro | MÉDIA | Criamos uma function em javascript com elemento "dark-mode" em todas telas html  |
 
 ## Descrição das estruturas:

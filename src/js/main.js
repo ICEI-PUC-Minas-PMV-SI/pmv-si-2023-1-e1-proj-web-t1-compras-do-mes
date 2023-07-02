@@ -343,11 +343,5 @@ if (vlrOrcamento >= 0){
           else{document.getElementById('valor-excedido').textContent = 0}
           
         })
-        .catch(error => {
-          console.error('Erro na requisição do orçamento:', error);
-        });
-    })
-    .catch(error => {
-      console.error('Erro na requisição dos produtos:', error);
-    });
+      })
 }

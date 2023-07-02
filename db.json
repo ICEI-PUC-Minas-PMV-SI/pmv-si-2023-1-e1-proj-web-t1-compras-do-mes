@@ -1,25 +1,25 @@
 {
   "produtos": [
     {
-      "id": "4",
-      "categoria": "Saúde",
-      "nome": "Remédio",
-      "vlr": "52",
+      "id": "1",
+      "categoria": "Alimentação",
+      "nome": "Arroz",
+      "vlr": "10",
       "qtd": "2"
     },
     {
-      "id": "15",
-      "categoria": "Transporte",
-      "nome": "teste ",
-      "vlr": "151",
+      "id": "2",
+      "categoria": "Habitação",
+      "nome": "Conta Água",
+      "vlr": "50",
       "qtd": "1"
     },
     {
-      "id": "5",
-      "categoria": "Diversos",
-      "nome": "Roupas",
-      "vlr": "50",
-      "qtd": "3"
+      "id": "3",
+      "categoria": "Lazer",
+      "nome": "Cinema",
+      "vlr": "25",
+      "qtd": "2"
     }
   ],
   "dates": [
@@ -30,7 +30,7 @@
   ],
   "orcamentos": [
     {
-      "orcamento": "5000",
+      "orcamento": "200",
       "id": 1
     }
   ]

@@ -54,15 +54,7 @@
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT08 -Permitir que o usuário cadastre uma categoria de gasto na lista**
- :--------------: | ------------
-**Procedimento**  | 1) O usuário deverá criar uma lista de gastos. 2) O usuário deve escolher uma categoria de gasto para aquela lista.
-**Requisitos associados** | RF-002
-**Resultado esperado** | O usuário conseguir escolher uma categoria.
-**Dados de entrada** | Inserção de dados válidos no formulário da lista.
-**Resultado obtido** | Sucesso.
-
-**Caso de Teste** | **CT09 -Emitir um alerta de excedente de gasto**
+**Caso de Teste** | **CT08 -Emitir um alerta de excedente de gasto**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá estipular um limite de orçamento. 2) O usuário deverá gastar mais do que o estipulado no limite de orçamento..
 **Requisitos associados** | RF-003
@@ -70,7 +62,7 @@
 **Dados de entrada** | Inserção de dados válidos no limite de orçamento.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT10 -Permitir que o usuário defina uma meta de orçamento mensal**
+**Caso de Teste** | **CT09 -Permitir que o usuário defina uma meta de orçamento mensal**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá estipular um limite de orçamento. 
 **Requisitos associados** | RF-004
@@ -78,7 +70,7 @@
 **Dados de entrada** | Inserção de dados válidos no limite de orçamento.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT11 -Personalização da lista de despesas por necessidade do usuário**
+**Caso de Teste** | **CT10 -Personalização da lista de despesas por necessidade do usuário**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá criar uma lista. 2) O usuário deverá editar uma lista conforme sua necessidade. 
 **Requisitos associados** | RF-005
@@ -86,17 +78,15 @@
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT12 -Emitir um gráfico com os gastos por tipos de despesas**
+**Caso de Teste** | **CT11 -Emitir um gráfico com os gastos por tipos de despesas**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário deverá criar uma lista. 2) O usuário deverá escolher o tipo de despesa de cada item. 3) Verificar o gráfico
 **Requisitos associados** | RF-006
 **Resultado esperado** |Permitir a vizualização de um gráfico por tipo de gasto.
 **Dados de entrada** | Inserção de dados válidos no formulário da lista.
 **Resultado obtido** | Sucesso.
-
-
-
-
+ 
+ 
 ## Registro dos Testes de Software
 
 |*Caso de Teste* |*TC-01 - Responsividade *|
@@ -129,27 +119,27 @@
 |Requisito Associado | RF-001 - Criar uma lista.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/bABNU | 
 
-|*Caso de Teste* |*TC-08 - Permitir a escolha de uma categoria na lista de gastos *|
+|*Caso de Teste* |*TC-07 - Permitir a escolha de uma categoria na lista de gastos *|
 |---|---| 
 |Requisito Associado | RF-002 - Cadastrar uma categotia.|
 |Link do vídeo do teste realizado: | https://encurtador.com.br/swOZ4 | 
 
-|*Caso de Teste* |*TC-09 - Emitir um alerta de excedente de gasto *|
+|*Caso de Teste* |*TC-08 - Emitir um alerta de excedente de gasto *|
 |---|---| 
 |Requisito Associado | RF-003 - Emitir um alerta de excedente de gasto.|
 |Link do vídeo do teste realizado: |  https://encurtador.com.br/oCGL6 |
 
-|*Caso de Teste* |*TC-10 - Permitir que o usuário defina uma meta de orçamento mensal *|
+|*Caso de Teste* |*TC-09 - Permitir que o usuário defina uma meta de orçamento mensal *|
 |---|---| 
 |Requisito Associado | RF-004 - Permitir que o usuário defina uma meta de orçamento mensal.|
 |Link do vídeo do teste realizado: |https://encurtador.com.br/ryPRT | 
 
-|*Caso de Teste* |*TC-11 - Personalização da lista de despesas por necessidade do usuário *|
+|*Caso de Teste* |*TC-10 - Personalização da lista de despesas por necessidade do usuário *|
 |---|---| 
 |Requisito Associado | RF-005 - Permitir que o usuário personalize uma lista.|
 |Link do vídeo do teste realizado: |https://encurtador.com.br/aiAF9 | 
 
-|*Caso de Teste* |*TC-12 - Emitir um gráfico com os gastos por tipos de despesas *|
+|*Caso de Teste* |*TC-11 - Emitir um gráfico com os gastos por tipos de despesas *|
 |---|---| 
 |Requisito Associado | RF-006 - Emitir um gráfico de gastos.|
 |Link do vídeo do teste realizado: |https://encurtador.com.br/ceoK8 | 

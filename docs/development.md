@@ -10,12 +10,12 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| Permitir que o usuário cadastre uma lista de gastos mensais | ALTA |  | lista-de-gastos.html 
-|RF-002| Permitir que o usuário cadastre seus gastos por categorias (Lazer, Alimentação, etc.)   | ALTA | |
-|RF-003| Emitir um alerta de excedente de gasto   | ALTA | |
-|RF-004| Permitir que o usuário defina uma meta de orçamento mensal | ALTA |  |
-|RF-005| Personalização da lista de despesas por necessidade do usuário   | MÉDIA | |
-|RF-006| Emitir um gráfico com os gastos por tipos de despesas | BAIXA |  |
+|RF-001| Permitir que o usuário cadastre uma lista de gastos mensais | ALTA |  lista-de-gastos.html |  
+|RF-002| Permitir que o usuário cadastre seus gastos por categorias (Lazer, Alimentação, etc.)   | ALTA | lista-de-gastos.html | 
+|RF-003| Emitir um alerta de excedente de gasto   | ALTA |lista-de-gastos.html  | 
+|RF-004| Permitir que o usuário defina uma meta de orçamento mensal | ALTA |lista-de-gastos.html   |
+|RF-005| Personalização da lista de despesas por necessidade do usuário   | MÉDIA |lista-de-gastos.html  |
+|RF-006| Emitir um gráfico com os gastos por tipos de despesas | BAIXA |lista-de-gastos.html   |
 
 ### Requisitos não Funcionais
 
@@ -44,3 +44,9 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 | Nome           | Texto             | Informar Usuário                          | Cowboy Top                                     |
 | Senha          | Texto             | Informar Senha do usuário                 | 1234                                           |
 | Acesso a Plataforma  | Texto       | Realização do Acesso                      | Seja bem vindo(a)!                    |
+
+## Registro do Orçamento do Mês
+|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| Id Usuário     | Numero (Inteiro)  | Identificador Único do Usuário            | 3                                              |
+| Tipo de entrada | Numero (Inteiro) | Usuário realiza a entrada de dados da receita do Mês                          | 5000       |

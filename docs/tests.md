@@ -178,6 +178,7 @@ Como meta futura, pretendemos manter o bom funcionamento dos tópicos aqui lista
 | 1             | Você é uma pessoa consumista que deseja definir um orçamento mensal e receber um alerta de excedente de gastos. |
 | 2             | Você é uma pessoa iniciante em finanças que busca controlar seus gastos|
 | 3             | Você é uma pessoa endividada que busca controlar seus gastos mensais|
+| 4             | Você é uma dona de casa que precisa registrar suas compras por categoria|
 
 
 
@@ -189,16 +190,18 @@ Cenário 1: Você é uma pessoa consumista que deseja definir um orçamento mens
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 4                    | 178.90 segundos                 |
-| 2       | SIM             | 4                    | 178.90 segundos                  |
+| 2       | SIM             | 4                    | 390.57 segundos                 |
 
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos | 
+|  |  |  |  |
+| **Média**|100%            | 4                    | 284,73 segundos                 |
+| **Tempo para conclusão pelo especialista** | SIM | 4| 100,5 segundos |
 
+    Comentários dos usuários: 
+    
+   • O site é bem intuitivo e funciona bem, o cadastro das listas é feito de maneira simples e fácil. Acredito que a imagem na tela de gastos seja grande e desnecessária e que o campo de minhas metas poderia ser retirado, focando apenas nas listas de gastos
 
-    Comentários dos usuários: O site é bem intuitivo e funciona bem, o cadastro das listas é feito de maneira simples e fácil. Acredito que a imagem na tela de gastos seja grande e desnecessária e que o campo de minhas metas poderia ser retirado, focando apenas nas listas de gastos
-
-
-
+   • O site é bem auto explicativo, porém as imagens estão grandes e atrapalham, o cadastro de lista poderia ser mais simplificado. Gostaria que tivesse a categoria "Beleza".
+ 
 
 Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus gastos.
 
@@ -210,6 +213,11 @@ Cenário 2: Você é uma pessoa iniciante em finanças que busca controlar seus 
 | **Média**     | 0%           | 0                | 0 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
 
+ Comentários dos usuários: 
+    
+    • O site funciona bem e cumpre com sua proposta, porém as imagens estão grandes e poluem a tela. As listas de gastos poderiam ser mais objetivas. Na parte de cadastro do usuário poderia haver um aviso de "Caps Locks" ativa.
+
+
 Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensais.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
@@ -220,10 +228,24 @@ Cenário 3: Você é uma pessoa endividada que busca controlar seus gastos mensa
 | **Média**     | 0%           | 0                | 0 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
 
+    Comentários dos usuários: 
+    
+    • O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock seria bom.
 
 
-    Comentários dos usuários: O layout do site está bom e bem adaptado. Poderia melhorar o design. Poderia melhorar o cadastro de produtos na lista. Gostaria que tivesse a opção de redefinir senha. Aviso de Caps Lock.
+Cenário 4: Você é uma pessoa endividada que busca controlar seus gastos mensais.
 
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 450.62                          |
+
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+
+    Comentários dos usuários: 
+    
+    • O sistema de cadastro de listas está muito bom e de facil entendimento. Gostaria de ter uma opção de recuperar a senha. As imagens poderiam ser um pouco menores. Site está muito bonito.
 
 
 

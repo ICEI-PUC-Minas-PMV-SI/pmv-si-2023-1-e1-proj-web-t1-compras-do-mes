@@ -29,11 +29,11 @@ A seguir, apresentamos as tabelas que demosntram os requisitos funcionais e não
 
 ## Descrição das estruturas:
 
-## Notícia
+## Registro do Usuário
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
 |:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+| Id Usuário     | Numero (Inteiro)  | Cadastro de Usuário                       | 1                                              |
+| Nome           | Texto             | Cadastrar Usuário                         | Cowboy Top                                     |
+| Senha          | Texto             | Cadastrar Senha do usuário                | 1234                                           |
+| Status da conta do Uusário  | Texto  | Efetivação do Cadastro | Cadastro realizado! Realize seu login!                          |
 

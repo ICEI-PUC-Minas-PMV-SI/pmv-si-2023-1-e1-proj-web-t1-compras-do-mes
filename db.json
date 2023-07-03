@@ -20,6 +20,13 @@
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
+    },
+    {
+      "id": "1",
+      "categoria": "Alimentação",
+      "nome": "coca",
+      "vlr": "8.00",
+      "qtd": "2"
     }
   ],
   "dates": [

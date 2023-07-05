@@ -10,7 +10,7 @@ function cadastrar(){
     let jt = JSON.stringify(novousuario); 
     localStorage.setItem(novousuario.nome, jt);
     alert("Cadastro realizado! Realize seu login!");
-    location.href = "/src/index.html";}
+    location.href = "index.html";}
     
     //caso as informações nos campos de "senha" e "confirme senha" não estejam iguais, o código acima não será rodado e a mensagem abaixo aparecerá
 

@@ -1,29 +1,25 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
+title: E-Li$t
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - family-names: Lorrayne Dos Santos Soares 
+    given-names: Vitoria
+  - family-names: Freitas Alves
+    given-names: Keren Hapuque 
+  - family-names: Freitas de Oliveira
+    given-names: Gabriel
+  - family-names: Hugo Miranda da Silva
+    given-names: Vitor 
+  - family-names: Alencar Diniz Martins
+    given-names: Helberth 
+  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: de Paula
+    given-names: Hugo Bastos
 keywords:
-  -
-  -
-repository-code:
+  - E-Li$t
+  - Lista de Compras Mensais
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-30

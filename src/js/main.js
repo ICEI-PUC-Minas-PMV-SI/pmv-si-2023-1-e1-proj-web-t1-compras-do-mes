@@ -35,6 +35,7 @@ function drawChart(categories) {
             title: 'Gastos mensais',
             pieStartAngle: 100,
             backgroundColor: { fill:'transparent' }
+            
         };
     
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));

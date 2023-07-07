@@ -44,14 +44,14 @@
         </div>
       </nav>     
     </header>
-    <nav aria-label="breadcrumb">
+  </div>
+  <div id="telafora">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Lista de Gastos</li>
     </ol>
-  </nav>
-  </div>
-  
+
+  <div id="telatotal">
   <div id=parte2>
     <div class="conteúdo">        
       <h1>Lista de Gastos</h1>
@@ -67,7 +67,7 @@
     </div>
     <div id="dataa">
       <form id="form-data">
-        <label for="data">Data:</label>
+        <label for="  ">Data:</label>
         <input type="date" id="data" name="data">
         <button type="submit">Salvar</button>
       </form>
@@ -79,32 +79,29 @@
     <button class="save-button" onclick="gravarJSON()">Salvar</button>
   </div>
   <div class="imagemfundo"> 
-    <img src="imgs/lista-de-gastos.svg.svg" height="500px">
+    <img src="imgs/lista-de-gastos.svg.svg">
+    <div class="formulario">
+      <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+    </div>
   </div>
 
   <div class="intermediaria">
     <div class="container0">
       <div class="grafico">
-        <div class="container-a">
-          <div id="piechart" style="width: 500px; height: 470px;"></div>
-            <div class="formulario">
-              <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
-              
-          </div>
-        </div>
+          <div id="piechart" style="width: 600px; height: 470px;" ></div>
       </div>
     </div>
   </div>
+<div class="placelista">
+  <h2 id="botaoadicionar">          
+    <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
+    data-toggle="modal" data-target="#produto-modal">
+    <i class="fa fa-plus"></i> Adicionar Novo Item
+</a>
+</h2>
+  <div class="container">    
 
-  <div class="container">
-    <h2>          
-        <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
-            data-toggle="modal" data-target="#produto-modal">
-            <i class="fa fa-plus"></i> Adicionar
-        </a>
-    </h2>
-    <hr />
     <div class="row">
         <div class="col-12">
             <table class="table">
@@ -124,7 +121,7 @@
         </div>
     </div>
   </div>
-
+</div>
   <!-- Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados -->
   <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -194,7 +191,8 @@
           </div>
       </div>
   </div>  
-
+</div>
+</div>
   <footer>            
     <a href="index.html">
       Home

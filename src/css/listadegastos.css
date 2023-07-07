@@ -4,20 +4,27 @@
 }
 
 
- .dark-mode, .breadcrumb-item.active {
-color: white;
-}
+.dark-mode #telafora{
+  background-color: rgb(59, 59, 59);
+} 
 
+.dark-mode #telatotal{
+  background-color: rgb(32, 32, 32);
+  border: 4px solid #333333;
+}
 
 .dark-mode .table{
 color: #ffffff;
 
 }
 
-#parte1 > nav{
-color: #333;}
+@media only screen and (min-width: 950px) {
+#telatotal{
 
-
+  margin-left: 20%;
+  margin-right: 20%;
+}
+}
 
 @media only screen and (max-width: 950px) {
   #parte2 .form-group {
@@ -27,34 +34,6 @@ color: #333;}
     }
   }
 
-@media only screen and (max-width: 950px) {
- .grafico .container-a{
-   width: 100%;
-   display: inline-block;
-    }
-  }
-  
-@media only screen and (max-width: 950px) {
-  .grafico .container-b{
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-@media only screen and (max-width: 950px) {
-  .grafico .container-c{
-    width: 100%;
-    display: inline-block;
-    }
-  }
-
-
- @media only screen and (max-width:950px) {
-  .container .right {
-    width: 100%;
-    display: inline-block;
-    }
-  }
 
 @media only screen and (max-width: 950px) {
   #despesa {
@@ -68,7 +47,7 @@ color: #333;}
   color: black;
   background-color: #ffffff;
   margin-bottom: 10px;
-  border-radius: 90px;  
+  border-radius: 20px;  
 }
 
 
@@ -86,15 +65,11 @@ color: #333;}
 }
 
 
-.grafico{
-  display: inline-block;
-}
 
 
 #parte2{
   
-  
-  width: 90%;
+  width: 100%;
   padding: 15px;
   border-radius: 5px;  
   max-height: auto;
@@ -116,90 +91,51 @@ color: #333;}
   
 }
 
-.imagemfundo{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.imagemfundo {
+  white-space: nowrap;
 }
 
-.imagemfundo img{
-  width: 80%;
-  height: 80%;
-  opacity: 0.8;
+.imagemfundo img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50%;
+  margin-right: 10px;
+  margin-left: 50px;
 }
 
+.imagemfundo .formulario {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin-left: 100px;
+  min-width: 50px;
+}
 
+/* Estilos adicionais para tornar o exemplo visualmente agradável */
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario .form-control {
+  width: 100%;
+  resize: vertical;
+}
+
+@media (max-width: 767px) {
+  .imagemfundo img,
+  .imagemfundo .formulario {
+    display: block;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left:0;
+  }
+}
 
 .container{
-  display: flex;
+  display: inline-block;
   justify-content: center;
   width: 100%;
-}
-
-.container .left {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
-  margin-right: 10px;
-  justify-self: start;
-}
-
-.container .right {
-  display: flex;
-  justify-content: center;
-  width: 1500px;
-  justify-self: end;
-}
-
-.container-a {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-
-.container-b {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.container-c {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-#parte3{
- padding: 10px;
- margin: 2px;
- border-radius: 10px;
- display: flex;
- justify-content: center;
- background-color:#7e7e7e;
- width: 90%;
- margin-left: auto ;
- margin-right: auto;
-}
-
-#parte3 h2{
- background-color: #ffffff;
- width: 100%;
- margin: 30px;
- text-align: center;
- padding-left: 2px;
- font-size: 40px;
- border-radius: 90px;
-}
-
-#parte4{
-  padding: 10px;
-  margin: 2px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #7e7e7e;
-  width: 90%;
-  margin-left: auto ;
-  margin-right: auto;
 }
       
 label {
@@ -208,25 +144,39 @@ label {
   font-weight: bold;
   font-family: Arial, sans-serif;
   padding: 5px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 20px;
+  min-width: 50px;
 }
+
+#orcamento-valor {
+  background-color: rgb(218, 218, 218);
+}
+
+#valor-total {
+  background-color: rgb(218, 218, 218);
+  }
+
+  #valor-excedido  {
+  background-color: rgb(218, 218, 218);
+  }
+  
 
 input[type="number"]::placeholder {
-  color: #999999;
+  color: #d3d3d3;
   font-style: italic;
   padding: 4%;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
-
-
-.container0 {
-  display: inline-block;
+#data {
+  background-color: rgb(218, 218, 218);
+  color: #000000;
+  padding: 5px;
+  border-radius: 20px
 }
-
 
 input[type="date"] {
   color: black; 
@@ -275,9 +225,6 @@ background-color:#7e7e7e ;
 
 }
 
-
-
-
 #definir-orcamento {
   width: 90%;
   padding: 15px;
@@ -321,4 +268,63 @@ color: #d32f2f;
 
 #produto-modal input{
   background-color: white;
+}
+
+svg{
+  border-radius: 40px;
+  background: rgba(0, 128, 0, 0)
+}
+
+.intermediaria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.grafico {
+  text-align: center;
+}
+
+  @media (max-width: 767px) {
+    .grafico {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+.table{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+
+#botaoadicionar{
+width: 100%;
+}
+
+.btn.btn-success.btn-sm{
+width: 100%;
+  }
+
+.placelista{
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#telafora{
+  background-color: rgb(67, 59, 87);
+  background-image: sr;
+}
+
+#telatotal{
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 4px solid #e6e6e6;
+  backdrop-filter: blur(6px);
 }

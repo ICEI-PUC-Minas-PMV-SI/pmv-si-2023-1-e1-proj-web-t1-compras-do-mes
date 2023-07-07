@@ -61,8 +61,6 @@ header nav .logo {
 
 
 header {
-  border-end-end-radius: 10px;
-  border-end-start-radius: 10px;
   color: white;
   font-size: 25px;
   background-color: rgb(43, 43, 43);
@@ -123,8 +121,7 @@ footer {
   background-color: rgb(43, 43, 43);
   color: rgb(255, 255, 255);
   padding: 10px;
-  border-start-start-radius: 10px;
-  border-start-end-radius: 10px;
+
   margin-top:auto ;
 }
 

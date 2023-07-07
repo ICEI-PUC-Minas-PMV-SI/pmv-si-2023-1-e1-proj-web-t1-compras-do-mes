@@ -28,11 +28,13 @@ function drawChart(categories) {
             ...categories    
         ]);
     
+        
         var options = {
             legend: '0',
             pieSliceText: '0',
             title: 'Gastos mensais',
             pieStartAngle: 100,
+            backgroundColor: { fill:'transparent' }
         };
     
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -390,3 +392,10 @@ window.addEventListener('DOMContentLoaded', () => {
       console.error('Erro na requisição:', error);
     });
 });
+
+//Dark Mode
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

@@ -20,24 +20,17 @@
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
-    },
-    {
-      "id": "4",
-      "categoria": "Alimentação",
-      "nome": "coca",
-      "vlr": "8.00",
-      "qtd": "2"
     }
   ],
   "dates": [
     {
-      "data": "2023-07-02",
+      "data": "2023-07-06",
       "id": 1
     }
   ],
   "orcamentos": [
     {
-      "orcamento": "1800",
+      "orcamento": "200",
       "id": 1
     }
   ],

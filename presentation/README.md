@@ -26,4 +26,6 @@
 
 ## Vídeo de demonstração
 
-<video src="Apresenta%C3%A7%C3%A3o%20E-Li$t%20-%20V%C3%ADdeo1.mp4" controls title="Title"></video>
+![E-list]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg) // Thumbnail
+(https://www.youtube.com/watch?v=dBd54XfHj3Q "Elist")

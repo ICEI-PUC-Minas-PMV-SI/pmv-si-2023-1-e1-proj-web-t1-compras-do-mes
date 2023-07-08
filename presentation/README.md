@@ -26,6 +26,4 @@
 
 ## Vídeo de demonstração
 
-![E-list]          // Title
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg) // Thumbnail
-(https://www.youtube.com/watch?v=dBd54XfHj3Q "Elist")
+[![Watch the video](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/Telas-slide/1.png)](https://www.youtube.com/watch?v=dBd54XfHj3Q)

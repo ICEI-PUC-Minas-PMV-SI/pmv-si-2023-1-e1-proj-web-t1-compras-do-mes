@@ -26,4 +26,4 @@
 
 ## Vídeo de demonstração
 
-[![Watch the video](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/blob/main/docs/Telas-slide/1.png)](https://www.youtube.com/watch?v=dBd54XfHj3Q)
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/assets/127058328/4491cb8a-89ca-4f38-adbc-70501cd321f2

@@ -20,17 +20,31 @@
       "nome": "Roupas",
       "vlr": "50",
       "qtd": "3"
+    },
+    {
+      "id": "4",
+      "categoria": "Saúde",
+      "nome": "consulta medica",
+      "vlr": "50.00",
+      "qtd": "1"
+    },
+    {
+      "id": "5",
+      "categoria": "Alimentação",
+      "nome": "supermercados bh",
+      "vlr": "65.00",
+      "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2023-07-06",
+      "data": "2023-07-08",
       "id": 1
     }
   ],
   "orcamentos": [
     {
-      "orcamento": "500",
+      "orcamento": "1800.00",
       "id": 1
     }
   ],

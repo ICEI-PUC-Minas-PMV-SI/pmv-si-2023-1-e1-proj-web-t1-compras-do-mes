@@ -23,16 +23,16 @@
     },
     {
       "id": "4",
-      "categoria": "Saúde",
-      "nome": "consulta medica",
-      "vlr": "50.00",
+      "categoria": "Alimentação",
+      "nome": "Super nosso",
+      "vlr": "96.00",
       "qtd": "1"
     },
     {
       "id": "5",
-      "categoria": "Alimentação",
-      "nome": "supermercados bh",
-      "vlr": "65.00",
+      "categoria": "Habitação",
+      "nome": "aluguel",
+      "vlr": "900",
       "qtd": "1"
     }
   ],
@@ -44,13 +44,13 @@
   ],
   "orcamentos": [
     {
-      "orcamento": "1800.00",
+      "orcamento": "1000",
       "id": 1
     }
   ],
   "metas": [
     {
-      "metas": "Insira aqui sua meta\n\n",
+      "metas": "Insira aqui sua meta\npara de gastar\n\n",
       "id": 1
     }
   ]

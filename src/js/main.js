@@ -1,5 +1,5 @@
 // URL DA API DE DADOS
-URL = 'https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/'
+URL = 'https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app'
 
 function getCategoriesToChart(products) {
     const categorias = {};

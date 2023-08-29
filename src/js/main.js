@@ -89,7 +89,7 @@ fetch(URL)
 //Valor Total Lista
 
 
-  fetch(URL)
+  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/produtos')
   .then(response => response.json())
   .then(data => {
     let valorTotal = 0;
@@ -119,7 +119,7 @@ fetch(URL)
 
 // Valor total Categoroias
 
-fetch(URL)
+fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/produtos')
   .then(response => response.json())
   .then(data => {
     const categorias = {};

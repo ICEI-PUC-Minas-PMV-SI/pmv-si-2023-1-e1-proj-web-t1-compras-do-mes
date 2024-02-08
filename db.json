@@ -1,13 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "categoria": "Saúde",
-      "nome": "Remédio",
-      "vlr": "52",
-      "qtd": "2"
-    },
-    {
       "id": "2",
       "categoria": "Transporte",
       "nome": "Gasolina ",
@@ -27,31 +20,24 @@
       "nome": "Super nosso",
       "vlr": "96.00",
       "qtd": "1"
-    },
-    {
-      "id": "5",
-      "categoria": "Habitação",
-      "nome": "aluguel",
-      "vlr": "900",
-      "qtd": "1"
     }
   ],
   "dates": [
     {
       "data": "2023-07-08",
-      "id": 1
+      "id": "1"
     }
   ],
   "orcamentos": [
     {
-      "orcamento": "1000",
-      "id": 1
+      "orcamento": "200",
+      "id": "1"
     }
   ],
   "metas": [
     {
       "metas": "Insira aqui sua meta\npara de gastar\n\n",
-      "id": 1
+      "id": "1"
     }
   ]
 }

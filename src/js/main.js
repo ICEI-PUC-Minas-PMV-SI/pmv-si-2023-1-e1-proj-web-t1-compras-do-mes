@@ -1,5 +1,5 @@
 // URL DA API DE DADOS
-URL = 'https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app'
+URL = 'http://localhost:3000/produtos'
 
 function getCategoriesToChart(products) {
     const categorias = {};
@@ -89,7 +89,7 @@ fetch(URL)
 //Valor Total Lista
 
 
-  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/produtos')
+  fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
     let valorTotal = 0;
@@ -119,7 +119,7 @@ fetch(URL)
 
 // Valor total Categoroias
 
-fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/produtos')
+fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
     const categorias = {};
@@ -238,7 +238,7 @@ produtoForm.addEventListener('submit', (e) => {
 /* salvar data*/
 $(document).ready(function() {
     $.ajax({
-        url: 'https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/dates/1',
+        url: 'http://localhost:3000/dates/1',
         type: 'GET',
         success: function(response) {
           $('#data').val(response.data)
@@ -257,7 +257,7 @@ $(document).ready(function() {
       };
       
       $.ajax({
-        url: 'https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/dates/1',
+        url: 'http://localhost:3000/dates/1',
         type: 'PUT',
         data: jsonData,
         success: function(response) {
@@ -282,7 +282,7 @@ function gravarJSON() {
     orcamento: novoOrcamento
   };
 
-  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/orcamentos/1', {
+  fetch('http://localhost:3000/orcamentos/1', {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
@@ -303,7 +303,7 @@ function gravarJSON() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/orcamentos/1')
+  fetch('http://localhost:3000/orcamentos/1')
     .then(response => response.json())
     .then(data => {
       const elementoOrcamento = document.getElementById('orcamento-valor');
@@ -317,7 +317,7 @@ window.addEventListener('DOMContentLoaded', () => {
 //Valor Excedido
 
 window.onload = function vlrExcedido() {
-  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/produtos')
+  fetch('http://localhost:3000/produtos')
     .then(response => response.json())
     .then(data => {
       let vlrTotal = 0;
@@ -328,7 +328,7 @@ window.onload = function vlrExcedido() {
         vlrTotal += valor * quantidade;
       });
 
-      fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/orcamentos/1')
+      fetch('http://localhost:3000/orcamentos/1')
         .then(response => response.json())
         .then(data => {
           const vlrOrcamento = parseInt(data.orcamento);
@@ -361,7 +361,7 @@ function salvarMetas(event) {
       metas: novoTexto
     };
 
-    fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/metas/1', {
+    fetch('http://localhost:3000/metas/1', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -383,7 +383,7 @@ document.getElementById('exampleFormControlTextarea1').addEventListener('keyup',
 
 // Função para exibir as metas ao carregar a página
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes-json-server.vercel.app/metas/1')
+  fetch('http://localhost:3000/metas/1')
     .then(response => response.json())
     .then(data => {
       const textarea = document.getElementById('exampleFormControlTextarea1');

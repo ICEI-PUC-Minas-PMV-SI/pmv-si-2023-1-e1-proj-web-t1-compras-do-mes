@@ -236,41 +236,59 @@ produtoForm.addEventListener('submit', (e) => {
 //=================================================================================================
 
 /* salvar data*/
-$(document).ready(function() {
-    $.ajax({
-        url: 'http://localhost:3000/dates/1',
-        type: 'GET',
-        success: function(response) {
-          $('#data').val(response.data)
-        },
-        error: function(error) {         
-          console.log(error);
+document.addEventListener('DOMContentLoaded', function () {
+  // Função para buscar a data do servidor
+  function getData() {
+    fetch('http://localhost:3000/dates/1')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao buscar a data do servidor');
         }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('data').value = data.data;
+      })
+      .catch(error => {
+        console.error('Erro:', error);
       });
+  }
 
-    $('#form-data').submit(function(event) {
-      event.preventDefault();
-      
-      var inputData = $('#data').val();
-      var jsonData = {
-        data: inputData
-      };
-      
-      $.ajax({
-        url: 'http://localhost:3000/dates/1',
-        type: 'PUT',
-        data: jsonData,
-        success: function(response) {
-          console.log(response);
-          alert('Data salva com sucesso!');
-        },
-        error: function(error) {         
-          console.log(error);
-          alert('Erro ao salvar a data!');
+  // Função para salvar a data no servidor
+  function saveData(data) {
+    fetch('http://localhost:3000/dates/1', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ data: data }),
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao salvar a data no servidor');
         }
+        return response.json();
+      })
+      .then(() => {
+        alert('Data salva com sucesso!');
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+        alert('Erro ao salvar a data!');
       });
-    });
+  }
+
+  // Buscar a data quando a página carregar
+  getData();
+
+  // Adicionar evento de envio do formulário
+  document.getElementById('form-data').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var inputData = document.getElementById('data').value;
+    saveData(inputData);
+  });
 });
+
 
 // Definir orçamento
 

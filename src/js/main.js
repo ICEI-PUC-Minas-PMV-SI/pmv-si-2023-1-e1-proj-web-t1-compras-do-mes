@@ -585,8 +585,8 @@ function sumArray(parameter) {
 
 // Modal Calculadora
 
-var modal = document.getElementById("modal");
-var btn = document.getElementById("abrirModal");
+var modal = document.getElementById("modalCalc");
+var btn = document.getElementById("abrirModalCalc");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {

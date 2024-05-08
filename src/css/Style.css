@@ -225,3 +225,13 @@ a, a:visited, a:hover, a:active {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+#logout {
+  background-color: #f44336; 
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 50px;
+}

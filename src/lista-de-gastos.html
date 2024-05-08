@@ -75,13 +75,8 @@
       </form>
     </div>
   </div>
-  <div id="definir-orcamento">
-    <label for="defina-orcamento">Defina o seu Orçamento:</label>
-    <input type="number" id="orcamento-definido" placeholder="R$">
-    <button class="save-button" onclick="gravarJSON()">Salvar</button>
-  </div>
 
-    <button id="abrirModalCalc">Abrir Calculadora</button>
+
 
     <div id="modalCalc" class="modalCalc">
       <div class="modal-content-calc">
@@ -171,7 +166,7 @@
                           <th width="15%">Valor (Un.)</th>
                           <th width="15%">Quantidade</th>
                           <th width="15%">Valor Total</th>
-                          <th width="20%"></th>
+                          <th width="20%"> <button id="abrirModalCalc"> <img src="imgs/calculadora.png"> </button> </th>
                       </tr>
                   </thead>
                   <tbody id='produto-list'>

@@ -60,6 +60,16 @@ header nav .logo {
 }
 
 
+header nav .plus {
+  font-family: playball;
+  font-style: italic;
+  font-size: 20px;
+  color: rgb(189, 255, 83);
+  height: 15px;
+}
+
+
+
 header {
   color: white;
   font-size: 25px;

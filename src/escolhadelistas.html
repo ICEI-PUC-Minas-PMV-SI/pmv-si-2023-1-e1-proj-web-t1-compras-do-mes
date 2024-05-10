@@ -23,10 +23,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="navbuttons" aria-current="page" href="index.html">Home</a>
+                  <a class="navbuttons" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item login">
+                <li class="nav-item-dica">
+                  <a class="navbuttons" aria-current="page" href="#">Dicas</a>
+                </li>
+                <li class="nav-item-login">
                   <div  id="nome" onload="usuarioLogado()"></div>
+                  <a href="alterarcadastrousuario.html">✏️</a>
                 </li>
               </ul>
               <div>
@@ -49,13 +53,14 @@
       </div>
     
       <div class="img">
-        <button><img class="ganho" src="imgs/ganho.svg" height="400px"></button>
-        <button><img class="reducao" src="imgs/reducao.svg" height="400px"></button>
+        <button onclick="window.location.href='#'"><img class="ganho" src="imgs/ganho.svg" height="400px">INSERIR LINK</button>
+
+        <button onclick="window.location.href='lista-de-gastos.html'"><img class="reducao" src="imgs/reducao.svg" height="400px"></button>
       </div>
     </div>
 
     <footer>            
-      <a href="index.html">
+      <a href="#">
         Home
       </a>
       <a href="quem-somos.html">
@@ -76,6 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="js/paginalogada.js"></script>
     <script src="js/dolar.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
   </html>

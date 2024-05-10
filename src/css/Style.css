@@ -7,14 +7,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+  .navbar-expand-lg {
+max-height: 75.99px;
+  }
+
+@media screen and (min-width: 1366px) {
   button .navbar-toggler {display:block;}
   header .icon {
     float: right;
     display: block;}
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 1366px) {
     header.responsive {position: relative;}
     header.responsive  {
       position: absolute;
@@ -53,22 +57,13 @@ body {
 }
 
 header nav .logo {
+  min-width: 160.1px;
   font-family: monoton;
   font-size: 40px;
   color: rgb(189, 255, 83);
   margin-left: 10px;
+
 }
-
-
-header nav .plus {
-  font-family: playball;
-  font-style: italic;
-  font-size: 20px;
-  color: rgb(189, 255, 83);
-  height: 15px;
-}
-
-
 
 header {
   color: white;
@@ -93,6 +88,10 @@ nav #navbarSupportedContent li {
 nav #navbarSupportedContent li :hover{
   color: blueviolet;
   transition: all 0.3s;
+}
+
+nav #nome {
+  display: inline;
 }
 
 

@@ -8,7 +8,7 @@ function buscaUsuario(nome, senha){
         if (senha === pessoa.senha) {
             alert("Seja bem vindo(a)!");
             localStorage.setItem("usuario_logado",pessoa.nome)
-            location.href = "lista-de-gastos.html";
+            location.href = "escolhadelistas.html";
         }
         else{
           alert("Seus dados estão incorretos, tente novamente");

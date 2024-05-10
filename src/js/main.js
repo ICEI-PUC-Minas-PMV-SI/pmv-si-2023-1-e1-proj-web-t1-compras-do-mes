@@ -22,27 +22,38 @@ function getCategoriesToChart(products) {
 }
 
 function drawChart(categories) {
-    function callback() {
-        var data = google.visualization.arrayToDataTable([
-            ['gasto mensal', 'Speakers (in millions)'],
-            ...categories    
-        ]);
-    
-        
-        var options = {
-            legend: '0',
-            pieSliceText: '0',
-            title: 'Gastos mensais',
-            pieStartAngle: 100,
-            backgroundColor: { fill:'transparent' }
-            
-        };
-    
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
-    }
+  function callback() {
+      // Verifica se o dark mode está ativo
+      const darkMode = document.body.classList.contains('dark-mode');
 
-    return callback;
+      // Define as cores baseadas no modo
+      const textColor = darkMode ? 'white' : 'black';
+      const titleColor = darkMode ? 'white' : 'black';
+
+      var data = google.visualization.arrayToDataTable([
+          ['Categoria', 'Gastos'],
+          ...categories    
+      ]);
+      
+      var options = {
+          legend: { textStyle: { color: textColor } },
+          pieSliceText: 'label',
+          title: 'Gastos Mensais',
+          titleTextStyle: { color: titleColor },
+          pieStartAngle: 100,
+          backgroundColor: { fill: 'transparent' },
+          slices: { 
+              0: { color: '#3366cc' }, 
+              1: { color: '#dc3912' }, // Configure as cores conforme necessário
+              // Adicione mais cores de fatias se tiver muitas categorias
+          }
+      };
+  
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+  }
+
+  return callback;
 }
 
 //=================================================================================================
@@ -414,6 +425,8 @@ window.addEventListener('DOMContentLoaded', () => {
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
 
 // Calculadora

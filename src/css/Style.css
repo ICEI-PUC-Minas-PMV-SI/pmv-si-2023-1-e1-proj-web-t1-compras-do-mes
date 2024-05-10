@@ -40,15 +40,18 @@ header nav .logo {
 
 }
 
+.pdolar {
+  margin: 0;
+}
+
 header {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgb(43, 43, 43);
 }
 
 nav .modoescuro, .navbuttons, .logo{
   display:inline-block;
-
 }
 
 nav .modoescuro{
@@ -129,7 +132,7 @@ a, a:visited, a:hover, a:active {
 /* Calculadora */
 
 .breadcrumb{
-  background-color: #ffffff0c;
+  background-color: #ffffff15;
   border-radius: 0px;
 }
 

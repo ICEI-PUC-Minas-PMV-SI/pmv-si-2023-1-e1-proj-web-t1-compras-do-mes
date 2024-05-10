@@ -5,7 +5,21 @@
       "categoria": "Habitação",
       "nome": "Conta de Agua",
       "vlr": "50",
-      "qtd": "1"
+      "qtd": "3"
+    },
+    {
+      "id": "2",
+      "categoria": "Transporte",
+      "nome": "Uber",
+      "vlr": "100",
+      "qtd": "2"
+    },
+    {
+      "id": "3",
+      "categoria": "Lazer",
+      "nome": "Cinema",
+      "vlr": "50",
+      "qtd": "2"
     }
   ],
   "dates": [

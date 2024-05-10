@@ -148,7 +148,24 @@ fetch('http://localhost:3000/produtos')
   });
 
 //=================================================================================================
-
+function updateDate() {
+  const currentDate = new Date().toISOString().slice(0, 10);
+  fetch('http://localhost:3000/dates/1', {
+      method: 'PUT',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ data: currentDate })
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Erro ao atualizar a data no servidor');
+      }
+  })
+  .catch(error => {
+      console.error('Erro:', error);
+  });
+}
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
 const produtoDelete = document.getElementById('btn-delete');
 
@@ -161,6 +178,8 @@ produtoDelete.addEventListener('click', (e) => {
     })
     .then(res => res.json())
     .then(() => location.reload());
+    updateDate();
+    
 
 })
 //=================================================================================================
@@ -219,7 +238,8 @@ produtoForm.addEventListener('submit', (e) => {
             body: produto
         })
         .then(res => res.json())
-        .then(() => location.reload());  
+        .then(() => location.reload());
+        updateDate();  
     }
     else{ 
         fetch(URL, {
@@ -230,7 +250,8 @@ produtoForm.addEventListener('submit', (e) => {
             body: produto
         })
         .then(res => res.json())
-        .then(() => location.reload());  
+        .then(() => location.reload());
+        updateDate();  
     }      
 })
 //=================================================================================================
@@ -240,46 +261,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // Função para buscar a data do servidor
   function getData() {
     fetch('http://localhost:3000/dates/1')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro ao buscar a data do servidor');
-        }
-        return response.json();
-      })
-      .then(data => {
-        document.getElementById('data').value = data.data;
-      })
-      .catch(error => {
-        console.error('Erro:', error);
-      });
-  }
-
-  // Função para salvar a data no servidor
-  function saveData(data) {
-    fetch('http://localhost:3000/dates/1', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ data: data }),
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro ao salvar a data no servidor');
-        }
-        return response.json();
-      })
-      .then(() => {
-        alert('Data salva com sucesso!');
-      })
-      .catch(error => {
-        console.error('Erro:', error);
-        alert('Erro ao salvar a data!');
-      });
-  }
-
-  // Buscar a data quando a página carregar
-  getData();
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao buscar a data do servidor');
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById('data').value = data.data;
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+}
 
   // Adicionar evento de envio do formulário
   document.getElementById('form-data').addEventListener('submit', function (event) {
@@ -287,6 +281,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var inputData = document.getElementById('data').value;
     saveData(inputData);
   });
+
+getData()
+
 });
 
 

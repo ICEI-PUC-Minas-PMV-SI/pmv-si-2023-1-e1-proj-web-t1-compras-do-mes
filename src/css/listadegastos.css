@@ -193,21 +193,6 @@ input[type="date"] {
  
 }
 
-
-/*botão dos valores de lista de gastos*/
-.save-button {
-  background-color: greenyellow; 
-  color: black; 
-  padding: 5px 8px;
-  border: none;
-  border-radius: 20px;
-  
-}
-
-.save-button:hover {
-  background-color: rgb(185, 41, 185); 
-}
-
 .modal-body{
 background-color:#7e7e7e ;
 

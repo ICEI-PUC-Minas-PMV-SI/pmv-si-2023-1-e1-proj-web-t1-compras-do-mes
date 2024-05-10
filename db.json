@@ -20,6 +20,13 @@
       "nome": "Cinema",
       "vlr": "50",
       "qtd": "2"
+    },
+    {
+      "id": "4",
+      "categoria": "Saúde",
+      "nome": "Remédio",
+      "vlr": "100",
+      "qtd": "1"
     }
   ],
   "dates": [

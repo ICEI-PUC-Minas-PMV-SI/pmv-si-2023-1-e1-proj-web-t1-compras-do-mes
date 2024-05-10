@@ -7,31 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-  .navbar-expand-lg {
-max-height: 75.99px;
-  }
-
-@media screen and (min-width: 1366px) {
-  button .navbar-toggler {display:block;}
-  header .icon {
-    float: right;
-    display: block;}
-  }
-  
-  @media screen and (min-width: 1366px) {
-    header.responsive {position: relative;}
-    header.responsive  {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    header.responsive {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
 .navbar-toggler img{
 
   width: 50px;
@@ -152,6 +127,19 @@ a, a:visited, a:hover, a:active {
 }
 
 /* Calculadora */
+
+.breadcrumb{
+  background-color: #ffffff0c;
+  border-radius: 0px;
+}
+
+.breadcrumb a{
+color: rgb(20, 20, 20);
+}
+
+.breadcrumb text{
+  color: rgb(233, 233, 233);
+  }
 
 .containerCalc {
   height: 40vh;

@@ -167,6 +167,7 @@ label {
   min-width: 50px;
   padding-left: 5px;
   padding-right: 5px;
+  text-align: center;
 }
 
 #valor-total-receita {
@@ -241,6 +242,14 @@ input[type="number"] {
   background-color: #7e7e7e;
   border:none;
 
+}
+
+.formulario button {
+  margin-top: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(206, 212, 218);
+  background-color: transparent;
 }
 
 .container button{

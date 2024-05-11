@@ -266,33 +266,31 @@ getData()
 });
 
 // Função para salvar o texto no JSON Server
-function salvarMetas(event) {
-  if (event.keyCode === 13) {
-    const textarea = document.getElementById('exampleFormControlTextarea1');
-    const novoTexto = textarea.value;
+function salvarMetas() {
+  const textarea = document.getElementById('exampleFormControlTextarea1');
+  const novoTexto = textarea.value;
 
-    const dadosAtualizados = {
-      metas: novoTexto
-    };
+  const dadosAtualizados = {
+    metas: novoTexto
+  };
 
-    fetch('http://localhost:3000/metas/1', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(dadosAtualizados)
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Metas atualizadas:', data);
-    })
-    .catch(error => {
-      console.error('Erro na requisição:', error);
-    });
-  }
+  fetch('http://localhost:3000/metas/1', {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosAtualizados)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Metas atualizadas:', data);
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error);
+  });
 }
 
-document.getElementById('exampleFormControlTextarea1').addEventListener('keyup', salvarMetas);
+document.getElementById('salvarmeta').addEventListener('click', salvarMetas);
 
 window.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:3000/metas/1')

@@ -143,41 +143,6 @@ Promise.all([fetchReceitas, fetchProdutos]).then(() => {
   calcularValorExcedido();
 });
 
-//Valor Excedido
-// window.onload = function vlrExcedido() {
-//   fetch('http://localhost:3000/produtos')
-//     .then(response => response.json())
-//     .then(data => {
-//       let vlrTotal = 0;
-
-//       data.forEach(produto => {
-//         const valor = parseFloat(produto.vlr);
-//         const quantidade = parseInt(produto.qtd);
-//         vlrTotal += valor * quantidade;
-//       });
-
-//       fetch('http://localhost:3000/orcamentos/1')
-//         .then(response => response.json())
-//         .then(data => {
-//           const vlrOrcamento = parseInt(data.orcamento);
-//           const valorExcedido = vlrOrcamento - vlrTotal;
-
-//           if (valorExcedido < 0) {
-//             document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
-//             alert('Cuidado! Você gastou mais do que havia planejado!');
-//           } else {
-//             document.getElementById('valor-excedido').textContent = 0;
-//           }
-//         })
-//         .catch(error => {
-//           console.error('Erro na requisição do orçamento:', error);
-//         });
-//     })
-//     .catch(error => {
-//       console.error('Erro na requisição dos produtos:', error);
-//     });
-// }
-
 // Valor total Categoroias
 fetch('http://localhost:3000/produtos')
   .then(response => response.json())
@@ -351,33 +316,31 @@ getData()
 
 
 // Função para salvar o texto no JSON Server
-function salvarMetas(event) {
-  if (event.keyCode === 13) {
-    const textarea = document.getElementById('exampleFormControlTextarea1');
-    const novoTexto = textarea.value;
+function salvarMetas() {
+  const textarea = document.getElementById('exampleFormControlTextarea1');
+  const novoTexto = textarea.value;
 
-    const dadosAtualizados = {
-      metas: novoTexto
-    };
+  const dadosAtualizados = {
+    metas: novoTexto
+  };
 
-    fetch('http://localhost:3000/metas/1', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(dadosAtualizados)
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Metas atualizadas:', data);
-    })
-    .catch(error => {
-      console.error('Erro na requisição:', error);
-    });
-  }
+  fetch('http://localhost:3000/metas/1', {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dadosAtualizados)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Metas atualizadas:', data);
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error);
+  });
 }
 
-document.getElementById('exampleFormControlTextarea1').addEventListener('keyup', salvarMetas);
+document.getElementById('salvarmeta').addEventListener('click', salvarMetas);
 
 window.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:3000/metas/1')
@@ -390,7 +353,6 @@ window.addEventListener('DOMContentLoaded', () => {
       console.error('Erro na requisição:', error);
     });
 });
-
 //Dark Mode
 function myFunction() {
   var element = document.body;

@@ -51,25 +51,21 @@
   "receitas": [
     {
       "id": "1",
-      "categoria": "Habitação",
       "nome": "Conta de Agua",
       "vlr": "50"
     },
     {
       "id": "2",
-      "categoria": "Transporte",
       "nome": "Uber",
       "vlr": "100"
     },
     {
       "id": "3",
-      "categoria": "Lazer",
       "nome": "Cinema",
       "vlr": "50"
     },
     {
       "id": "4",
-      "categoria": "Saúde",
       "nome": "Remédio",
       "vlr": "100"
     }

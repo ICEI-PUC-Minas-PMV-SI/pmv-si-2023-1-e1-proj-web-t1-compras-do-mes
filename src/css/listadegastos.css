@@ -169,16 +169,16 @@ label {
   padding-right: 5px;
 }
 
-#orcamento-valor {
-  background-color: rgb(255, 255, 255);
-}
+#valor-total-receita {
+  font-weight: lighter;
+  }
 
 #valor-total {
-  background-color: rgb(255, 255, 255);
+  font-weight: lighter;
   }
 
   #valor-excedido  {
-  background-color: rgb(255, 255, 255);
+    font-weight: lighter;
   }
   
 
@@ -196,6 +196,7 @@ input[type="number"]::placeholder {
   border-radius: 10px;
   height: 25px;
   border: 1px solid #ccc;
+  max-width: 115px;
 }
 
 input[type="date"] {

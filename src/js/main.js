@@ -91,26 +91,93 @@ fetch(URL)
         google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
     });
 
-//Valor Total Lista
-  fetch('http://localhost:3000/produtos')
+//Valor Total Receita
+let valorTotalReceita = 0;
+let valorTotalGasto = 0;
+
+// Função para formatar número como moeda
+function formatarMoeda(valor) {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(valor);
+}
+
+// Função para calcular o valor excedido
+function calcularValorExcedido() {
+  const valorExcedido = valorTotalReceita - valorTotalGasto;
+
+  if (valorExcedido < 0) {
+    document.getElementById('valor-excedido').textContent = formatarMoeda(valorExcedido);
+    alert('Cuidado! Você gastou mais do que havia planejado!');
+  } else {
+    document.getElementById('valor-excedido').textContent = formatarMoeda(0);
+  }
+}
+
+// Fetch das receitas
+const fetchReceitas = fetch('http://localhost:3000/receitas')
   .then(response => response.json())
   .then(data => {
-    let valorTotal = 0;
+    data.forEach(receita => {
+      const valor = parseFloat(receita.vlr);
+      valorTotalReceita += valor;
+    });
+    document.getElementById('valor-total-receita').innerHTML = formatarMoeda(valorTotalReceita);
+  });
+
+// Fetch dos produtos
+const fetchProdutos = fetch('http://localhost:3000/produtos')
+  .then(response => response.json())
+  .then(data => {
     data.forEach(produto => {
       const valor = parseFloat(produto.vlr);
       const quantidade = parseInt(produto.qtd);
-      valorTotal += valor * quantidade;
+      valorTotalGasto += valor * quantidade;
     });
-  totalVLR = `${valorTotal}`;
-
-  document.getElementById('valor-total').innerHTML = totalVLR;
+    document.getElementById('valor-total').innerHTML = formatarMoeda(valorTotalGasto);
   });
 
-// usuário logado
-    let nomeUsuario = localStorage.getItem('usuario_logado');
-    var tagA = document.getElementById("nome");
-    tagA.innerHTML = `${nomeUsuario}`; 
-    
+// Executar os cálculos após ambas as fetch serem completadas
+Promise.all([fetchReceitas, fetchProdutos]).then(() => {
+  calcularValorExcedido();
+});
+
+//Valor Excedido
+// window.onload = function vlrExcedido() {
+//   fetch('http://localhost:3000/produtos')
+//     .then(response => response.json())
+//     .then(data => {
+//       let vlrTotal = 0;
+
+//       data.forEach(produto => {
+//         const valor = parseFloat(produto.vlr);
+//         const quantidade = parseInt(produto.qtd);
+//         vlrTotal += valor * quantidade;
+//       });
+
+//       fetch('http://localhost:3000/orcamentos/1')
+//         .then(response => response.json())
+//         .then(data => {
+//           const vlrOrcamento = parseInt(data.orcamento);
+//           const valorExcedido = vlrOrcamento - vlrTotal;
+
+//           if (valorExcedido < 0) {
+//             document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
+//             alert('Cuidado! Você gastou mais do que havia planejado!');
+//           } else {
+//             document.getElementById('valor-excedido').textContent = 0;
+//           }
+//         })
+//         .catch(error => {
+//           console.error('Erro na requisição do orçamento:', error);
+//         });
+//     })
+//     .catch(error => {
+//       console.error('Erro na requisição dos produtos:', error);
+//     });
+// }
+
 // Valor total Categoroias
 fetch('http://localhost:3000/produtos')
   .then(response => response.json())
@@ -283,82 +350,6 @@ getData()
 });
 
 
-// Definir orçamento
-function gravarJSON() {
-  const inputOrcamento = document.getElementById('orcamento-definido');
-  const novoOrcamento = inputOrcamento.value;
-
-  const dadosAtualizados = {
-    orcamento: novoOrcamento
-  };
-
-  fetch('http://localhost:3000/orcamentos/1', {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(dadosAtualizados)
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Orçamento atualizado:', data);
-    const elementoOrcamento = document.getElementById('orcamento-valor');
-    elementoOrcamento.textContent = data.orcamento;
-  })
-  .catch(error => {
-    console.error('Erro na requisição:', error);
-  });
-
-  inputOrcamento.value = '';
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:3000/orcamentos/1')
-    .then(response => response.json())
-    .then(data => {
-      const elementoOrcamento = document.getElementById('orcamento-valor');
-      elementoOrcamento.textContent = data.orcamento;
-    })
-    .catch(error => {
-      console.error('Erro na requisição:', error);
-    });
-});
-
-//Valor Excedido
-window.onload = function vlrExcedido() {
-  fetch('http://localhost:3000/produtos')
-    .then(response => response.json())
-    .then(data => {
-      let vlrTotal = 0;
-
-      data.forEach(produto => {
-        const valor = parseFloat(produto.vlr);
-        const quantidade = parseInt(produto.qtd);
-        vlrTotal += valor * quantidade;
-      });
-
-      fetch('http://localhost:3000/orcamentos/1')
-        .then(response => response.json())
-        .then(data => {
-          const vlrOrcamento = parseInt(data.orcamento);
-          const valorExcedido = vlrOrcamento - vlrTotal;
-
-          if (valorExcedido < 0) {
-            document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
-            alert('Cuidado! Você gastou mais do que havia planejado!');
-          } else {
-            document.getElementById('valor-excedido').textContent = 0;
-          }
-        })
-        .catch(error => {
-          console.error('Erro na requisição do orçamento:', error);
-        });
-    })
-    .catch(error => {
-      console.error('Erro na requisição dos produtos:', error);
-    });
-}
-
 // Função para salvar o texto no JSON Server
 function salvarMetas(event) {
   if (event.keyCode === 13) {
@@ -407,3 +398,8 @@ function myFunction() {
   google.charts.load("current", {packages:["corechart"]});
   google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
+
+// usuário logado
+let nomeUsuario = localStorage.getItem('usuario_logado');
+var tagA = document.getElementById("nome");
+tagA.innerHTML = `${nomeUsuario}`; 

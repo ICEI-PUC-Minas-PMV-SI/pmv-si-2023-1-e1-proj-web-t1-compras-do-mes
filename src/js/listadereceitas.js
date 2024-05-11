@@ -83,32 +83,56 @@ fetch(URL)
         google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas)));
     });
 
-//Valor Total Lista
-  fetch(URL)
+//Valor Total Receita
+let valorTotalReceita = 0;
+let valorTotalGasto = 0;
+
+// Função para formatar número como moeda
+function formatarMoeda(valor) {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(valor);
+}
+
+// Função para calcular o valor Saldo
+function calcularValorReceita() {
+  const valorSaldo = valorTotalReceita - valorTotalGasto;
+
+  if (valorSaldo > 0) {
+    document.getElementById('valor-saldo').textContent = formatarMoeda(valorSaldo);
+  } else {
+    document.getElementById('valor-saldo').textContent = formatarMoeda(0);
+  }
+}
+
+// Fetch das receitas
+const fetchReceitas = fetch('http://localhost:3000/receitas')
   .then(response => response.json())
   .then(data => {
-    let valorTotal = 0;
-
     data.forEach(receita => {
       const valor = parseFloat(receita.vlr);
-      valorTotal += valor;
-      
+      valorTotalReceita += valor;
     });
-
-  totalVLR = `${valorTotal}`;
-
-
-  
-  document.getElementById('valor-total').innerHTML = totalVLR;
+    document.getElementById('valor-total-receita').innerHTML = formatarMoeda(valorTotalReceita);
   });
 
-// usuário logado
-    let nomeUsuario = localStorage.getItem('usuario_logado');
-    
-    var tagA = document.getElementById("nome");
-    tagA.innerHTML = `${nomeUsuario}`; 
-    
+// Fetch dos produtos
+const fetchProdutos = fetch('http://localhost:3000/produtos')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(produto => {
+      const valor = parseFloat(produto.vlr);
+      const quantidade = parseInt(produto.qtd);
+      valorTotalGasto += valor * quantidade;
+    });
+    document.getElementById('valor-total-gasto').innerHTML = formatarMoeda(valorTotalGasto);
+  });
 
+// Executar os cálculos após ambas as fetch serem completadas
+Promise.all([fetchReceitas, fetchProdutos]).then(() => {
+  calcularValorReceita();
+});
 
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
 const receitaDelete = document.getElementById('btn-delete');
@@ -241,41 +265,6 @@ document.addEventListener('DOMContentLoaded', function () {
 getData()
 });
 
-//Valor Excedido
-window.onload = function vlrExcedido() {
-  fetch(URL)
-    .then(response => response.json())
-    .then(data => {
-      let vlrTotal = 0;
-
-      data.forEach(receita => {
-        const valor = parseFloat(receita.vlr);
-        const quantidade = parseInt(receita.qtd);
-        vlrTotal += valor * quantidade;
-      });
-
-      fetch('http://localhost:3000/orcamentos/1')
-        .then(response => response.json())
-        .then(data => {
-          const vlrOrcamento = parseInt(data.orcamento);
-          const valorExcedido = vlrOrcamento - vlrTotal;
-
-          if (valorExcedido < 0) {
-            document.getElementById('valor-excedido').textContent = valorExcedido.toFixed(2);
-            alert('Cuidado! Você gastou mais do que havia planejado!');
-          } else {
-            document.getElementById('valor-excedido').textContent = 0;
-          }
-        })
-        .catch(error => {
-          console.error('Erro na requisição do orçamento:', error);
-        });
-    })
-    .catch(error => {
-      console.error('Erro na requisição dos produtos:', error);
-    });
-}
-
 // Função para salvar o texto no JSON Server
 function salvarMetas(event) {
   if (event.keyCode === 13) {
@@ -324,3 +313,9 @@ function myFunction() {
   google.charts.load("current", {packages:["corechart"]});
   google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
+
+// usuário logado
+let nomeUsuario = localStorage.getItem('usuario_logado');
+    
+var tagA = document.getElementById("nome");
+tagA.innerHTML = `${nomeUsuario}`; 

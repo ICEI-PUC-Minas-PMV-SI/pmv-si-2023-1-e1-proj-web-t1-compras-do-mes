@@ -1,0 +1,327 @@
+
+.dark-mode {
+  background-color: rgb(32, 32, 32);
+}
+
+.dark-mode #telafora{
+  background-color: rgb(59, 59, 59);
+} 
+
+.dark-mode #telatotal{
+  background-color: rgb(32, 32, 32);
+  border: 4px solid #333333;
+}
+
+.dark-mode .table{
+color: #ffffff;
+}
+
+.dark-mode #exampleFormControlTextarea1{
+  background-color: #57575700;
+  color: white;
+}
+
+@media only screen and (min-width: 950px) {
+#telatotal{
+
+  margin-left: 20%;
+  margin-right: 20%;
+}
+}
+
+@media only screen and (max-width: 950px) {
+  #parte2 .form-group {
+    width: 100%;
+    display: inline-block;
+  
+    }
+  }
+
+
+@media only screen and (max-width: 950px) {
+  #despesa {
+    width: 100%;
+    display: inline-block;
+    }
+  }
+
+
+.conteúdo{ /*lista de gastos(titulo)*/
+  color: black;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 20px;  
+}
+
+
+#logout {
+  background-color: #f44336; 
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#logout:hover {
+  background-color: #d32f2f; 
+}
+
+#parte2{
+  
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px;  
+  max-height: auto;
+  min-width: 300px;
+  background-color: rgba(143, 143, 143, 0.365);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 0px solid #7e7e7e;
+}
+
+#parte2 h1{
+  border: 0px solid #7e7e7e;
+  margin-bottom: 20px;
+
+}
+
+#parte2 h2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  
+}
+
+.imagemfundo img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50%;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.imagemfundo .formulario {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin-left: 100px;
+  margin-top: 50px;
+  min-width: 300px;
+}
+
+/* Estilos adicionais para tornar o exemplo visualmente agradável */
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario .form-control {
+  width: 100%;
+  resize: vertical;
+}
+
+@media (max-width: 767px) {
+  .imagemfundo img,
+  .imagemfundo .formulario {
+    display: block;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left:0;
+  }
+}
+
+.container{
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+}
+
+#produto-form label{
+margin-bottom: 5px;
+}
+
+#produto-id{
+  border-radius: 10px;
+}
+      
+#produto-vlr{
+  border-radius: 10px;
+}
+
+#produto-qtd{
+  border-radius: 10px;
+}
+
+
+label {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 10px;
+  min-width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#orcamento-valor {
+  background-color: rgb(255, 255, 255);
+}
+
+#valor-total {
+  background-color: rgb(255, 255, 255);
+  }
+
+  #valor-excedido  {
+  background-color: rgb(255, 255, 255);
+  }
+  
+
+input[type="number"]::placeholder {
+  color: #d3d3d3;
+  font-style: italic;
+  padding: 4%;
+  border-radius: 20px;
+}
+
+#data {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 5px;
+  border-radius: 10px;
+  height: 25px;
+  border: 1px solid #ccc;
+}
+
+input[type="date"] {
+  color: black; 
+  background-color: #cccccc;
+  border-radius: 50px;
+  border: 1px solid black;
+  border-radius: 50px; 
+  border: none;
+  align-items: center;
+ 
+ 
+}
+
+.modal-body{
+background-color:#e0e0e0 ;
+
+}
+
+#definir-orcamento {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: inline-block;
+  border-radius: 5px;  
+  max-height: 50px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#orcamento-definido{
+  height: 25px;
+
+}
+
+input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: #7e7e7e;
+  border:none;
+
+}
+
+.container button{
+border: none;
+background-color: transparent;
+}
+
+#abrirModalCalc img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#valor-excedido{
+color: #d32f2f;
+
+}
+
+#produto-modal input{
+  background-color: white;
+}
+
+svg{
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0)
+}
+
+.intermediaria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.grafico {
+  text-align: center;
+}
+
+.table{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+
+#botaoadicionar{
+width: 100%;
+}
+
+.btn.btn-success.btn-sm{
+width: 100%;
+  }
+
+.placelista{
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#telafora{
+  background-color: rgb(54, 83, 81);
+  min-height: 100vh;
+}
+
+#telatotal{
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 4px solid #e6e6e6;
+  margin-bottom: 15px;
+}
+
+#telatotal .placelista .container {
+
+  display: block;
+}
+
+/* Conteúdo interno do modal */
+.modal-content-calc {
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  width: 400px;
+}

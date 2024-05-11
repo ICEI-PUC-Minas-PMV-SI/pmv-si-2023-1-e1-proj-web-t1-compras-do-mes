@@ -203,9 +203,10 @@ function getProduto(id){
 const produtoForm = document.getElementById('produto-form');
 
 produtoForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Impede o recarregamento padrão da página
 
     // RECUPERA O ID DO PRODUTO
-    let id = parseInt($('#edit-prod-id').text());    
+    let id = parseInt($('#edit-prod-id').text());
 
     // RECUPERA OS DADOS DO PRODUTO
     const produto = JSON.stringify({
@@ -214,7 +215,7 @@ produtoForm.addEventListener('submit', (e) => {
         nome: document.getElementById('produto-nome').value,
         vlr: document.getElementById('produto-vlr').value,
         qtd: document.getElementById('produto-qtd').value
-    })
+    });
 
     if (id >= 0) {
         fetch(`${URL}/${id}`, {
@@ -225,10 +226,12 @@ produtoForm.addEventListener('submit', (e) => {
             body: produto
         })
         .then(res => res.json())
-        .then(() => location.reload());
-        updateDate();  
+        .then(() => {
+            updateDate(); // Atualiza os dados na página
+            location.reload(); // Recarrega a página se for realmente necessário
+        });
     }
-    else{ 
+    else { 
         fetch(URL, {
             method: 'POST',
             headers: {
@@ -237,10 +240,12 @@ produtoForm.addEventListener('submit', (e) => {
             body: produto
         })
         .then(res => res.json())
-        .then(() => location.reload());
-        updateDate();  
+        .then(() => {
+            updateDate(); // Atualiza os dados na página
+            location.reload(); // Recarrega a página se for realmente necessário
+        });
     }      
-})
+});
 //=================================================================================================
 
 function updateDate() {

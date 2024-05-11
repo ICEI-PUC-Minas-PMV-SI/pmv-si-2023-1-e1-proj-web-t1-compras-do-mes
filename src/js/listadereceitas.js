@@ -168,6 +168,7 @@ function getReceita(id){
 const receitaForm = document.getElementById('receita-form');
 
 receitaForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Impede o recarregamento padrão da página
 
     // RECUPERA O ID DO PRODUTO
     let id = parseInt($('#edit-rec-id').text());    
@@ -188,10 +189,13 @@ receitaForm.addEventListener('submit', (e) => {
             body: receita
         })
         .then(res => res.json())
-        .then(() => location.reload());
-        updateDate();  
+        .then(() => {
+            // Atualização da página acontece aqui se necessário
+            updateDate();
+            // location.reload(); // Recarrega a página se for realmente necessário
+        });
     }
-    else{ 
+    else { 
         fetch(URL, {
             method: 'POST',
             headers: {
@@ -200,10 +204,13 @@ receitaForm.addEventListener('submit', (e) => {
             body: receita
         })
         .then(res => res.json())
-        .then(() => location.reload());
-        updateDate();  
+        .then(() => {
+            // Atualização da página acontece aqui se necessário
+            updateDate();
+            // location.reload(); // Recarrega a página se for realmente necessário
+        });  
     }      
-})
+});
 //=================================================================================================
 
 function updateDate() {

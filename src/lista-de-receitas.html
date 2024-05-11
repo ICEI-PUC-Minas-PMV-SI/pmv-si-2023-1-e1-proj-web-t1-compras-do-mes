@@ -191,7 +191,7 @@
                   </button>
               </div>
               <div class="modal-body">
-                  Você realmente deseja remover o produto <span id="id-receita"></span>?
+                  Você realmente deseja remover a receita <span id="id-receita"></span>?
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
@@ -202,11 +202,11 @@
   </div>
 
   <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
-  <div class="modal fade" id="produto-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade" id="receita-modal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title">Produto <span id="edit-rec-id"></span></h5>
+                  <h5 class="modal-title">Receita <span id="edit-rec-id"></span></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -218,27 +218,12 @@
                           <input type="number" class="form-control" id="receita-id" min="1" required>
                       </div>
                       <div class="form-group">
-                        <label for="produto-categoria" class="col-form-label">Categoria:</label>
-                        <select class="form-control" id="produto-categoria" required> 
-                            <option value="Habitação">Habitação</option>
-                            <option value="Alimentação">Alimentação</option>
-                            <option value="Lazer">Lazer</option>
-                            <option value="Saúde">Saúde</option>
-                            <option value="Transporte">Transporte</option>
-                            <option value="Diversos">Diversos</option>
-                        </select>
-                    </div>
-                      <div class="form-group">
                           <label for="receita-nome" class="col-form-label">Descrição:</label>
                           <input type="text" class="form-control" id="receita-nome" required>
                       </div>
                       <div class="form-group">
                           <label for="receita-vlr" class="col-form-label">Valor:</label>
                           <input type="number" step="0.01" class="form-control" id="receita-vlr" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="produto-qtd" class="col-form-label">Quantidade:</label>
-                          <input type="number" class="form-control" id="produto-qtd" required>
                       </div>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

@@ -1,10 +1,12 @@
 // URL DA API DE DADOS
 URL = 'http://localhost:3000/produtos'
 
+
+//Function Google Chart
 function getCategoriesToChart(products) {
     const categorias = {};
-
-    // Calculando o valor total por categoria
+    
+// buscando valor por categoria
     products.forEach(produto => {
       const categoria = produto.categoria;
       const valor = parseFloat(produto.vlr);
@@ -23,10 +25,7 @@ function getCategoriesToChart(products) {
 
 function drawChart(categories) {
   function callback() {
-      // Verifica se o dark mode está ativo
       const darkMode = document.body.classList.contains('dark-mode');
-
-      // Define as cores baseadas no modo
       const textColor = darkMode ? 'white' : 'black';
       const titleColor = darkMode ? 'white' : 'black';
 
@@ -34,7 +33,6 @@ function drawChart(categories) {
           ['Categoria', 'Gastos'],
           ...categories    
       ]);
-      
       var options = {
           legend: { textStyle: { color: textColor } },
           pieSliceText: 'label',
@@ -44,8 +42,7 @@ function drawChart(categories) {
           backgroundColor: { fill: 'transparent' },
           slices: { 
               0: { color: '#3366cc' }, 
-              1: { color: '#dc3912' }, // Configure as cores conforme necessário
-              // Adicione mais cores de fatias se tiver muitas categorias
+              1: { color: '#dc3912' },
           }
       };
   
@@ -56,7 +53,6 @@ function drawChart(categories) {
   return callback;
 }
 
-//=================================================================================================
 // GET - Recupera todos os produtos e adiciona na tabela
 const produtoList = document.getElementById('produto-list');
 fetch(URL)
@@ -90,27 +86,21 @@ fetch(URL)
             produtoList.innerHTML = lista_produtos;
         }
 
-
         // FUNCTION GRÁFICOS
         google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
     });
-//=================================================================================================
 
 //Valor Total Lista
-
   fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
     let valorTotal = 0;
-
     data.forEach(produto => {
       const valor = parseFloat(produto.vlr);
       const quantidade = parseInt(produto.qtd);
       valorTotal += valor * quantidade;
-      
     });
-
   totalVLR = `${valorTotal}`;
 
   document.getElementById('valor-total').innerHTML = totalVLR;
@@ -118,18 +108,14 @@ fetch(URL)
 
 // usuário logado
     let nomeUsuario = localStorage.getItem('usuario_logado');
-    
     var tagA = document.getElementById("nome");
     tagA.innerHTML = `${nomeUsuario}`; 
     
 // Valor total Categoroias
-
 fetch('http://localhost:3000/produtos')
   .then(response => response.json())
   .then(data => {
     const categorias = {};
-
-    // Calculando o valor total por categoria
     data.forEach(produto => {
       const categoria = produto.categoria;
       const valor = parseFloat(produto.vlr);
@@ -143,7 +129,6 @@ fetch('http://localhost:3000/produtos')
       }
     });
 
-    // Exibindo os totais por categoria
     for (const categoria in categorias) {
       console.log(`Categoria: ${categoria} - Total: ${categorias[categoria]}`);
     }
@@ -169,7 +154,6 @@ produtoDelete.addEventListener('click', (e) => {
     
 
 })
-//=================================================================================================
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API
 function getProduto(id){
@@ -196,19 +180,12 @@ function getProduto(id){
     }    
 }
 
-//=================================================================================================
-
 // CREATE or UPDATE - PROCEDIMENTO PARA CRIAR OU EDITAR UM PRODUTO
-
 const produtoForm = document.getElementById('produto-form');
 
 produtoForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Impede o recarregamento padrão da página
-
-    // RECUPERA O ID DO PRODUTO
+    e.preventDefault();
     let id = parseInt($('#edit-prod-id').text());
-
-    // RECUPERA OS DADOS DO PRODUTO
     const produto = JSON.stringify({
         id: document.getElementById('produto-id').value,
         categoria: document.getElementById('produto-categoria').value,
@@ -227,8 +204,8 @@ produtoForm.addEventListener('submit', (e) => {
         })
         .then(res => res.json())
         .then(() => {
-            updateDate(); // Atualiza os dados na página
-            location.reload(); // Recarrega a página se for realmente necessário
+            updateDate();
+            location.reload();
         });
     }
     else { 
@@ -241,13 +218,13 @@ produtoForm.addEventListener('submit', (e) => {
         })
         .then(res => res.json())
         .then(() => {
-            updateDate(); // Atualiza os dados na página
-            location.reload(); // Recarrega a página se for realmente necessário
+            updateDate();
+            location.reload();
         });
     }      
 });
-//=================================================================================================
 
+// Atualizar Data
 function updateDate() {
   const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
     'pt-BR', {
@@ -275,9 +252,9 @@ function updateDate() {
   });
 }
 
-/* salvar data*/
+// Salvar Data
 document.addEventListener('DOMContentLoaded', function () {
-  // Função para buscar a data do servidor
+
   function getData() {
     fetch('http://localhost:3000/dates/1')
         .then(response => {
@@ -294,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 }
 
-  // Adicionar evento de envio do formulário
+
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
     var inputData = document.getElementById('data').value;
@@ -307,7 +284,6 @@ getData()
 
 
 // Definir orçamento
-
 function gravarJSON() {
   const inputOrcamento = document.getElementById('orcamento-definido');
   const novoOrcamento = inputOrcamento.value;
@@ -349,7 +325,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 //Valor Excedido
-
 window.onload = function vlrExcedido() {
   fetch('http://localhost:3000/produtos')
     .then(response => response.json())
@@ -411,10 +386,8 @@ function salvarMetas(event) {
   }
 }
 
-//  salvar o texto quando pressionar Enter
 document.getElementById('exampleFormControlTextarea1').addEventListener('keyup', salvarMetas);
 
-// Função para exibir as metas ao carregar a página
 window.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:3000/metas/1')
     .then(response => response.json())
@@ -428,7 +401,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 //Dark Mode
-
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");

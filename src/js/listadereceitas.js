@@ -4,7 +4,6 @@ URL = 'http://localhost:3000/receitas'
 function getCategoriesToChart(products) {
     const categorias = {};
 
-    // Calculando o valor total por categoria
     products.forEach(receita => {
       const categoria = produto.categoria;
       const valor = parseFloat(produto.vlr);
@@ -22,18 +21,13 @@ function getCategoriesToChart(products) {
 
 function drawChart(categories) {
   function callback() {
-      // Verifica se o dark mode está ativo
       const darkMode = document.body.classList.contains('dark-mode');
-
-      // Define as cores baseadas no modo
       const textColor = darkMode ? 'white' : 'black';
       const titleColor = darkMode ? 'white' : 'black';
-
       var data = google.visualization.arrayToDataTable([
           ['Categoria', 'Gastos'],
           ...categories    
       ]);
-      
       var options = {
           legend: { textStyle: { color: textColor } },
           pieSliceText: 'label',
@@ -43,8 +37,7 @@ function drawChart(categories) {
           backgroundColor: { fill: 'transparent' },
           slices: { 
               0: { color: '#3366cc' }, 
-              1: { color: '#dc3912' }, // Configure as cores conforme necessário
-              // Adicione mais cores de fatias se tiver muitas categorias
+              1: { color: '#dc3912' },
           }
       };
   
@@ -55,7 +48,6 @@ function drawChart(categories) {
   return callback;
 }
 
-//=================================================================================================
 // GET - Recupera todos os produtos e adiciona na tabela
 const receitaList = document.getElementById('receita-list');
 fetch(URL)
@@ -86,16 +78,12 @@ fetch(URL)
             receitaList.innerHTML = lista_receitas;
         }
 
-
         // FUNCTION GRÁFICOS
         google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas)));
     });
-//=================================================================================================
 
 //Valor Total Lista
-
-
   fetch(URL)
   .then(response => response.json())
   .then(data => {
@@ -138,7 +126,6 @@ receitaDelete.addEventListener('click', (e) => {
     
 
 })
-//=================================================================================================
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API
 function getReceita(id){
@@ -161,25 +148,17 @@ function getReceita(id){
     }    
 }
 
-//=================================================================================================
-
 // CREATE or UPDATE - PROCEDIMENTO PARA CRIAR OU EDITAR UM PRODUTO
-
 const receitaForm = document.getElementById('receita-form');
 
 receitaForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Impede o recarregamento padrão da página
-
-    // RECUPERA O ID DO PRODUTO
+    e.preventDefault();
     let id = parseInt($('#edit-rec-id').text());    
-
-    // RECUPERA OS DADOS DO PRODUTO
     const receita = JSON.stringify({
         id: document.getElementById('receita-id').value,
         nome: document.getElementById('receita-nome').value,
         vlr: document.getElementById('receita-vlr').value,
     })
-
     if (id >= 0) {
         fetch(`${URL}/${id}`, {
             method: 'PUT',
@@ -190,9 +169,7 @@ receitaForm.addEventListener('submit', (e) => {
         })
         .then(res => res.json())
         .then(() => {
-            // Atualização da página acontece aqui se necessário
             updateDate();
-            // location.reload(); // Recarrega a página se for realmente necessário
         });
     }
     else { 
@@ -205,14 +182,12 @@ receitaForm.addEventListener('submit', (e) => {
         })
         .then(res => res.json())
         .then(() => {
-            // Atualização da página acontece aqui se necessário
             updateDate();
-            // location.reload(); // Recarrega a página se for realmente necessário
         });  
     }      
 });
-//=================================================================================================
 
+// Atualizar Data
 function updateDate() {
   const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
     'pt-BR', {
@@ -240,9 +215,8 @@ function updateDate() {
   });
 }
 
-/* salvar data*/
+// salvar data
 document.addEventListener('DOMContentLoaded', function () {
-  // Função para buscar a data do servidor
   function getData() {
     fetch('http://localhost:3000/datesReceita/1')
         .then(response => {
@@ -259,19 +233,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 }
 
-  // Adicionar evento de envio do formulário
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
     var inputData = document.getElementById('data').value;
     saveData(inputData);
   });
-
 getData()
-
 });
 
 //Valor Excedido
-
 window.onload = function vlrExcedido() {
   fetch(URL)
     .then(response => response.json())
@@ -306,7 +276,6 @@ window.onload = function vlrExcedido() {
     });
 }
 
-
 // Função para salvar o texto no JSON Server
 function salvarMetas(event) {
   if (event.keyCode === 13) {
@@ -334,10 +303,8 @@ function salvarMetas(event) {
   }
 }
 
-//  salvar o texto quando pressionar Enter
 document.getElementById('exampleFormControlTextarea1').addEventListener('keyup', salvarMetas);
 
-// Função para exibir as metas ao carregar a página
 window.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:3000/metas/1')
     .then(response => response.json())
@@ -351,7 +318,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 //Dark Mode
-
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");

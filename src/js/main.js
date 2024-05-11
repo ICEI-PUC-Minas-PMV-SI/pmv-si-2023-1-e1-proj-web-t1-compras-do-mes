@@ -353,6 +353,7 @@ window.addEventListener('DOMContentLoaded', () => {
       console.error('Erro na requisição:', error);
     });
 });
+
 //Dark Mode
 function myFunction() {
   var element = document.body;

@@ -80,7 +80,7 @@ fetch(URL)
 
         // FUNCTION GRÁFICOS
         google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas))); // Troque getCategoriesToChart(receitas))); 
+        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas))); // Troque (getCategoriesToChart(receitas))); por (getReceitaToChart(receitas)));
     });
 
 //Valor Total Receita

@@ -1,32 +1,32 @@
 // URL DA API DE DADOS
 URL = 'http://localhost:3000/receitas'
 
-function getCategoriesToChart(products) {
-    const categorias = {};
+function getReceitaToChart(revenue) {
+    const receitas = {};
 
-    products.forEach(receita => {
-      const categoria = produto.categoria;
-      const valor = parseFloat(produto.vlr);
+    revenue.forEach(receita => {
+      const receita = receita.nome;
+      const valor = parseFloat(receita.vlr);
 
 
-      if (categorias[categoria]) {
-        categorias[categoria] += subtotal;
+      if (receitas[receita]) {
+        receitas[receita] += valor;
       } else {
-        categorias[categoria] = subtotal;
+        receitas[receita] = valor;
       }
     });
 
-    return Object.entries(categorias);
+    return Object.entries(receitas);
 }
 
-function drawChart(categories) {
+function drawChart(revenue) {
   function callback() {
       const darkMode = document.body.classList.contains('dark-mode');
       const textColor = darkMode ? 'white' : 'black';
       const titleColor = darkMode ? 'white' : 'black';
       var data = google.visualization.arrayToDataTable([
-          ['Categoria', 'Gastos'],
-          ...categories    
+          ['Receita', 'Gastos'],
+          ...revenue    
       ]);
       var options = {
           legend: { textStyle: { color: textColor } },
@@ -80,7 +80,7 @@ fetch(URL)
 
         // FUNCTION GRÁFICOS
         google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas))); // Troque (getCategoriesToChart(receitas))); por (getReceitaToChart(receitas)));
+        google.charts.setOnLoadCallback(drawChart(getReceitaToChart(receitas))); 
     });
 
 //Valor Total Receita

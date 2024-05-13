@@ -96,7 +96,7 @@ color: #ffffff;
 .imagemfundo img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 50%;
+  max-width: 40%;
   margin-right: 10px;
   margin-left: 50px;
   margin-top: 50px;
@@ -138,19 +138,19 @@ color: #ffffff;
   width: 100%;
 }
 
-#produto-form label{
+#receita-form label{
 margin-bottom: 5px;
 }
 
-#produto-id{
+#receita-id{
   border-radius: 10px;
 }
       
-#produto-vlr{
+#receita-vlr{
   border-radius: 10px;
 }
 
-#produto-qtd{
+#receita-qtd{
   border-radius: 10px;
 }
 
@@ -170,24 +170,35 @@ label {
   text-align: center;
 }
 
+#orcamento-valor {
+ font-weight: lighter;
+}
+
 #valor-total-receita {
   font-weight: lighter;
-  }
+}
 
-#valor-total {
-  font-weight: lighter;
-  }
-
-  #valor-excedido  {
-    font-weight: lighter;
+  #valor-saldo  {
+  font-weight:lighter;
   }
   
+  #valor-total-gasto {
+    font-weight: lighter;
+  }
 
 input[type="number"]::placeholder {
   color: #d3d3d3;
   font-style: italic;
   padding: 4%;
   border-radius: 20px;
+}
+
+.formulario button {
+  margin-top: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(206, 212, 218);
+  background-color: transparent;
 }
 
 #data {
@@ -244,14 +255,6 @@ input[type="number"] {
 
 }
 
-.formulario button {
-  margin-top: 5px;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: rgb(206, 212, 218);
-  background-color: transparent;
-}
-
 .container button{
 border: none;
 background-color: transparent;
@@ -267,7 +270,7 @@ color: #d32f2f;
 
 }
 
-#produto-modal input{
+#receita-modal input{
   background-color: white;
 }
 
@@ -312,7 +315,7 @@ width: 100%;
 }
 
 #telafora{
-  background-color: rgb(67, 59, 87);
+  background-color: rgb(54, 83, 81);
   min-height: 100vh;
 }
 

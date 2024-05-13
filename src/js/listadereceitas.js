@@ -1,17 +1,13 @@
 // URL DA API DE DADOS
-URL = 'http://localhost:3000/produtos'
+URL = 'http://localhost:3000/receitas'
 
-
-//Function Google Chart
 function getCategoriesToChart(products) {
     const categorias = {};
-    
-// buscando valor por categoria
-    products.forEach(produto => {
+
+    products.forEach(receita => {
       const categoria = produto.categoria;
       const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      const subtotal = valor * quantidade;
+
 
       if (categorias[categoria]) {
         categorias[categoria] += subtotal;
@@ -28,7 +24,6 @@ function drawChart(categories) {
       const darkMode = document.body.classList.contains('dark-mode');
       const textColor = darkMode ? 'white' : 'black';
       const titleColor = darkMode ? 'white' : 'black';
-
       var data = google.visualization.arrayToDataTable([
           ['Categoria', 'Gastos'],
           ...categories    
@@ -36,7 +31,7 @@ function drawChart(categories) {
       var options = {
           legend: { textStyle: { color: textColor } },
           pieSliceText: 'label',
-          title: 'Gastos Mensais',
+          title: 'Receita',
           titleTextStyle: { color: titleColor },
           pieStartAngle: 100,
           backgroundColor: { fill: 'transparent' },
@@ -54,41 +49,38 @@ function drawChart(categories) {
 }
 
 // GET - Recupera todos os produtos e adiciona na tabela
-const produtoList = document.getElementById('produto-list');
+const receitaList = document.getElementById('receita-list');
 fetch(URL)
     .then(res => res.json())
-    .then(produtos => {
-        let lista_produtos = '';
-        for (let i = 0; i < produtos.length; i++) {
-            vlt_total = produtos[i].qtd * produtos[i].vlr;
-            lista_produtos += `
+    .then(receitas => {
+        let lista_receitas = '';
+        for (let i = 0; i < receitas.length; i++) {
+            vlt_total = receitas[i].qtd * receitas[i].vlr;
+            lista_receitas += `
             <tr>
-                <th>${produtos[i].id}</th>
-                <td>${produtos[i].categoria}</td>
-                <td>${produtos[i].nome}</td>
-                <td>R$${(parseFloat(produtos[i].vlr)).toFixed(2)}</td>
-                <td>${produtos[i].qtd}</td>
-                <td>R$${parseFloat(vlt_total).toFixed(2)}</td>
+                <th>${receitas[i].id}</th>
+                <td>${receitas[i].nome}</td>
+                <td>R$${(parseFloat(receitas[i].vlr)).toFixed(2)}</td>
                 <td>
-                    <a onclick="getProduto(${produtos[i].id});" 
+                    <a onclick="getReceita(${receitas[i].id});" 
                     class="btn btn-warning btn-sm" 
-                    data-toggle="modal" data-target="#produto-modal">
+                    data-toggle="modal" data-target="#receita-modal">
                     <i class="fa fa-edit"></i>  Editar
                     </a>
 
-                    <a onclick="$('#id-prod').text(${produtos[i].id});" class="btn btn-danger btn-sm" 
+                    <a onclick="$('#id-receita').text(${receitas[i].id});" class="btn btn-danger btn-sm" 
                     data-toggle="modal" data-target="#modal-delete">
                     <i class="fa fa-trash"></i> Remover
                     </a>
                 </td>
             </tr>
             `;
-            produtoList.innerHTML = lista_produtos;
+            receitaList.innerHTML = lista_receitas;
         }
 
         // FUNCTION GRÁFICOS
         google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
+        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(receitas))); // Troque (getCategoriesToChart(receitas))); por (getReceitaToChart(receitas)));
     });
 
 //Valor Total Receita
@@ -103,15 +95,14 @@ function formatarMoeda(valor) {
   }).format(valor);
 }
 
-// Função para calcular o valor excedido
-function calcularValorExcedido() {
-  const valorExcedido = valorTotalReceita - valorTotalGasto;
+// Função para calcular o valor Saldo
+function calcularValorReceita() {
+  const valorSaldo = valorTotalReceita - valorTotalGasto;
 
-  if (valorExcedido < 0) {
-    document.getElementById('valor-excedido').textContent = formatarMoeda(valorExcedido);
-    alert('Cuidado! Você gastou mais do que havia planejado!');
+  if (valorSaldo > 0) {
+    document.getElementById('valor-saldo').textContent = formatarMoeda(valorSaldo);
   } else {
-    document.getElementById('valor-excedido').textContent = formatarMoeda(0);
+    document.getElementById('valor-saldo').textContent = formatarMoeda(0);
   }
 }
 
@@ -135,47 +126,20 @@ const fetchProdutos = fetch('http://localhost:3000/produtos')
       const quantidade = parseInt(produto.qtd);
       valorTotalGasto += valor * quantidade;
     });
-    document.getElementById('valor-total').innerHTML = formatarMoeda(valorTotalGasto);
+    document.getElementById('valor-total-gasto').innerHTML = formatarMoeda(valorTotalGasto);
   });
 
 // Executar os cálculos após ambas as fetch serem completadas
 Promise.all([fetchReceitas, fetchProdutos]).then(() => {
-  calcularValorExcedido();
+  calcularValorReceita();
 });
 
-// Valor total Categoroias
-fetch('http://localhost:3000/produtos')
-  .then(response => response.json())
-  .then(data => {
-    const categorias = {};
-    data.forEach(produto => {
-      const categoria = produto.categoria;
-      const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      const subtotal = valor * quantidade;
-
-      if (categorias[categoria]) {
-        categorias[categoria] += subtotal;
-      } else {
-        categorias[categoria] = subtotal;
-      }
-    });
-
-    for (const categoria in categorias) {
-      console.log(`Categoria: ${categoria} - Total: ${categorias[categoria]}`);
-    }
-  })
-  .catch(error => {
-    console.error('Erro na requisição:', error);
-  });
-
-
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
-const produtoDelete = document.getElementById('btn-delete');
+const receitaDelete = document.getElementById('btn-delete');
 
-produtoDelete.addEventListener('click', (e) => {
+receitaDelete.addEventListener('click', (e) => {
 
-    let id = $('#id-prod').text();
+    let id = $('#id-receita').text();
 
     fetch(`${URL}/${id}`, {
         method: 'DELETE',
@@ -188,56 +152,48 @@ produtoDelete.addEventListener('click', (e) => {
 })
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API
-function getProduto(id){
+function getReceita(id){
 
     if(id == 0){
-        $('#edit-prod-id').text("");
-        $( "#produto-id" ).prop( "disabled", false );
-        $('#produto-id').val("");
-        $('#produto-categoria').val("");
-        $('#produto-nome').val("");
-        $('#produto-vlr').val("");
-        $('#produto-qtd').val("");
+        $('#edit-rec-id').text("");
+        $( "#receita-id" ).prop( "disabled", false );
+        $('#receita-id').val("");
+        $('#receita-nome').val("");
+        $('#receita-vlr').val("");
     }else{
-        $('#edit-prod-id').text(id);
+        $('#edit-rec-id').text(id);
         fetch(`${URL}/${id}`).then(res => res.json())    
         .then(data => {
-            $( "#produto-id" ).prop( "disabled", true );
-            $('#produto-id').val(data.id);
-            $('#produto-categoria').val(data.categoria);
-            $('#produto-nome').val(data.nome);
-            $('#produto-vlr').val(data.vlr);
-            $('#produto-qtd').val(data.qtd);
+            $( "#receita-id" ).prop( "disabled", true );
+            $('#receita-id').val(data.id);
+            $('#receita-nome').val(data.nome);
+            $('#receita-vlr').val(data.vlr);
         });
     }    
 }
 
 // CREATE or UPDATE - PROCEDIMENTO PARA CRIAR OU EDITAR UM PRODUTO
-const produtoForm = document.getElementById('produto-form');
+const receitaForm = document.getElementById('receita-form');
 
-produtoForm.addEventListener('submit', (e) => {
+receitaForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let id = parseInt($('#edit-prod-id').text());
-    const produto = JSON.stringify({
-        id: document.getElementById('produto-id').value,
-        categoria: document.getElementById('produto-categoria').value,
-        nome: document.getElementById('produto-nome').value,
-        vlr: document.getElementById('produto-vlr').value,
-        qtd: document.getElementById('produto-qtd').value
-    });
-
+    let id = parseInt($('#edit-rec-id').text());    
+    const receita = JSON.stringify({
+        id: document.getElementById('receita-id').value,
+        nome: document.getElementById('receita-nome').value,
+        vlr: document.getElementById('receita-vlr').value,
+    })
     if (id >= 0) {
         fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: produto
+            body: receita
         })
         .then(res => res.json())
         .then(() => {
             updateDate();
-            location.reload();
         });
     }
     else { 
@@ -246,13 +202,12 @@ produtoForm.addEventListener('submit', (e) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: produto
+            body: receita
         })
         .then(res => res.json())
         .then(() => {
             updateDate();
-            location.reload();
-        });
+        });  
     }      
 });
 
@@ -265,9 +220,9 @@ function updateDate() {
       month: '2-digit',
       day:'2-digit'
     }
-  )
+  );
 
-  fetch('http://localhost:3000/dates/1', {
+  fetch('http://localhost:3000/datesReceita/1', {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json'
@@ -284,11 +239,10 @@ function updateDate() {
   });
 }
 
-// Salvar Data
+// salvar data
 document.addEventListener('DOMContentLoaded', function () {
-
   function getData() {
-    fetch('http://localhost:3000/dates/1')
+    fetch('http://localhost:3000/datesReceita/1')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao buscar a data do servidor');
@@ -303,17 +257,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 }
 
-
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
     var inputData = document.getElementById('data').value;
     saveData(inputData);
   });
-
 getData()
-
 });
-
 
 // Função para salvar o texto no JSON Server
 function salvarMetas() {
@@ -364,5 +314,6 @@ function myFunction() {
 
 // usuário logado
 let nomeUsuario = localStorage.getItem('usuario_logado');
+    
 var tagA = document.getElementById("nome");
 tagA.innerHTML = `${nomeUsuario}`; 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E-li$t - Lista de Gastos</title>
+    <title>E-li$t - Lista de Receitas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/listadegastos.css">
+    <link rel="stylesheet" href="css/listadereceitas.css">
   </head>
 <body>
   <div id="parte1">
@@ -33,7 +33,7 @@
                 <a class="navbuttons" aria-current="page" href="escolhadelistas.html">Home</a>
               </li>
               <li class="nav-item-dica">
-                <a class="navbuttons" aria-current="page" href="lista-de-receitas.html">Receitas</a>
+                <a class="navbuttons" aria-current="page" href="lista-de-gastos.html">Gastos</a>
               </li>
               <li class="nav-item-dica">
                 <a class="navbuttons" aria-current="page" href="#">Dicas</a>
@@ -59,20 +59,20 @@
   <div id="telafora">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="escolhadelistas.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Lista de Gastos</li>
+      <li class="breadcrumb-item active" aria-current="page">Lista de Receitas</li>
     </ol>
   <div id="telatotal">
   <div id=parte2>
     <div class="conteúdo">        
-      <h1>Lista de Gastos</h1>
+      <h1>Lista de Receitas</h1>
     </div>
     <div class="form-group">
-      <label for="orcamento-mes">Valor Receita:</label>
-      <label id="valor-total-receita"></label>       
-      <label for="valor-gasto">Valor Total Gasto:</label>
-      <label id="valor-total"></label>
-      <label for="valor-total-excedido">Valor Total Excedido:</label>
-      <label id="valor-excedido"></label>
+      <label for="valor-gasto-mes">Valor Gasto:</label>
+      <label id="valor-total-gasto"></label>       
+      <label for="valor-receita">Valor Total Receita:</label>
+      <label id="valor-total-receita"></label>
+      <label for="valor-total-saldo">Saldo:</label>
+      <label id="valor-saldo"></label>
   
     </div>
     <div id="dataa">
@@ -136,7 +136,7 @@
 </div>
 
 <div class="imagemfundo"> 
-  <img src="imgs/lista-de-gastos.svg.svg">
+  <img src="imgs/imagemlistareceita.svg">
   <div class="formulario">
     <label for="exampleFormControlTextarea1">Minhas Metas Mensais:</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Digite suas metas mensais aqui!"></textarea>
@@ -154,8 +154,8 @@
 
 <div class="placelista">
   <h2 id="botaoadicionar">          
-    <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right"
-    data-toggle="modal" data-target="#produto-modal">
+    <a onclick="getReceita(0)" class="btn btn-success btn-sm" style="float:right"
+    data-toggle="modal" data-target="#receita-modal">
     <i class="fa fa-plus"></i> Adicionar Novo Item
 </a>
 </h2>
@@ -167,15 +167,12 @@
                   <thead>
                       <tr>
                           <th width="5%">#</th>
-                          <th width="30%">Categoria</th>
-                          <th width="30%">Produto</th>
+                          <th width="30%">Descrição</th>
                           <th width="15%">Valor (Un.)</th>
-                          <th width="15%">Quantidade</th>
-                          <th width="15%">Valor Total</th>
                           <th class= "calc" width="20%"> <button class="buttonCalc" id="abrirModalCalc"> <img src="imgs/calculadora.png"> </button> </th>
                       </tr>
                   </thead>
-                  <tbody id='produto-list'>
+                  <tbody id='receita-list'>
                   </tbody>
               </table>
           </div>
@@ -195,7 +192,7 @@
                   </button>
               </div>
               <div class="modal-body">
-                  Você realmente deseja remover o produto <span id="id-prod"></span>?
+                  Você realmente deseja remover a receita <span id="id-receita"></span>?
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
@@ -206,43 +203,28 @@
   </div>
 
   <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
-  <div class="modal fade" id="produto-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade" id="receita-modal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title">Produto <span id="edit-prod-id"></span></h5>
+                  <h5 class="modal-title">Receita <span id="edit-rec-id"></span></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
               </div>
               <div class="modal-body">
-                  <form id="produto-form" method="post" action="">
+                  <form id="receita-form" method="post" action="">
                       <div class="form-group">
-                          <label for="produto-id" class="col-form-label">Código:</label>
-                          <input type="number" class="form-control" id="produto-id" min="1" required>
+                          <label for="receita-id" class="col-form-label">Código:</label>
+                          <input type="number" class="form-control" id="receita-id" min="1" required>
                       </div>
                       <div class="form-group">
-                        <label for="produto-categoria" class="col-form-label">Categoria:</label>
-                        <select class="form-control" id="produto-categoria" required> 
-                            <option value="Habitação">Habitação</option>
-                            <option value="Alimentação">Alimentação</option>
-                            <option value="Lazer">Lazer</option>
-                            <option value="Saúde">Saúde</option>
-                            <option value="Transporte">Transporte</option>
-                            <option value="Diversos">Diversos</option>
-                        </select>
-                    </div>
-                      <div class="form-group">
-                          <label for="produto-nome" class="col-form-label">Descrição:</label>
-                          <input type="text" class="form-control" id="produto-nome" required>
+                          <label for="receita-nome" class="col-form-label">Descrição:</label>
+                          <input type="text" class="form-control" id="receita-nome" required>
                       </div>
                       <div class="form-group">
-                          <label for="produto-vlr" class="col-form-label">Valor:</label>
-                          <input type="number" step="0.01" class="form-control" id="produto-vlr" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="produto-qtd" class="col-form-label">Quantidade:</label>
-                          <input type="number" class="form-control" id="produto-qtd" required>
+                          <label for="receita-vlr" class="col-form-label">Valor:</label>
+                          <input type="number" step="0.01" class="form-control" id="receita-vlr" required>
                       </div>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -271,7 +253,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="js/paginalogada.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/listadereceitas.js"></script>
   <script src="js/dolar.js"></script>
   <script src="js/calculadora.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

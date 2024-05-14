@@ -1,6 +1,10 @@
 // URL DA API DE DADOS
 URL = 'http://localhost:3000/produtos'
 
+// usuário logado
+let nomeUsuario = localStorage.getItem('usuario_logado');
+var tagA = document.getElementById("nome");
+tagA.innerHTML = `${nomeUsuario}`;
 
 //Function Google Chart
 function getCategoriesToChart(products) {
@@ -383,7 +387,3 @@ function myFunction() {
   google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
 
-// usuário logado
-let nomeUsuario = localStorage.getItem('usuario_logado');
-var tagA = document.getElementById("nome");
-tagA.innerHTML = `${nomeUsuario}`; 

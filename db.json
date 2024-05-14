@@ -37,12 +37,17 @@
     {
       "id": "1",
       "nome": "MRV",
-      "vlr": "300"
+      "vlr": "500"
     },
     {
       "id": "2",
       "nome": "Salário",
       "vlr": "3000"
+    },
+    {
+      "id": "3",
+      "nome": "Uber",
+      "vlr": "100"
     }
   ],
   "datesReceita": [

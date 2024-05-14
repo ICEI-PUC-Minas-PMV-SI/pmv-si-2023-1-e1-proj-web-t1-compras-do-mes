@@ -8,7 +8,6 @@ function getReceitaToChart(revenue) {
       const receitaGraf = receita.nome;
       const valor = parseFloat(receita.vlr);
 
-
       if (receitasGraf[receitaGraf]) {
         receitasGraf[receitaGraf] += valor;
       } else {
@@ -333,6 +332,5 @@ function myFunction() {
 
 // usuário logado
 let nomeUsuario = localStorage.getItem('usuario_logado');
-    
 var tagA = document.getElementById("nome");
 tagA.innerHTML = `${nomeUsuario}`; 

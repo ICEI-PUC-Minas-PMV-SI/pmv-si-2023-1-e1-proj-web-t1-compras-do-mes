@@ -8,7 +8,6 @@ function getReceitaToChart(revenue) {
       const receitaGraf = receita.nome;
       const valor = parseFloat(receita.vlr);
 
-
       if (receitasGraf[receitaGraf]) {
         receitasGraf[receitaGraf] += valor;
       } else {
@@ -177,13 +176,15 @@ const receitaForm = document.getElementById('receita-form');
 
 receitaForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let id = parseInt($('#edit-rec-id').text());    
-    const receita = JSON.stringify({
-        id: document.getElementById('receita-id').value,
-        nome: document.getElementById('receita-nome').value,
-        vlr: document.getElementById('receita-vlr').value,
-    })
-    if (id >= 0) {
+    let id = $('#edit-rec-id').text();    
+    
+    if (id) {
+        const receita = JSON.stringify({
+            id: id,
+            nome: document.getElementById('receita-nome').value,
+            vlr: document.getElementById('receita-vlr').value,
+        });
+        
         fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: {
@@ -198,72 +199,89 @@ receitaForm.addEventListener('submit', (e) => {
     }
     else { 
         fetch(URL, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: receita
+            }
         })
         .then(res => res.json())
-        .then(() => {
-            updateDate();
+        .then(data => {
+            const lastId = data.length > 0 ? parseInt(data[data.length - 1].id) : 0;
+            const newId = (lastId + 1).toString();
+            
+            const receita = JSON.stringify({
+                id: newId,
+                nome: document.getElementById('receita-nome').value,
+                vlr: document.getElementById('receita-vlr').value,
+            });
+            
+            fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: receita
+            })
+            .then(res => res.json())
+            .then(() => {
+                updateDate();
+            });
         });  
     }      
 });
-
 // Atualizar Data
 function updateDate() {
-  const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
-    'pt-BR', {
-      timeZone: 'America/Sao_Paulo',
-      year: 'numeric',
-      month: '2-digit',
-      day:'2-digit'
-    }
-  );
+  const currentDate = new Date().toLocaleString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).split('/').reverse().join('-');
 
   fetch('http://localhost:3000/datesReceita/1', {
-      method: 'PUT',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ data: currentDate })
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ data: currentDate })
   })
-  .then(response => {
+    .then(response => {
       if (!response.ok) {
-          throw new Error('Erro ao atualizar a data no servidor');
+        throw new Error('Erro ao atualizar a data no servidor');
       }
-  })
-  .catch(error => {
+    })
+    .catch(error => {
       console.error('Erro:', error);
-  });
+    });
 }
 
-// salvar data
+// Salvar Data
 document.addEventListener('DOMContentLoaded', function () {
   function getData() {
     fetch('http://localhost:3000/datesReceita/1')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao buscar a data do servidor');
-            }
-            return response.json();
-        })
-        .then(data => {
-            document.getElementById('data').value = data.data;
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
-}
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao buscar a data do servidor');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('data').value = data.data;
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+      });
+  }
 
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
     var inputData = document.getElementById('data').value;
     saveData(inputData);
   });
-getData()
+
+  getData();
 });
+
 
 // Função para salvar o texto no JSON Server
 function salvarMetas() {
@@ -314,6 +332,5 @@ function myFunction() {
 
 // usuário logado
 let nomeUsuario = localStorage.getItem('usuario_logado');
-    
 var tagA = document.getElementById("nome");
 tagA.innerHTML = `${nomeUsuario}`; 

@@ -1,6 +1,10 @@
 // URL DA API DE DADOS
 URL = 'http://localhost:3000/produtos'
 
+// usuário logado
+let nomeUsuario = localStorage.getItem('usuario_logado');
+var tagA = document.getElementById("nome");
+tagA.innerHTML = `${nomeUsuario}`;
 
 //Function Google Chart
 function getCategoriesToChart(products) {
@@ -217,16 +221,17 @@ const produtoForm = document.getElementById('produto-form');
 
 produtoForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let id = parseInt($('#edit-prod-id').text());
-    const produto = JSON.stringify({
-        id: document.getElementById('produto-id').value,
-        categoria: document.getElementById('produto-categoria').value,
-        nome: document.getElementById('produto-nome').value,
-        vlr: document.getElementById('produto-vlr').value,
-        qtd: document.getElementById('produto-qtd').value
-    });
-
-    if (id >= 0) {
+    let id = $('#edit-prod-id').text();
+    
+    if (id) {
+        const produto = JSON.stringify({
+            id: id,
+            categoria: document.getElementById('produto-categoria').value,
+            nome: document.getElementById('produto-nome').value,
+            vlr: document.getElementById('produto-vlr').value,
+            qtd: document.getElementById('produto-qtd').value
+        });
+        
         fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: {
@@ -242,67 +247,83 @@ produtoForm.addEventListener('submit', (e) => {
     }
     else { 
         fetch(URL, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: produto
+            }
         })
         .then(res => res.json())
-        .then(() => {
-            updateDate();
-            location.reload();
+        .then(data => {
+            const lastId = data.length > 0 ? parseInt(data[data.length - 1].id) : 0;
+            const newId = (lastId + 1).toString();
+            
+            const produto = JSON.stringify({
+                id: newId,
+                categoria: document.getElementById('produto-categoria').value,
+                nome: document.getElementById('produto-nome').value,
+                vlr: document.getElementById('produto-vlr').value,
+                qtd: document.getElementById('produto-qtd').value
+            });
+            
+            fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: produto
+            })
+            .then(res => res.json())
+            .then(() => {
+                updateDate();
+                location.reload();
+            });
         });
     }      
 });
 
 // Atualizar Data
 function updateDate() {
-  const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
-    'pt-BR', {
-      timeZone: 'America/Sao_Paulo',
-      year: 'numeric',
-      month: '2-digit',
-      day:'2-digit'
-    }
-  )
+  const currentDate = new Date().toLocaleString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).split('/').reverse().join('-');
 
   fetch('http://localhost:3000/dates/1', {
-      method: 'PUT',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ data: currentDate })
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ data: currentDate })
   })
-  .then(response => {
+    .then(response => {
       if (!response.ok) {
-          throw new Error('Erro ao atualizar a data no servidor');
+        throw new Error('Erro ao atualizar a data no servidor');
       }
-  })
-  .catch(error => {
+    })
+    .catch(error => {
       console.error('Erro:', error);
-  });
+    });
 }
 
 // Salvar Data
 document.addEventListener('DOMContentLoaded', function () {
-
   function getData() {
     fetch('http://localhost:3000/dates/1')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao buscar a data do servidor');
-            }
-            return response.json();
-        })
-        .then(data => {
-            document.getElementById('data').value = data.data;
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
-}
-
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao buscar a data do servidor');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('data').value = data.data;
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+      });
+  }
 
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -310,8 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
     saveData(inputData);
   });
 
-getData()
-
+  getData();
 });
 
 
@@ -362,7 +382,3 @@ function myFunction() {
   google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
 
-// usuário logado
-let nomeUsuario = localStorage.getItem('usuario_logado');
-var tagA = document.getElementById("nome");
-tagA.innerHTML = `${nomeUsuario}`; 

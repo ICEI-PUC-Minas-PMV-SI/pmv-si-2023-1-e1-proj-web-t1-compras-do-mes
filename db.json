@@ -1,42 +1,65 @@
 {
   "produtos": [
     {
-      "id": "2",
-      "categoria": "Transporte",
-      "nome": "Gasolina ",
-      "vlr": "100",
-      "qtd": "1"
-    },
-    {
-      "id": "3",
-      "categoria": "Diversos",
-      "nome": "Roupas",
+      "id": "1",
+      "categoria": "Habitação",
+      "nome": "Conta de Agua",
       "vlr": "50",
       "qtd": "3"
     },
     {
-      "id": "4",
+      "id": "2",
       "categoria": "Alimentação",
-      "nome": "Super nosso",
-      "vlr": "96.00",
+      "nome": "Mercado",
+      "vlr": "250",
+      "qtd": "1"
+    },
+    {
+      "id": "3",
+      "categoria": "Transporte",
+      "nome": "Uber",
+      "vlr": "50",
       "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2024-02-10",
+      "data": "2024-05-13",
       "id": "1"
     }
   ],
   "orcamentos": [
     {
-      "orcamento": "400",
+      "orcamento": "4000",
       "id": "1"
     }
   ],
   "metas": [
     {
-      "metas": "Insira aqui sua meta\npara de gastar\n\n",
+      "metas": "",
+      "id": "1"
+    }
+  ],
+  "receitas": [
+    {
+      "id": "1",
+      "nome": "MRV",
+      "vlr": "500"
+    },
+    {
+      "id": "2",
+      "nome": "Salário",
+      "vlr": "3000"
+    },
+    {
+      "id": "3",
+      "nome": "Uber",
+      "vlr": "100"
+    }
+  ],
+  "datesReceita": [
+    {
+      "data": "2024-05-13",
       "id": "1"
     }
   ]

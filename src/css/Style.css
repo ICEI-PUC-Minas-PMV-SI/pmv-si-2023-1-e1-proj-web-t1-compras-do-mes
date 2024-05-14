@@ -7,26 +7,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-  button .navbar-toggler {display:block;}
-  header .icon {
-    float: right;
-    display: block;}
-  }
-  
-  @media screen and (max-width: 600px) {
-    header.responsive {position: relative;}
-    header.responsive  {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    header.responsive {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+.dark-mode .formulario button {
+  color: white;
+}
 
 .navbar-toggler img{
 
@@ -53,22 +36,26 @@ body {
 }
 
 header nav .logo {
+  min-width: 160.1px;
   font-family: monoton;
   font-size: 40px;
   color: rgb(189, 255, 83);
   margin-left: 10px;
+
 }
 
+.pdolar {
+  margin: 0;
+}
 
 header {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgb(43, 43, 43);
 }
 
 nav .modoescuro, .navbuttons, .logo{
   display:inline-block;
-
 }
 
 nav .modoescuro{
@@ -83,6 +70,10 @@ nav #navbarSupportedContent li {
 nav #navbarSupportedContent li :hover{
   color: blueviolet;
   transition: all 0.3s;
+}
+
+nav #nome {
+  display: inline;
 }
 
 
@@ -143,6 +134,19 @@ a, a:visited, a:hover, a:active {
 }
 
 /* Calculadora */
+
+.breadcrumb{
+  background-color: #ffffff15;
+  border-radius: 0px;
+}
+
+.breadcrumb a{
+color: rgb(20, 20, 20);
+}
+
+.breadcrumb text{
+  color: rgb(233, 233, 233);
+  }
 
 .containerCalc {
   height: 40vh;
@@ -224,4 +228,14 @@ a, a:visited, a:hover, a:active {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+
+#logout {
+  background-color: #f44336; 
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 50px;
 }

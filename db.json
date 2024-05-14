@@ -5,7 +5,7 @@
       "categoria": "Habitação",
       "nome": "Conta de Agua",
       "vlr": "50",
-      "qtd": "2"
+      "qtd": "3"
     },
     {
       "id": "2",
@@ -13,11 +13,18 @@
       "nome": "Mercado",
       "vlr": "250",
       "qtd": "1"
+    },
+    {
+      "id": "3",
+      "categoria": "Transporte",
+      "nome": "Uber",
+      "vlr": "50",
+      "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2024-05-14",
+      "data": "2024-05-13",
       "id": "1"
     }
   ],
@@ -52,7 +59,7 @@
   ],
   "datesReceita": [
     {
-      "data": "2024-05-14",
+      "data": "2024-05-13",
       "id": "1"
     }
   ]

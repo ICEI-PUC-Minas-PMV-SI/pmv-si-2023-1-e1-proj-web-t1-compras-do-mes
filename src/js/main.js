@@ -283,51 +283,47 @@ produtoForm.addEventListener('submit', (e) => {
 
 // Atualizar Data
 function updateDate() {
-  const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
-    'pt-BR', {
-      timeZone: 'America/Sao_Paulo',
-      year: 'numeric',
-      month: '2-digit',
-      day:'2-digit'
-    }
-  )
+  const currentDate = new Date().toLocaleString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).split('/').reverse().join('-');
 
   fetch('http://localhost:3000/dates/1', {
-      method: 'PUT',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ data: currentDate })
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ data: currentDate })
   })
-  .then(response => {
+    .then(response => {
       if (!response.ok) {
-          throw new Error('Erro ao atualizar a data no servidor');
+        throw new Error('Erro ao atualizar a data no servidor');
       }
-  })
-  .catch(error => {
+    })
+    .catch(error => {
       console.error('Erro:', error);
-  });
+    });
 }
 
 // Salvar Data
 document.addEventListener('DOMContentLoaded', function () {
-
   function getData() {
     fetch('http://localhost:3000/dates/1')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao buscar a data do servidor');
-            }
-            return response.json();
-        })
-        .then(data => {
-            document.getElementById('data').value = data.data;
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
-}
-
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao buscar a data do servidor');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('data').value = data.data;
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+      });
+  }
 
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -335,8 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
     saveData(inputData);
   });
 
-getData()
-
+  getData();
 });
 
 

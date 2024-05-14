@@ -5,26 +5,19 @@
       "categoria": "Habitação",
       "nome": "Conta de Agua",
       "vlr": "50",
-      "qtd": "3"
-    },
-    {
-      "id": "2",
-      "categoria": "Transporte",
-      "nome": "Uber",
-      "vlr": "100",
       "qtd": "2"
     },
     {
-      "id": "3",
-      "categoria": "Lazer",
-      "nome": "Cinema",
-      "vlr": "50",
+      "id": "2",
+      "categoria": "Alimentação",
+      "nome": "Mercado",
+      "vlr": "250",
       "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2024-05-11",
+      "data": "2024-05-14",
       "id": "1"
     }
   ],
@@ -43,23 +36,18 @@
   "receitas": [
     {
       "id": "1",
-      "nome": "Salário",
-      "vlr": "2500"
+      "nome": "MRV",
+      "vlr": "300"
     },
     {
       "id": "2",
-      "nome": "Uber",
-      "vlr": "700"
-    },
-    {
-      "id": "3",
-      "nome": "Investimentos",
-      "vlr": "400"
+      "nome": "Salário",
+      "vlr": "3000"
     }
   ],
   "datesReceita": [
     {
-      "data": "2024-05-13",
+      "data": "2024-05-14",
       "id": "1"
     }
   ]

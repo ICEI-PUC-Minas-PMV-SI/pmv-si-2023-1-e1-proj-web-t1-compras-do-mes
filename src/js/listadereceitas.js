@@ -177,13 +177,15 @@ const receitaForm = document.getElementById('receita-form');
 
 receitaForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let id = parseInt($('#edit-rec-id').text());    
-    const receita = JSON.stringify({
-        id: document.getElementById('receita-id').value,
-        nome: document.getElementById('receita-nome').value,
-        vlr: document.getElementById('receita-vlr').value,
-    })
-    if (id >= 0) {
+    let id = $('#edit-rec-id').text();    
+    
+    if (id) {
+        const receita = JSON.stringify({
+            id: id,
+            nome: document.getElementById('receita-nome').value,
+            vlr: document.getElementById('receita-vlr').value,
+        });
+        
         fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: {
@@ -198,19 +200,36 @@ receitaForm.addEventListener('submit', (e) => {
     }
     else { 
         fetch(URL, {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: receita
+            }
         })
         .then(res => res.json())
-        .then(() => {
-            updateDate();
+        .then(data => {
+            const lastId = data.length > 0 ? parseInt(data[data.length - 1].id) : 0;
+            const newId = (lastId + 1).toString();
+            
+            const receita = JSON.stringify({
+                id: newId,
+                nome: document.getElementById('receita-nome').value,
+                vlr: document.getElementById('receita-vlr').value,
+            });
+            
+            fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: receita
+            })
+            .then(res => res.json())
+            .then(() => {
+                updateDate();
+            });
         });  
     }      
 });
-
 // Atualizar Data
 function updateDate() {
   const currentDate = new Date().toISOString().slice(0, 10).toLocaleString( 

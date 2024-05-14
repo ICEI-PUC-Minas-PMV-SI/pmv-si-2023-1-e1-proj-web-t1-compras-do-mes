@@ -213,7 +213,7 @@ receitaForm.addEventListener('submit', (e) => {
 
 // Atualizar Data
 function updateDate() {
-  const currentDate = new Date().toISOString().slice(0, 10).toLocaleString(
+  const currentDate = new Date().toISOString().slice(0, 10).toLocaleString( 
     'pt-BR', {
       timeZone: 'America/Sao_Paulo',
       year: 'numeric',
@@ -237,7 +237,7 @@ function updateDate() {
   .catch(error => {
       console.error('Erro:', error);
   });
-}
+} 
 
 // salvar data
 document.addEventListener('DOMContentLoaded', function () {

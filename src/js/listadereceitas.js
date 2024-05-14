@@ -2,21 +2,21 @@
 URL = 'http://localhost:3000/receitas'
 
 function getReceitaToChart(revenue) {
-    const receitas = {};
+    const receitasGraf = {};
 
     revenue.forEach(receita => {
-      const receita = receita.nome;
+      const receitaGraf = receita.nome;
       const valor = parseFloat(receita.vlr);
 
 
-      if (receitas[receita]) {
-        receitas[receita] += valor;
+      if (receitasGraf[receitaGraf]) {
+        receitasGraf[receitaGraf] += valor;
       } else {
-        receitas[receita] = valor;
+        receitasGraf[receitaGraf] = valor;
       }
     });
 
-    return Object.entries(receitas);
+    return Object.entries(receitasGraf);
 }
 
 function drawChart(revenue) {

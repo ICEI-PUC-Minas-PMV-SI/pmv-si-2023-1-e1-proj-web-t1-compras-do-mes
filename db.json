@@ -20,11 +20,18 @@
       "nome": "Uber",
       "vlr": "50",
       "qtd": "1"
+    },
+    {
+      "id": "4",
+      "categoria": "Saúde",
+      "nome": "remedio",
+      "vlr": "25.00",
+      "qtd": "1"
     }
   ],
   "dates": [
     {
-      "data": "2024-05-13",
+      "data": "2024-05-14",
       "id": "1"
     }
   ],

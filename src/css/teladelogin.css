@@ -11,19 +11,17 @@
 }
 
 #parte2 {
-    border: 0px solid #7e7e7e;
+    border: 1px solid #7e7e7e73;
     text-align: center;
-    margin: auto;
-    margin-top: 30px;
     width: 80%;
     padding: 10px;
     border-radius: 10px;  
     max-height: auto;
     min-width: 10%;
+    max-width: 500px;
 }
 
 #parte2 h1{
-    background-color: rgba(187, 187, 187, 0.365);
     border-radius: 10px;
     max-height: auto;
     margin-left: auto;
@@ -34,40 +32,30 @@
     border: 0px solid #7e7e7e;
 }
 
-
-
-.senha { 
-background-color: rgba(187, 187, 187, 0.365);
-margin-top: 10px;
-border-radius: 10px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
-.usuario {
+.botao {    
     background-color: rgba(187, 187, 187, 0.365);
-    margin-top: 10px;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.botao {
-    background-color: white ;
     border-radius: 90px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    margin-top: 10px;
-    border: solid 0px rgb(131, 125, 125) ;
+    font-size: 20px;
+    border: none;
     width: 100%;
-    
-    
-    
+    max-width: 130px;
 }
+
+.botao2 {
+    margin-top: 20px;
+    border-radius: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    max-width: 360px;
+}
+
+input {
+    margin-bottom:20px;
+}
+
 
 #parte2 input {
     border-radius: 90px;
@@ -77,46 +65,23 @@ margin-bottom: 20px;
 }
 
 .senha2 {
-    background-color: rgba(187, 187, 187, 0.365);
     margin-top: 10px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin-top: 20px;
-    margin-bottom: 20px;
     color: black;
 }
 .usuario2 {
-    background-color: rgba(187, 187, 187, 0.365);
     margin-top: 10px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin-top: 20px;
-    margin-bottom: 20px;
     color: black;
 }
 
-.botoes {
-    background-color: darkgray;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-   
-    
-}
 
-.botoes2 {
-    background-color: darkgray;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    
-}
 
 @media screen and (max-width: 600px) {
     #parte2-container{

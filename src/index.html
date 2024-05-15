@@ -53,34 +53,13 @@
     <form class="form-inline">
 
       <fieldset>
-        
-        <div class="usuario">
-          <label class="usuario2">Usuário</label>
-          <input type="text" name="usuario" id="usuario">
-        </div>
-
-        <div class="senha">
-          <label class="senha2">Senha</label>
-          <input type="password" name="senha" id="senha">
-        </div>
-
-        <div class="botoes">
-        <button class="botao" type="reset" onclick="buscaUsuario(document.getElementById('usuario').value, document.getElementById('senha').value);">Entrar</button>
-        </div>
-        
-        <div class="botoes2">
-        <button class="botao" type="submit"><a href="cadastrodeusuario.html">Novo(a) por aqui? Crie sua conta!</a> </button>
-        
-        </div>
-        
+          <input type="text" name="usuario" id="usuario" placeholder="Usuário"></input>
+          <input type="password" name="senha" id="senha" placeholder="Senha">
+          <button class="botao" type="reset" onclick="buscaUsuario(document.getElementById('usuario').value, document.getElementById('senha').value);">Entrar</button>
+          <button class="botao2" type="submit"><a href="cadastrodeusuario.html">Novo(a) por aqui? Crie sua conta!</a> </button>
       </fieldset>
     </form>
    </div>
-
-
-
-
-
    </div>
     <footer>            
       <a href="">

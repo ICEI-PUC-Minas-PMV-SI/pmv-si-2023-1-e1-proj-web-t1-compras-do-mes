@@ -18,13 +18,13 @@
       "id": "3",
       "categoria": "Transporte",
       "nome": "Uber",
-      "vlr": "50",
-      "qtd": "1"
+      "vlr": "25",
+      "qtd": "2"
     }
   ],
   "dates": [
     {
-      "data": "2024-05-13",
+      "data": "2024-05-15",
       "id": "1"
     }
   ],
@@ -43,13 +43,13 @@
   "receitas": [
     {
       "id": "1",
-      "nome": "MRV",
+      "nome": "Investimentos",
       "vlr": "500"
     },
     {
       "id": "2",
       "nome": "Salário",
-      "vlr": "3000"
+      "vlr": "2000"
     },
     {
       "id": "3",
@@ -59,7 +59,7 @@
   ],
   "datesReceita": [
     {
-      "data": "2024-05-13",
+      "data": "2024-05-14",
       "id": "1"
     }
   ]

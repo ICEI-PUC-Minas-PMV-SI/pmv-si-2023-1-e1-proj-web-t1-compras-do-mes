@@ -18,7 +18,6 @@
       "id": "3",
       "categoria": "Transporte",
       "nome": "Uber",
-<<<<<<< HEAD
       "vlr": "50",
       "qtd": "1"
     },
@@ -28,19 +27,11 @@
       "nome": "remedio",
       "vlr": "25.00",
       "qtd": "1"
-=======
-      "vlr": "25",
-      "qtd": "2"
->>>>>>> d70ef62c6e41377caaa3019ee511a65e37f488e2
     }
   ],
   "dates": [
     {
-<<<<<<< HEAD
       "data": "2024-05-14",
-=======
-      "data": "2024-05-15",
->>>>>>> d70ef62c6e41377caaa3019ee511a65e37f488e2
       "id": "1"
     }
   ],
@@ -59,13 +50,13 @@
   "receitas": [
     {
       "id": "1",
-      "nome": "Investimentos",
+      "nome": "MRV",
       "vlr": "500"
     },
     {
       "id": "2",
       "nome": "Salário",
-      "vlr": "2000"
+      "vlr": "3000"
     },
     {
       "id": "3",
@@ -75,7 +66,7 @@
   ],
   "datesReceita": [
     {
-      "data": "2024-05-15",
+      "data": "2024-05-13",
       "id": "1"
     }
   ]

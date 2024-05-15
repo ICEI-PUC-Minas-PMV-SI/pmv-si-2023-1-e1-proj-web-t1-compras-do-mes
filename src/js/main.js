@@ -378,5 +378,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
 }
 

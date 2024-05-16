@@ -1,4 +1,10 @@
 function buscaUsuario(nome, senha) {
+  // Verifica se os campos estão preenchidos
+  if (nome.trim() === "" || senha.trim() === "") {
+    alert("Por favor, preencha todos os campos.");
+    return; // Interrompe a execução da função se os campos não estiverem preenchidos
+  }
+
   const jt = localStorage.getItem(nome);
 
   if (jt != null) {
@@ -11,7 +17,7 @@ function buscaUsuario(nome, senha) {
       alert("Seus dados estão incorretos, tente novamente");
     }
   } else {
-    alert("Insira seus dados para continuar!");
+    alert("Usuário não encontrado. Por favor, verifique suas credenciais.");
   }
 }
 

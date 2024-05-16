@@ -1,7 +1,6 @@
 <h1 align="center">E-Li$t</h1>
 
-![Captura de tela 2023-04-01 201715](https://user-images.githubusercontent.com/127058328/229321109-b3599df8-f77f-498c-a1b4-4d84193fc48d.jpg)
-
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/assets/127058328/29f4e788-fbd8-46f3-8988-f16a339c2729)
 
 `CURSO: Sistemas de Informação`
 

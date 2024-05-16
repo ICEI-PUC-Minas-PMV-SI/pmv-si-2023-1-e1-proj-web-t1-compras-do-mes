@@ -1,7 +1,4 @@
-// URL DA API DE DADOS
-URL = 'http://localhost:3000/produtos'
-
-// usuário logado
+// USUÁRIO LOGADO
 let nomeUsuario = localStorage.getItem('usuario_logado');
 var tagA = document.getElementById("nome");
 tagA.innerHTML = `${nomeUsuario}`;
@@ -10,7 +7,6 @@ tagA.innerHTML = `${nomeUsuario}`;
 function getCategoriesToChart(products) {
     const categorias = {};
     
-// buscando valor por categoria
     products.forEach(produto => {
       const categoria = produto.categoria;
       const valor = parseFloat(produto.vlr);
@@ -59,47 +55,47 @@ function drawChart(categories) {
 
 // GET - Recupera todos os produtos e adiciona na tabela
 const produtoList = document.getElementById('produto-list');
-fetch(URL)
-    .then(res => res.json())
-    .then(produtos => {
-        let lista_produtos = '';
-        for (let i = 0; i < produtos.length; i++) {
-            vlt_total = produtos[i].qtd * produtos[i].vlr;
-            lista_produtos += `
-            <tr>
-                <th>${produtos[i].id}</th>
-                <td>${produtos[i].categoria}</td>
-                <td>${produtos[i].nome}</td>
-                <td>R$${(parseFloat(produtos[i].vlr)).toFixed(2)}</td>
-                <td>${produtos[i].qtd}</td>
-                <td>R$${parseFloat(vlt_total).toFixed(2)}</td>
-                <td>
-                    <a onclick="getProduto(${produtos[i].id});" 
-                    class="btn btn-warning btn-sm" 
-                    data-toggle="modal" data-target="#produto-modal">
-                    <i class="fa fa-edit"></i>  Editar
-                    </a>
 
-                    <a onclick="$('#id-prod').text(${produtos[i].id});" class="btn btn-danger btn-sm" 
-                    data-toggle="modal" data-target="#modal-delete">
-                    <i class="fa fa-trash"></i> Remover
-                    </a>
-                </td>
-            </tr>
-            `;
-            produtoList.innerHTML = lista_produtos;
-        }
+let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
 
-        // FUNCTION GRÁFICOS
-        google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
-    });
+let lista_produtos = '';
 
-//Valor Total Receita
+for (let i = 0; i < produtos.length; i++) {
+    let vlt_total = produtos[i].qtd * produtos[i].vlr;
+    lista_produtos += `
+    <tr>
+        <th>${produtos[i].id}</th>
+        <td>${produtos[i].categoria}</td>
+        <td>${produtos[i].nome}</td>
+        <td>R$${(parseFloat(produtos[i].vlr)).toFixed(2)}</td>
+        <td>${produtos[i].qtd}</td>
+        <td>R$${parseFloat(vlt_total).toFixed(2)}</td>
+        <td>
+            <a onclick="getProduto('${produtos[i].id}');" 
+            class="btn btn-warning btn-sm" 
+            data-toggle="modal" data-target="#produto-modal">
+            <i class="fa fa-edit"></i>  Editar
+            </a>
+
+            <a onclick="$('#id-prod').text('${produtos[i].id}');" class="btn btn-danger btn-sm" 
+            data-toggle="modal" data-target="#modal-delete">
+            <i class="fa fa-trash"></i> Remover
+            </a>
+        </td>
+    </tr>
+    `;
+}
+
+produtoList.innerHTML = lista_produtos;
+
+// FUNCTION GRÁFICOS
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart(getCategoriesToChart(produtos)));
+
+// BUSCA VALORES TOTAIS
 let valorTotalReceita = 0;
 let valorTotalGasto = 0;
 
-// Função para formatar número como moeda
 function formatarMoeda(valor) {
   return new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -107,7 +103,6 @@ function formatarMoeda(valor) {
   }).format(valor);
 }
 
-// Função para calcular o valor excedido
 function calcularValorExcedido() {
   const valorExcedido = valorTotalReceita - valorTotalGasto;
 
@@ -119,101 +114,72 @@ function calcularValorExcedido() {
   }
 }
 
-// Fetch das receitas
-const fetchReceitas = fetch('http://localhost:3000/receitas')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(receita => {
-      const valor = parseFloat(receita.vlr);
-      valorTotalReceita += valor;
-    });
-    document.getElementById('valor-total-receita').innerHTML = formatarMoeda(valorTotalReceita);
+function carregarValores() {
+  const receitas = JSON.parse(localStorage.getItem('receitas')) || [];
+  receitas.forEach(receita => {
+    const valor = parseFloat(receita.vlr);
+    valorTotalReceita += valor;
   });
+  document.getElementById('valor-total-receita').innerHTML = formatarMoeda(valorTotalReceita);
 
-// Fetch dos produtos
-const fetchProdutos = fetch('http://localhost:3000/produtos')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(produto => {
-      const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      valorTotalGasto += valor * quantidade;
-    });
-    document.getElementById('valor-total').innerHTML = formatarMoeda(valorTotalGasto);
+  const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+  produtos.forEach(produto => {
+    const valor = parseFloat(produto.vlr);
+    const quantidade = parseInt(produto.qtd);
+    valorTotalGasto += valor * quantidade;
   });
+  document.getElementById('valor-total').innerHTML = formatarMoeda(valorTotalGasto);
 
-// Executar os cálculos após ambas as fetch serem completadas
-Promise.all([fetchReceitas, fetchProdutos]).then(() => {
   calcularValorExcedido();
-});
+}
 
-// Valor total Categoroias
-fetch('http://localhost:3000/produtos')
-  .then(response => response.json())
-  .then(data => {
-    const categorias = {};
-    data.forEach(produto => {
-      const categoria = produto.categoria;
-      const valor = parseFloat(produto.vlr);
-      const quantidade = parseInt(produto.qtd);
-      const subtotal = valor * quantidade;
-
-      if (categorias[categoria]) {
-        categorias[categoria] += subtotal;
-      } else {
-        categorias[categoria] = subtotal;
-      }
-    });
-
-    for (const categoria in categorias) {
-      console.log(`Categoria: ${categoria} - Total: ${categorias[categoria]}`);
-    }
-  })
-  .catch(error => {
-    console.error('Erro na requisição:', error);
-  });
-
+window.addEventListener('DOMContentLoaded', carregarValores);
 
 // DELETE - PROCEDIMENTO PARA EXCLUIR UM PRODUTO
 const produtoDelete = document.getElementById('btn-delete');
 
 produtoDelete.addEventListener('click', (e) => {
-
     let id = $('#id-prod').text();
 
-    fetch(`${URL}/${id}`, {
-        method: 'DELETE',
-    })
-    .then(res => res.json())
-    .then(() => location.reload());
-    updateDate();
-    
+    let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
 
-})
+    produtos = produtos.filter(produto => produto.id !== id);
+
+    localStorage.setItem('produtos', JSON.stringify(produtos));
+
+    updateDate();
+
+    location.reload();
+});
 
 // PROCEDIMENTO PARA RECUPERAR OS DADOS DE UM PRODUTO NA API
-function getProduto(id){
+function getProduto(id) {
+  if (id == 0) {
+      $('#edit-prod-id').text("");
+      $("#produto-id").prop("disabled", false);
+      $('#produto-id').val("");
+      $('#produto-categoria').val("");
+      $('#produto-nome').val("");
+      $('#produto-vlr').val("");
+      $('#produto-qtd').val("");
+  } else {
+      $('#edit-prod-id').text(id);
 
-    if(id == 0){
-        $('#edit-prod-id').text("");
-        $( "#produto-id" ).prop( "disabled", false );
-        $('#produto-id').val("");
-        $('#produto-categoria').val("");
-        $('#produto-nome').val("");
-        $('#produto-vlr').val("");
-        $('#produto-qtd').val("");
-    }else{
-        $('#edit-prod-id').text(id);
-        fetch(`${URL}/${id}`).then(res => res.json())    
-        .then(data => {
-            $( "#produto-id" ).prop( "disabled", true );
-            $('#produto-id').val(data.id);
-            $('#produto-categoria').val(data.categoria);
-            $('#produto-nome').val(data.nome);
-            $('#produto-vlr').val(data.vlr);
-            $('#produto-qtd').val(data.qtd);
-        });
-    }    
+      let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+
+      let produto = produtos.find(produto => produto.id === id.toString());
+
+      if (produto) {
+          $("#produto-id").prop("disabled", true);
+          $('#produto-id').val(produto.id);
+          $('#produto-categoria').val(produto.categoria);
+          $('#produto-nome').val(produto.nome);
+          $('#produto-vlr').val(produto.vlr);
+          $('#produto-qtd').val(produto.qtd);
+      } else {
+          alert("Produto não encontrado.");
+      }
+  }
 }
 
 // CREATE or UPDATE - PROCEDIMENTO PARA CRIAR OU EDITAR UM PRODUTO
@@ -223,65 +189,30 @@ produtoForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let id = $('#edit-prod-id').text();
     
+    let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+    
+    const produto = {
+        id: id || (produtos.length > 0 ? (parseInt(produtos[produtos.length - 1].id) + 1).toString() : '1'),
+        categoria: document.getElementById('produto-categoria').value,
+        nome: document.getElementById('produto-nome').value,
+        vlr: document.getElementById('produto-vlr').value,
+        qtd: document.getElementById('produto-qtd').value
+    };
+
     if (id) {
-        const produto = JSON.stringify({
-            id: id,
-            categoria: document.getElementById('produto-categoria').value,
-            nome: document.getElementById('produto-nome').value,
-            vlr: document.getElementById('produto-vlr').value,
-            qtd: document.getElementById('produto-qtd').value
-        });
-        
-        fetch(`${URL}/${id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: produto
-        })
-        .then(res => res.json())
-        .then(() => {
-            updateDate();
-            location.reload();
-        });
+        produtos = produtos.map(p => p.id === id ? produto : p);
+    } else {
+        produtos.push(produto);
     }
-    else { 
-        fetch(URL, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(res => res.json())
-        .then(data => {
-            const lastId = data.length > 0 ? parseInt(data[data.length - 1].id) : 0;
-            const newId = (lastId + 1).toString();
-            
-            const produto = JSON.stringify({
-                id: newId,
-                categoria: document.getElementById('produto-categoria').value,
-                nome: document.getElementById('produto-nome').value,
-                vlr: document.getElementById('produto-vlr').value,
-                qtd: document.getElementById('produto-qtd').value
-            });
-            
-            fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: produto
-            })
-            .then(res => res.json())
-            .then(() => {
-                updateDate();
-                location.reload();
-            });
-        });
-    }      
+
+    localStorage.setItem('produtos', JSON.stringify(produtos));
+
+    updateDate();
+
+    location.reload();
 });
 
-// Atualizar Data
+// ATUALIZAR DATA
 function updateDate() {
   const currentDate = new Date().toLocaleString('pt-BR', {
     timeZone: 'America/Sao_Paulo',
@@ -290,88 +221,43 @@ function updateDate() {
     day: '2-digit'
   }).split('/').reverse().join('-');
 
-  fetch('http://localhost:3000/dates/1', {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ data: currentDate })
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro ao atualizar a data no servidor');
-      }
-    })
-    .catch(error => {
-      console.error('Erro:', error);
-    });
+  localStorage.setItem('dataAtualizada', currentDate);
 }
 
-// Salvar Data
 document.addEventListener('DOMContentLoaded', function () {
   function getData() {
-    fetch('http://localhost:3000/dates/1')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro ao buscar a data do servidor');
-        }
-        return response.json();
-      })
-      .then(data => {
-        document.getElementById('data').value = data.data;
-      })
-      .catch(error => {
-        console.error('Erro:', error);
-      });
+    let data = localStorage.getItem('dataAtualizada');
+    if (data) {
+      document.getElementById('data').value = data;
+    }
   }
 
   document.getElementById('form-data').addEventListener('submit', function (event) {
     event.preventDefault();
     var inputData = document.getElementById('data').value;
-    saveData(inputData);
+    localStorage.setItem('dataAtualizada', inputData);
   });
 
   getData();
 });
 
 
-// Função para salvar o texto no JSON Server
+// SALVAR METAS
 function salvarMetas() {
   const textarea = document.getElementById('exampleFormControlTextarea1');
   const novoTexto = textarea.value;
 
-  const dadosAtualizados = {
-    metas: novoTexto
-  };
-
-  fetch('http://localhost:3000/metas/1', {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(dadosAtualizados)
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Metas atualizadas:', data);
-  })
-  .catch(error => {
-    console.error('Erro na requisição:', error);
-  });
+  localStorage.setItem('metas', novoTexto);
 }
 
 document.getElementById('salvarmeta').addEventListener('click', salvarMetas);
 
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:3000/metas/1')
-    .then(response => response.json())
-    .then(data => {
-      const textarea = document.getElementById('exampleFormControlTextarea1');
-      textarea.value = data.metas;
-    })
-    .catch(error => {
-      console.error('Erro na requisição:', error);
-    });
+  const metas = localStorage.getItem('metas');
+  if (metas) {
+    const textarea = document.getElementById('exampleFormControlTextarea1');
+    textarea.value = metas;
+  }
 });
 
 //Dark Mode

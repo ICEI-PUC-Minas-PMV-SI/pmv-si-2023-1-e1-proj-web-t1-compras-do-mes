@@ -97,4 +97,10 @@ input {
     
 }
 
+footer{
+    margin-top: 10px;
+}
 
+#parte1 > header > nav{
+    margin-bottom: 10px;
+}

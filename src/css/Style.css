@@ -39,6 +39,10 @@ body {
   background-color: rgb(32, 32, 32);
 }
 
+.dark-mode a {
+  background-color: transparent;
+}
+
 header nav .logo {
   min-width: 160.1px;
   font-family: monoton;

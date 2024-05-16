@@ -7,10 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.dark-mode h1{
-  color: white;
-}
-
 .dark-mode .formulario button {
   color: white;
 }
@@ -37,10 +33,6 @@ body {
   
 .dark-mode {
   background-color: rgb(32, 32, 32);
-}
-
-.dark-mode a {
-  background-color: transparent;
 }
 
 header nav .logo {

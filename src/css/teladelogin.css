@@ -104,3 +104,9 @@ footer{
 #parte1 > header > nav{
     margin-bottom: 10px;
 }
+
+
+.dark-mode h1{
+    color: white;
+  }
+  

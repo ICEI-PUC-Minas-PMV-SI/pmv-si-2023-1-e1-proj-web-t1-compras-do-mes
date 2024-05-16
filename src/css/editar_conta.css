@@ -225,3 +225,8 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
+
+  
+.dark-mode h1{
+  color: white;
+}

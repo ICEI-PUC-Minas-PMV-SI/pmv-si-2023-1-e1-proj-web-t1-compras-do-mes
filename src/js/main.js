@@ -3,7 +3,7 @@ let nomeUsuario = localStorage.getItem('usuario_logado');
 var tagA = document.getElementById("nome");
 tagA.innerHTML = `${nomeUsuario}`;
 
-//Function Google Chart
+//GOOGLE CHART GRÁFICO
 function getCategoriesToChart(products) {
     const categorias = {};
     

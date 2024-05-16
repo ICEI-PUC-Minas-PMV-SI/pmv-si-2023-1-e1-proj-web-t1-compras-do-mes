@@ -1,4 +1,4 @@
-<h1 align="center">E-Li$t</h1>
+<h1 align="center">E-LI$T+</h1>
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t1-compras-do-mes/assets/127058328/29f4e788-fbd8-46f3-8988-f16a339c2729)
 
@@ -6,7 +6,7 @@
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
-`SEMESTRE: 1º`
+`SEMESTRE: 1º e 3º`
 
 Criação de uma página WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
 
@@ -14,14 +14,17 @@ https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes.vercel.app/
 
 ## Integrantes
 
-* Vitoria Lorrayne Dos Santos Soares
-* Keren Hapuque Freitas Alves
 * Gabriel Freitas de Oliveira
-* Vitor Hugo Miranda da Silva
 * Helberth Alencar Diniz Martins
+* Keren Hapuque Freitas Alves
+* Natanael Igor Torres de Sales 
+* Nathan de Mesquita dos Santos 
+* Vitoria Lorrayne Dos Santos Soares
+* Vitor Hugo Miranda da Silva
 
-## Orientador
+## Orientadores
 
+* Simone de Assis Alves da Silva 
 * Hugo Bastos de Paula
 
 # Planejamento

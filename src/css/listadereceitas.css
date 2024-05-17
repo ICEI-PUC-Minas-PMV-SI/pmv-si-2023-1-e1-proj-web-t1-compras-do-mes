@@ -45,6 +45,21 @@ color: #ffffff;
     }
   }
 
+  .form-group{
+    width: 100%;
+  }
+  
+  .valorlabel{
+    width: auto;
+    display: inline-block;
+  }
+  
+  .total-label{
+    width: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }  
 
 .conteúdo{ /*lista de gastos(titulo)*/
   color: black;

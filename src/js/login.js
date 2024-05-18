@@ -1,4 +1,9 @@
-function buscaUsuario(nome, senha) {
+function buscaUsuario(event) {
+  event.preventDefault(); // Impede o envio do formulário
+
+  const nome = document.getElementById("usuario").value;
+  const senha = document.getElementById("senha").value;
+
   // Verifica se os campos estão preenchidos
   if (nome.trim() === "" || senha.trim() === "") {
     alert("Por favor, preencha todos os campos.");
@@ -21,13 +26,5 @@ function buscaUsuario(nome, senha) {
   }
 }
 
-// Adicione esta função para lidar com o evento de envio do formulário
-function handleFormSubmit(event) {
-  event.preventDefault(); // Impede o envio do formulário
-  const nome = document.getElementById("usuario").value;
-  const senha = document.getElementById("senha").value;
-  buscaUsuario(nome, senha);
-}
-
 // Adicione um ouvinte de evento ao formulário para capturar o evento de envio
-document.getElementById("login-form").addEventListener("submit", handleFormSubmit);
+document.getElementById("login-form").addEventListener("submit", buscaUsuario);

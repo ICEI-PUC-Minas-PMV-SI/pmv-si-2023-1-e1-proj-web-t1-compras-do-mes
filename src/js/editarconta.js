@@ -28,7 +28,7 @@ function alterarConta(event) {
         let jt = JSON.stringify(usuarioObj);
         localStorage.setItem(usuario, jt);
         alert("Senha alterada com sucesso!");
-        location.href = "index.html";
+        location.href = "escolhadelistas.html";
       } else {
         alert('"Nova Senha" e "Confirme Nova Senha" devem conter o mesmo dado.');
       }

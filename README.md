@@ -6,9 +6,9 @@
 
 `DISCIPLINA: Projeto - Aplicações Web`
 
-`SEMESTRE: 1º e 3º`
+`SEMESTRES: 1º e 3º`
 
-Criação de uma página WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
+Criação de uma aplicação WEB que fornece o controle e gerenciamento de listas compras, possibilitando aos usuários delimitar uma quantidade fixa para seus gastos. Promovendo assim controle financeiro, autonomia e conscientização de despesas.
 
 https://pmv-si-2023-1-e1-proj-web-t1-compras-do-mes.vercel.app/
 
